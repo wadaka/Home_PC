@@ -2,7 +2,7 @@ package run;
 
 import java.util.Scanner;
 
-public class Op {
+public class Directing_Op {
 	final static Scanner scan = new Scanner(System.in);
 	public static void showOp() {
 		try {
@@ -46,12 +46,11 @@ public class Op {
 		System.out.println("人はトレジャーハンターとよぶ！");
 		Thread.sleep(4000);
 		System.out.println();
-		Thread.sleep(1000);
 		System.out.println();
-		Thread.sleep(1000);
 		System.out.println();
+		System.out.println("  …………。");
 		Thread.sleep(3000);
-		System.out.println("  なんかいいでしょ。");
+		System.out.println("  なんかいいでしょ、こういうの。");
 		Thread.sleep(3500);
 		System.out.println("  実は、君もその一人なのだ。");
 		Thread.sleep(5000);
@@ -93,8 +92,9 @@ public class Op {
 		Thread.sleep(2000);
 		System.out.println("黄金が、");
 		Thread.sleep(2000);
-		System.out.println("  君の到着を、今か今かと待ちわびているのだから！！");
+		System.out.println("  君の到着を、待ちわびているのだから！！");
 		Thread.sleep(4000);
+		System.out.println();
 		System.out.println();
 		System.out.println("  なにも臆することはない。");
 		Thread.sleep(2000);
@@ -104,8 +104,7 @@ public class Op {
 		System.out.println();
 		System.out.println("============================================================================");
 		System.out.println();
-		System.out.println("  キーボードで君の意気込みを打ち込み、「秘境」へ Let's Go！");
-		System.out.print("  >>");
+		System.out.println("  エンターキー入力で、タイトルに戻るよ。>>");
 		String in = scan.nextLine();
 		for(int i=0;i<33;i++) {
 			System.out.println();
