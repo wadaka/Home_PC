@@ -14,7 +14,7 @@ public class Directing_StartGame {
 		System.out.println("    ■■■        ■■■    ■■          ■■      ■■  ■■■");
 		System.out.println("                ■■■      ■■          ■■    ■■■■■■■■■■■");
 		System.out.println("              ■■■        ■■          ■■    ■■■■■■■■■■■");
-		System.out.println("            ■■■■        ■■          ■■        ■■■■■■■");
+		System.out.println("");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -22,7 +22,7 @@ public class Directing_StartGame {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("    ■■■■■■■■■■■    ■■■■■■■                ■■■");
+		System.out.println("");
 		System.out.println("    ■■■■■■■■■■■      ■■■■■                ■■■");
 		System.out.println("      ■■■■■■■■■                                ■■■");
 		System.out.println("        ■■■■■■■                                ■■■");

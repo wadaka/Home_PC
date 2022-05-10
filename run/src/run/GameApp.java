@@ -60,6 +60,9 @@ public class GameApp {
 				int money = h.getMoney();
 				switch(input) {
 					case 1:
+						System.out.println();
+						System.out.println("  ============================================================================");
+						System.out.println();
 						System.out.println("    安全な道を進むことにした。");
 						try {
 							EventJudgement(input,h);
@@ -72,6 +75,9 @@ public class GameApp {
 						System.out.println("    探索終了。");
 						break;
 					case 2:
+						System.out.println();
+						System.out.println("  ============================================================================");
+						System.out.println();
 						System.out.println("    普通の道を進むことにした。");
 						try {
 							EventJudgement(input,h);
@@ -86,7 +92,10 @@ public class GameApp {
 						System.out.println("    普通の道ボーナス:財宝+1。");
 						break;
 					case 3:
-						System.out.println("    危険な道を進んだ。");
+						System.out.println();
+						System.out.println("  ============================================================================");
+						System.out.println();
+						System.out.println("    危険な道を進むことにした。");
 						try {
 							EventJudgement(input,h);
 						} catch (InterruptedException e) {
