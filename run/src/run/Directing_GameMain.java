@@ -34,14 +34,14 @@ public class Directing_GameMain {
 		System.out.println();
 		System.out.println("============================================================================");
 		System.out.println("============================================================================");
-		Thread.sleep(4000);
+		Thread.sleep(2500);
 	}
 	static void showMain(Hero h,int count) {
 		System.out.println();
 		System.out.println();
 		System.out.println("  ============");
 		System.out.println(" |////////////|-----------------------  =================================");
-		System.out.printf(" |//第 %02d 歩//|=======================||  HP  %3d/100  |  財宝  %3d/100  ||%n",count,h.getHp(),h.getMoney());
+		System.out.printf(" |//第 %02d 歩//|=======================||  HP  %3d/100  |  財宝  %3d/50   ||%n",count,h.getHp(),h.getMoney());
 		System.out.println(" |////////////|                         ================================= ");
 		System.out.println("  ============                                                            |");
 		System.out.println(" |                                                                        |");
@@ -62,7 +62,7 @@ public class Directing_GameMain {
 					System.out.print("▽");
 				}else {
 					System.out.print("  ");
-					
+
 				}
 			}else {
 				if(i+2==count+3){

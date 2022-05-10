@@ -22,7 +22,7 @@ public class Directing_Ending {
 			System.out.println("  志半ば、その体は歩みをやめ、");
 			Thread.sleep(2000);
 			System.out.print("  あなたは地に伏した……。");
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			System.out.println("もう二度と目覚めることはない……。");
 			System.out.println();
 			System.out.println();
@@ -30,6 +30,7 @@ public class Directing_Ending {
 			System.out.println();
 			System.out.println();
 			System.out.println();
+			Thread.sleep(3000);
 			System.out.println("  文字入力&エンターキーで、タイトルへ戻る");
 			Thread.sleep(2000);
 			System.out.print("  >>");
@@ -44,9 +45,9 @@ public class Directing_Ending {
 			System.out.println();
 			System.out.println("  「あっぱれ…っ！」");
 			Thread.sleep(2000);
-			System.out.println("  あなたは「秘境」に打ち勝ち、借金までもチャラにしたぞ！");
+			System.out.println("  あなたは「秘境」に打ち勝ち、借金までもチャラにした！");
 			Thread.sleep(2000);
-			System.out.println("  もう「駆け出し」じゃない、一流のトレジャーハンターだ！");
+			System.out.println("  もう「駆け出し」じゃないぞ、一流のトレジャーハンターだ！");
 			Thread.sleep(4000);
 			System.out.println();
 			System.out.println();
@@ -70,13 +71,13 @@ public class Directing_Ending {
 			System.out.println("  ……と、言いたいところだけど、");
 			Thread.sleep(2000);
 			System.out.println("  残念ながら、借金を返済できなかった……。");
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			System.out.println();
 			System.out.println();
 			System.out.println("  生きて「秘境」を脱出できた。");
 			Thread.sleep(2000);
 			System.out.println("  命があるだけラッキーだ。");
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			System.out.println();
 			System.out.println();
 			System.out.println("  ……そうやって、自分を慰めるあなたを尻目に、");
