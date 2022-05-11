@@ -44,8 +44,9 @@ public class GameApp {
 			
 			
 			Hero h = new Hero();
-			int ending = 0;
 			
+			//ゲームのメインループ
+			//HPが0になる場合を除き、30ターン
 			for(int i=0;i<30;i++) {
 				
 				try {
@@ -58,14 +59,17 @@ public class GameApp {
 				int input = sc.nextInt();
 				int hp = h.getHp();
 				int money = h.getMoney();
+				
+				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
+					//安全な道を選択した時の処理-----------------------------------------------------------------------------
 					case 1:
 						System.out.println();
 						System.out.println("  ============================================================================");
 						System.out.println();
 						System.out.println("    安全な道を進むことにした。");
 						try {
-							EventJudgement(input,h);
+							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
@@ -74,13 +78,14 @@ public class GameApp {
 						System.out.println("  ============================================================================");
 						System.out.println("    探索終了。");
 						break;
+					//普通の道を選択した時の処理-----------------------------------------------------------------------------
 					case 2:
 						System.out.println();
 						System.out.println("  ============================================================================");
 						System.out.println();
 						System.out.println("    普通の道を進むことにした。");
 						try {
-							EventJudgement(input,h);
+							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
@@ -91,13 +96,14 @@ public class GameApp {
 						System.out.println("    探索終了。");
 						System.out.println("    普通の道ボーナス:財宝+1。");
 						break;
+					//危険な道を選択した時の処理-----------------------------------------------------------------------------
 					case 3:
 						System.out.println();
 						System.out.println("  ============================================================================");
 						System.out.println();
 						System.out.println("    危険な道を進むことにした。");
 						try {
-							EventJudgement(input,h);
+							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
@@ -108,17 +114,20 @@ public class GameApp {
 						System.out.println("    探索終了。");
 						System.out.println("    危険な道ボーナス:財宝+2。");
 						break;
+					//傷薬を使用するときの処理、もし所持していない場合は安全な道を進むことになる。--------------------------
 					default:
 						if(h.getItem_ointment()>0) {
 							h.setHp(hp+30);
 							h.setItem_ointment(h.getItem_ointment()-1);
 							System.out.println("    傷薬を使用し、HPが30ポイント回復した！");
+							System.out.println();
 							System.out.println("    その後は、再三の注意を払いながら、道を進んでいった……。");
 						}else {
 							System.out.println("    しかし、傷薬を持っていなかった！");
+							System.out.println();
 							System.out.println("    仕方がないので、安全な道を進むことにした……。");
 							try {
-								EventJudgement(input,h);
+								EventJudgement(1,i,h);
 							} catch (InterruptedException e) {
 								// TODO 自動生成された catch ブロック
 								e.printStackTrace();
@@ -138,6 +147,10 @@ public class GameApp {
 					break;
 				}
 			}
+			
+			//エンディングの分岐処理
+			//エンディングは3種類で、１.HP0で死亡、2.借金が返せずLife is Over、3.生存+借金返済のはっぴーえんど。
+			int ending = 0;
 			if(h.getHp()<0) {
 				ending = 0;
 			}
@@ -167,7 +180,7 @@ public class GameApp {
 		System.out.print("============================================================================");
 		String pre = sc.nextLine();
 	}
-	static void EventJudgement(int root,Hero h) throws InterruptedException{
+	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
 		
 		Thread.sleep(1000);
@@ -175,113 +188,90 @@ public class GameApp {
 		System.out.println("    …………");
 		System.out.println();
 		Thread.sleep(1000);
-		System.out.println("    …………");
+		System.out.println("    ……………………");
 		System.out.println();
 		Thread.sleep(1000);
-		System.out.println("    …………");
+		System.out.println("    ………………………………");
 		System.out.println();
 		Thread.sleep(1000);
 		
 		
-		
+		int battle_j = rdm.nextInt(100);
 		int first_j = rdm.nextInt(100);
 		int second_j = rdm.nextInt(100);
 		//int third_j = rdm.nextInt(100);
 		int get_m = 0;
 		
+		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
+		if(turn<11) {
+			if(battle_j>69 && root==1) {
+				Battle.lottery_easy(h);
+			}else if(battle_j>59 && root==2) {
+				Battle.lottery_a_bit_easy(h);
+			}else if(battle_j>49 && root==3) {
+				Battle.lottery_a_bit_difficult(h);
+			}
+		}else if(turn<21) {
+			if(battle_j>59 && root==1) {
+				Battle.lottery_a_bit_easy(h);
+			}else if(battle_j>59 && root==2) {
+				Battle.lottery_normal(h);
+			}else if(battle_j>49 && root==3) {
+				Battle.lottery_a_bit_difficult(h);
+			}
+		}else {
+			if(battle_j>59 && root==1) {
+				Battle.lottery_normal(h);
+			}else if(battle_j>49 && root==2) {
+				Battle.lottery_a_bit_difficult(h);
+			}else if(battle_j>39 && root==3) {
+				Battle.lottery_difficult(h);
+			}
+		}
+		
+		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
 		if(root<=2 && first_j>=50) {
-			//安全な道を選んだ時の抽選
+			//安全な道を選んだ時の抽選-------------------------------------------------------
 			if(root==1) {
-				if(second_j>=50) {
-					//
+				if(second_j>=74) {
 					getItem(root,h);
-				}else if(second_j>=25) {
+				}else if(second_j>34) {
+					//アイテム獲得イベント
+					getItem(root,h);
+				}else {
 					//自然の脅威イベント
 					attackNature(root,h);
-					
-				}else {
-					//敵との戦闘(仮)
-					if((rdm.nextInt(4))>0) {
-						h.setHp(h.getHp()-10);
-						System.out.println("    敵だ！");
-						Thread.sleep(1000);
-						System.out.println();
-						System.out.println("    負けた！ボコられて痛いぜ！");
-						System.out.println("    HP-10");
-						Thread.sleep(1000);
-					}else {
-						h.setMoney(h.getMoney()+3);
-						System.out.println("    敵だ！");
-						Thread.sleep(1000);
-						System.out.println();
-						System.out.println("    勝った！ボコボコにしてやったぜ！");
-						System.out.println("    財宝+3");
-						Thread.sleep(1000);
-					}
 				}
-			//普通の道を選んだ時の抽選
+			//普通の道を選んだ時の抽選-------------------------------------------------------
 			}else {
-				if(second_j>=75) {
+				if(second_j>84) {
 					getItem(root,h);
-				}else if(second_j>=50) {
+				}else if(second_j>70) {
 					goToDungeon(h);
-				}else if(second_j>=25) {
-					//自然の脅威イベント
-					attackNature(root,h);
+				}else if(second_j>34) {
+					//アイテム獲得イベント
+					getItem(root,h);
 					
 				}else {
-					//敵との戦闘(仮)
-					if((rdm.nextInt(3))>0) {
-						h.setHp(h.getHp()-20);
-						System.out.println("    敵だ！");
-						Thread.sleep(1000);
-						System.out.println();
-						System.out.println("    負けた！ボコられて痛いぜ！");
-						System.out.println("    HP-20");
-						Thread.sleep(1000);
-					}else {
-						h.setMoney(h.getMoney()+5);
-						System.out.println("    敵だ！");
-						Thread.sleep(1000);
-						System.out.println();
-						System.out.println("    勝った！ボコボコにしてやったぜ！");
-						System.out.println("    財宝+5");
-						Thread.sleep(1000);
-					}
+					//自然の脅威イベント
+					attackNature(root,h);
 				}
 			}
+		//危険な道を選んだ時の抽選-----------------------------------------------------------
 		}else if(root>=3 && first_j>=30) {
-			if(second_j>=80) {
+			if(second_j>70) {
 				getItem(root,h);
-			}else if(second_j>=50) {
+			}else if(second_j>50) {
 				goToDungeon(h);
-			}else if(second_j>=25) {
+			}else if(second_j>24) {
+				//アイテム獲得イベント
+				getItem(root,h);
+			}else {
 				//自然の脅威イベント
 				attackNature(root,h);
-				
-			}else {
-				//敵との戦闘(仮)
-				if((rdm.nextInt(2))>0) {
-					h.setHp(h.getHp()-30);
-					System.out.println("    敵だ！");
-					Thread.sleep(1000);
-					System.out.println();
-					System.out.println("    負けた！ボコられて死にそーだぜ！");
-					System.out.println("    HP-30");
-					Thread.sleep(1000);
-				}else {
-					h.setMoney(h.getMoney()+7);
-					System.out.println("    敵だ！");
-					Thread.sleep(1000);
-					System.out.println();
-					System.out.println("    勝った！ボコボコにしてやったぜ！");
-					System.out.println("    財宝+7");
-					Thread.sleep(1000);
-				}
 			}
-			
+		//ラッキーパターン、ノーリスクで財宝をGETするチャンスだ！！	-------------------------
 		}else {
-			//ラッキーパターン
 			//お宝を発見できるか判定
 			if((rdm.nextInt(2))>0) {
 				get_m = 1;
@@ -544,8 +534,6 @@ public class GameApp {
 				Thread.sleep(1000);
 				System.out.println("    おお、像を持ち上げたら外への入口が！なんて親切な遺跡なのだ！");
 				Thread.sleep(2000);
-				System.out.println("    なに考えてんだ、マジで！");
-				Thread.sleep(2000);
 				System.out.println("    財宝+10");
 				Thread.sleep(1000);
 			}
@@ -553,12 +541,12 @@ public class GameApp {
 			System.out.println();
 			System.out.println();
 			System.out.println();
-			System.out.println("    すごそうな水晶が祀られてる！");
+			System.out.println("    ムム、高価な水晶が祀られてる！");
 			Thread.sleep(1000);
 			System.out.println("    でも、原住民達にしっかり守られてるぞ。");
 			Thread.sleep(2000);
 			System.out.println();
-			System.out.println("    よーし、上手くバレないように盗み出してやろう。");
+			System.out.println("    よーし、コッソリ盗み出してやろう。");
 			Thread.sleep(2000);
 			if(rdm.nextInt(2)>0) {
 				h.setHp(h.getHp()-5);
