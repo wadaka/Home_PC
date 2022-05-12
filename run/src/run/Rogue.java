@@ -43,7 +43,7 @@ public class Rogue extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"15      ","5       ","銃       (10%)","1～3(50%"};
+		String[] infos = {"15      ","5       ","銃 (10%)      ","1～3(50%"};
 		return infos;
 	}
 

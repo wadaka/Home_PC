@@ -15,9 +15,9 @@ public class GameApp {
 	final static int[] item_N = {20,35,50,60,90};
 	final static int[] item_getN = {25,45,70};
 	final static int[] item_H = {25,35,45,50,70};
-	
-	
-	
+
+
+
 	public static void main(String[] args) {
 		preparation();
 		while(true) {
@@ -41,14 +41,14 @@ public class GameApp {
 			}else {
 				continue;
 			}
-			
-			
+
+
 			Hero h = new Hero();
-			
+
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
 			for(int i=0;i<30;i++) {
-				
+
 				try {
 					Directing_GameMain.showAvant(i+1);
 				} catch (InterruptedException e) {
@@ -59,7 +59,7 @@ public class GameApp {
 				int input = sc.nextInt();
 				int hp = h.getHp();
 				int money = h.getMoney();
-				
+
 				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
@@ -136,7 +136,7 @@ public class GameApp {
 							System.out.println("  ============================================================================");
 							System.out.println("    探索終了。");
 						}
-						
+
 				}
 				System.out.println();
 				System.out.println("    ※エンターキー入力で次へ進みます。");
@@ -147,7 +147,7 @@ public class GameApp {
 					break;
 				}
 			}
-			
+
 			//エンディングの分岐処理
 			//エンディングは3種類で、１.HP0で死亡、2.借金が返せずLife is Over、3.生存+借金返済のはっぴーえんど。
 			int ending = 0;
@@ -166,7 +166,7 @@ public class GameApp {
 				e.printStackTrace();
 			}
 			String lastClick = sc.nextLine();
-			
+
 		}
 		System.out.println("アプリケーションを終了します。");
 	}
@@ -182,7 +182,7 @@ public class GameApp {
 	}
 	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
-		
+
 		Thread.sleep(1000);
 		System.out.println();
 		System.out.println("    …………");
@@ -194,14 +194,14 @@ public class GameApp {
 		System.out.println("    ………………………………");
 		System.out.println();
 		Thread.sleep(1000);
-		
-		
+
+
 		int battle_j = rdm.nextInt(100);
 		int first_j = rdm.nextInt(100);
 		int second_j = rdm.nextInt(100);
 		//int third_j = rdm.nextInt(100);
 		int get_m = 0;
-		
+
 		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
 		if(turn<11) {
 			if(battle_j>69 && root==1) {
@@ -228,7 +228,7 @@ public class GameApp {
 				Battle.lottery_difficult(h);
 			}
 		}
-		
+
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
 		if(root<=2 && first_j>=50) {
 			//安全な道を選んだ時の抽選-------------------------------------------------------
@@ -251,7 +251,7 @@ public class GameApp {
 				}else if(second_j>34) {
 					//アイテム獲得イベント
 					getItem(root,h);
-					
+
 				}else {
 					//自然の脅威イベント
 					attackNature(root,h);
@@ -277,7 +277,7 @@ public class GameApp {
 				get_m = 1;
 				if(root==2) get_m+=rdm.nextInt(3);
 				if(root==3) get_m+=rdm.nextInt(3)+2;
-				
+
 				System.out.println("    ラッキー！宝を発見した！");
 				Thread.sleep(1000);
 				System.out.printf("    財宝+%d%n",get_m);
@@ -285,17 +285,17 @@ public class GameApp {
 			}else {
 				System.out.println("    安全に進むことができた。");
 			}
-			
+
 		}
 	}
 	static void getItem(int root,Hero h) throws InterruptedException{
 		System.out.println("    ……なにか落ちているぞ？");
 		Thread.sleep(2000);
-		
+
 		int item_j = rdm.nextInt(100);
 		int[] items = new int[item_E.length];
 		int[] getItems = new int[item_getEH.length];
-		
+
 		int hp = h.getHp();
 		switch(root) {
 		case 1:
@@ -317,9 +317,9 @@ public class GameApp {
 				items[i]=item_H[i];
 				if(i>=items.length-2) continue;
 				getItems[i]=item_getEH[i];
-			}				
+			}
 		}
-		
+
 		if(item_j<items[0]) {
 			System.out.println();
 			h.setHp(hp+3);
@@ -393,12 +393,12 @@ public class GameApp {
 			System.out.println("    HP-15");
 			Thread.sleep(2000);
 		}
-		
+
 	}
 	static void attackNature(int root,Hero h) throws InterruptedException{
 		int attackN_j = rdm.nextInt(100);
 		int[] attackNs = new int[attackN_E.length];
-		
+
 		int hp = h.getHp();
 		switch(root) {
 		case 1:
@@ -414,9 +414,9 @@ public class GameApp {
 		default:
 			for(int i=0;i<attackNs.length;i++) {
 				attackNs[i]=attackN_H[i];
-			}				
+			}
 		}
-		
+
 		if(attackN_j<attackNs[0]) {
 			//スコール
 			h.setHp(hp-2);
@@ -493,7 +493,7 @@ public class GameApp {
 				Thread.sleep(2000);
 				System.out.println("    財宝-5");
 				Thread.sleep(2000);
-				
+
 			}else {
 				h.setMoney(h.getMoney()+10);
 				Thread.sleep(1000);
@@ -525,7 +525,7 @@ public class GameApp {
 				Thread.sleep(1000);
 				System.out.println("    HP-10");
 				Thread.sleep(1000);
-				
+
 			}else {
 				h.setMoney(h.getMoney()+10);
 				Thread.sleep(1000);
@@ -564,7 +564,7 @@ public class GameApp {
 				Thread.sleep(2000);
 				System.out.println("    HP-5、財宝-5");
 				Thread.sleep(1000);
-				
+
 			}else {
 				h.setMoney(h.getMoney()+10);
 				Thread.sleep(1000);

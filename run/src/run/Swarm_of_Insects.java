@@ -43,7 +43,7 @@ public class Swarm_of_Insects extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"25      ","15      ","傷薬     (30%)","1～3(50%"};
+		String[] infos = {"25      ","15      ","傷薬 (30%)    ","1～3(50%"};
 		return infos;
 	}
 

@@ -42,7 +42,7 @@ public class Mercenary extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"30～40  ","15～20  ","銃       (40%)","5(50%)  "};
+		String[] infos = {"30～40  ","15～20  ","銃 (40%)      ","5(50%)  "};
 		return infos;
 	}
 

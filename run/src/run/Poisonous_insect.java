@@ -44,7 +44,7 @@ public class Poisonous_insect extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"10      ","5       ","煙幕     (25%)","1～3(50%"};
+		String[] infos = {"10      ","5       ","煙幕 (25%)   ","1～3(50%"};
 		return infos;
 	}
 

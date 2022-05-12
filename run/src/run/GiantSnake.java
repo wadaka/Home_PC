@@ -42,7 +42,7 @@ public class GiantSnake extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"30          ","15      ","ゴミ     (25%)","3(50%)  "};
+		String[] infos = {"30      ","15      ","ゴミ (25%)    ","3(50%)  "};
 		return infos;
 	}
 

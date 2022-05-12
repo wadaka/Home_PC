@@ -5,6 +5,12 @@ public class Directing_Battle {
 
 		String[] infos = enemy.getBattleInfo();
 
+		System.out.println("    …………！？");
+		Thread.sleep(1000);
+		System.out.println("    敵だ！！");
+		Thread.sleep(1500);
+
+
 		System.out.println("=======================================================================================");
 		System.out.println();
 		System.out.println("     +============================================================================+");
@@ -24,7 +30,6 @@ public class Directing_Battle {
 		System.out.println("     ||                  エ    ネ    ミ    ー    接    近    ！                  ||");
 		System.out.println("     ||                                                                          || ");
 		System.out.println("     +============================================================================+");
-		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
@@ -44,40 +49,6 @@ public class Directing_Battle {
 		System.out.println("=======================================================================================");
 		System.out.println();
 		System.out.println("     +============================================================================+");
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println("     +============================================================================+");
-		System.out.println("     ||                                                                          ||");
-		System.out.println("     ||                  エ    ネ    ミ    ー    接    近    ！                  ||");
-		System.out.println("     ||                                                                          || ");
-		System.out.println("     +============================================================================+");
-		System.out.println();
-		System.out.println();
-		System.out.printf("                                    %s が現れた！%n",enemy.name);
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println("     +============================================================================+");
-		System.out.println("=======================================================================================");
-		Thread.sleep(1500);
-		System.out.println("=======================================================================================");
-		System.out.println();
-		System.out.println("     +============================================================================+");
 		System.out.println("     ||                                                                          ||");
 		System.out.println("     ||                  エ    ネ    ミ    ー    接    近    ！                  ||");
 		System.out.println("     ||                                                                          || ");
@@ -88,7 +59,7 @@ public class Directing_Battle {
 		System.out.println();
 		System.out.println();
 		System.out.println("     ++================++                    ++================++                      ");
-		System.out.printf("     ||     戦  闘     ||  勝率   %3d %%      ||     逃  走     ||  勝率   %3d %%%n",enemy.win_per,enemy.run_per);
+		System.out.printf("     ||     戦  闘     ||  勝率   %3d %%      ||     逃  走     ||  成功率 %3d %%%n",enemy.win_per,enemy.run_per);
 		System.out.println("     ++================++  -------------     ++================++  -------------");
 		System.out.println("     ++================++================++  ++================++================++");
 		System.out.println("     || 勝利時　　　   || 敗北時         ||  || 成功時　　　   || 失敗時         ||");
@@ -96,22 +67,25 @@ public class Directing_Battle {
 		System.out.println("     ||  獲得          ||  喪失          ||  ||  獲得          ||  喪失          ||");
 		System.out.println("     ||  ----          ||  ----          ||  ||  ----          ||  ----          ||");
 		System.out.printf("     ||  財宝 +");
-		System.out.printf("%s||  ＨＰ -%s||  ||  なし          ||  ＨＰ -%s||c",enemy.win_money,infos[0],infos[1]);
+		System.out.printf("%s      ",enemy.win_money);
+		if(enemy.win_money<10) System.out.printf(" ");
+		System.out.printf("||  ＨＰ -%s||  ||  なし          ||  ＨＰ -%s||%n",infos[0],infos[1]);
 		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||");
 		System.out.printf("     ||  ");
 		System.out.printf("%s||  なし          ||  ||  なし          ||  財宝 -%s||%n",infos[2],infos[3]);
-		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||%n");
+		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||");
 		System.out.println("     ++==================================++  ++==================================++");
 		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
+		System.out.println();
 		Thread.sleep(1500);
 		System.out.println();
 		System.out.println();
 		System.out.println("     ++================++                    ++================++                      ");
-		System.out.println("     ||     戦  闘     ||  勝率   %3d %      ||     逃  走     ||  勝率   %3d % ");
+		System.out.printf("     ||     戦  闘     ||  勝率   %3d %%      ||     逃  走     ||  成功率 %3d %%%n",enemy.win_per,enemy.run_per);
 		System.out.println("     ++================++  -------------     ++================++  -------------");
 		System.out.println("     ++================++================++  ++================++================++");
 		System.out.println("     || 勝利時　　　   || 敗北時         ||  || 成功時　　　   || 失敗時         ||");
@@ -119,11 +93,13 @@ public class Directing_Battle {
 		System.out.println("     ||  獲得          ||  喪失          ||  ||  獲得          ||  喪失          ||");
 		System.out.println("     ||  ----          ||  ----          ||  ||  ----          ||  ----          ||");
 		System.out.printf("     ||  財宝 +");
-		System.out.printf("%s||  ＨＰ -%s||  ||  なし          ||  ＨＰ -%s||%n",enemy.win_money,infos[0],infos[1]);
+		System.out.printf("%s      ",enemy.win_money);
+		if(enemy.win_money<10) System.out.printf(" ");
+		System.out.printf("||  ＨＰ -%s||  ||  なし          ||  ＨＰ -%s||%n",infos[0],infos[1]);
 		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||");
 		System.out.printf("     ||  ");
-		System.out.printf("%s||  なし          ||  ||  なし          ||  財宝 -%s||",infos[2],infos[3]);
-		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||%n");
+		System.out.printf("%s||  なし          ||  ||  なし          ||  財宝 -%s||%n",infos[2],infos[3]);
+		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||");
 		System.out.println("     ++==================================++  ++==================================++");
 		System.out.println();
 		System.out.println();
@@ -131,13 +107,16 @@ public class Directing_Battle {
 		System.out.println("     ||     プレイヤーステータス     ||");
 		System.out.println("     ++==============================++");
 		System.out.println("     ++==============================++=========================================++");
-		//System.out.printf("     ||  HP %3d/100  |  財産 %3d/50  || 銃(%d)…勝率25%UP | 煙幕(%d)…成功率25%UP ||%n",h.getHp(),h.getMoney(),h.getItem_gun(),h.getItem_smoke());
+		System.out.printf("     ||  HP %3d/100  |  財産 %3d/50  || 銃(%d)…勝率25%%UP | 煙幕(%d)…成功率25%%UP ||%n",h.getHp(),h.getMoney(),h.getItem_gun(),h.getItem_smoke());
 		System.out.println("     ++==============================++=========================================++");
 		System.out.println("");
 		System.out.println("     -----------------------------------------------------------------------------");
 		System.out.println("     どうする？");
 		System.out.println("");
+		System.out.println("");
 		System.out.println("     【1】戦う  【2】逃げる");
+		System.out.println("");
+		System.out.println("");
 		System.out.println("");
 		System.out.print("      >>");
 	}
@@ -148,6 +127,16 @@ public class Directing_Battle {
 ;		}
 		System.out.println("=======================================================================================");
 		System.out.println();
+		System.out.println("     +============================================================================+");
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println("                       +======================================+");
@@ -157,10 +146,17 @@ public class Directing_Battle {
 		System.out.println("                       +======================================+");
 		System.out.println();
 		System.out.println();
-		Thread.sleep(2000);
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                                          ・");
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
 		Thread.sleep(1000);
 		System.out.println("");
 		System.out.println("");
@@ -177,13 +173,17 @@ public class Directing_Battle {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("                                          ・");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                          ・");
+		Thread.sleep(1000);
 		System.out.println("");
 		System.out.println("");
 
 	}
 
-	static void showResult(Hero h,int result,int hp,int money,int[] itemUsedChecker) {
+	static void showResult(Hero h,int result,int hp,int money,int[] itemGetChecker) {
 		System.out.println("      -----------------------------------------------------------------------------");
 		System.out.println("");
 		System.out.println("");
@@ -219,11 +219,30 @@ public class Directing_Battle {
 		System.out.println("");
 		System.out.println("              獲得アイテム");
 		System.out.println("");
+		System.out.print("                ");
+		int[] itemBringNow = {h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter()};
+		String[] itemLabels = {"傷薬  ","銃  ","煙幕  ","ゴミ  "};
+		for(int i=0;i<itemGetChecker.length;i++) {
+			if(itemBringNow[i]>itemGetChecker[i]) System.out.print(itemLabels[i]);
+		};
+		System.out.println();
+		System.out.println("");
+		System.out.println("            ◇現在のプレイヤーステータス ");
+		System.out.println("            -----------------------------");
+		System.out.println("");
+		System.out.println("              基本ステータス");
+		System.out.println("              --------------");
+		System.out.println("");
+		System.out.printf("                HP %3d/100  |  財産 %3d/50%n",h.getHp(),h.getMoney());
 		System.out.println("");
 		System.out.println("");
+		System.out.println("              アイテム");
+		System.out.println("              --------");
+		System.out.println("");
+		System.out.printf("                傷薬(%d) | 銃(%d) | 煙幕(%d) | ゴミ(%d)",itemBringNow[0],itemBringNow[1],itemBringNow[2],itemBringNow[3]);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("");
+		System.out.println("      -----------------------------------------------------------------------------");
 	}
 
 	static void s() {

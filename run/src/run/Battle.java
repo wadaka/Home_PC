@@ -112,7 +112,7 @@ public class Battle {
 			battle_start(enemy,h);
 		}else{
 			Enemy enemy = new Tiger("タイガー",25,50,10);
-			
+
 			battle_start(enemy,h);
 		}
 	}
@@ -127,16 +127,35 @@ public class Battle {
 		}
 		int item_use = 0;
 		while(true) {
-			int num = sc.nextInt();
-			if(num==1) {
+			int input_1 = sc.nextInt();
+			if(input_1==1) {
 				if(h.getItem_gun()>0) {
-					item_use = 25;
-					h.setItem_gun(h.getItem_gun()-1);
-					System.out.println("     銃を使用した。戦闘勝率が25%あがった！");
-					System.out.println("     エンターキーで戦闘へ進みます。");
-					sc.nextLine();
-					String Click = sc.nextLine();
+					
+					System.out.printf("     銃を使用しますか？（現在の 銃所持数 : %s",h.getItem_gun());
+					System.out.println();
+					System.out.println("    【1】使用する  【2】 使用しない");
+					System.out.println();
+					System.out.println("     >>");
+					int input_2 = sc.nextInt();
+
+					if(input_2==1) {
+						item_use = 25;
+						h.setItem_gun(h.getItem_gun()-1);
+						int win_per_plus = enemy.win_per+item_use;
+						if(win_per_plus>100); win_per_plus = 100;
+						System.out.println("");
+						System.out.printf("     銃の使用により、戦闘勝率が25%%上昇！(勝率【】",enemy.win_per,win_per_plus);
+						System.out.println("     エンターキーで戦闘へ進みます。");
+						sc.nextLine();
+						String Click = sc.nextLine();
+					}
 				}
+				
+				//戦闘でアイテムを獲得した場合、その結果を表示するために必要な変数を事前に保存しておく。
+				int[] itemGetChecker = {
+						h.getItem_ointment(), h.getItem_gun(),h.getItem_smoke(),h.getItem_litter()
+				};
+
 				
 				try {
 					Directing_Battle.battleStart();
@@ -144,24 +163,27 @@ public class Battle {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
-				
-				int[] itemUsedChecker = {
-						h.getItem_ointment(), h.getItem_gun(),h.getItem_smoke(),h.getItem_litter()
-				};
-				
+
 				if(rdm.nextInt(100)<=(enemy.win_per+item_use)) {
-					
+					int lostHp = enemy.setLost_Lose_Hp();
+					h.setHp(h.getHp()-lostHp);
+					Directing_Battle.showResult(h,2,lostHp,0,itemGetChecker);
 				}else {
 					//勝ち
 					int getMoney = enemy.win_money;
 					h.setMoney(h.getMoney()+getMoney);
 					enemy.setGet_Item(h);
-					Directing_Battle.showResult(h,1,0,getMoney,itemUsedChecker);
+					Directing_Battle.showResult(h,1,0,getMoney,itemGetChecker);
 				}
-				
-				
-			}else if(num==2) {
-				
+
+				System.out.println("      >>エンターキー入力で次へ進む");
+				sc.nextLine();
+				String Click = sc.nextLine();
+				//whileを抜けて、GameAppの処理へ戻る。
+				break;
+
+			}else if(input_1==2) {
+
 			}
 		}
 	}
