@@ -2,16 +2,8 @@ package run;
 
 public class Rogue extends Enemy{
 
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
-
-	Rogue(){
-		this.name="ならず者";
-		this.win_per=70;
-		this.run_per=90;
-		this.win_money=2;
+	Rogue(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
 
 	@Override

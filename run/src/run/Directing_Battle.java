@@ -35,8 +35,8 @@ public class Directing_Battle {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		System.out.println();
 		System.out.println("     +============================================================================+");
+		System.out.println();
 		System.out.println("=======================================================================================");
 		//System.out.printf("                                  第 %02d 歩                                  %n",count);
 		//System.out.println("");
@@ -96,10 +96,10 @@ public class Directing_Battle {
 		System.out.println("     ||  獲得          ||  喪失          ||  ||  獲得          ||  喪失          ||");
 		System.out.println("     ||  ----          ||  ----          ||  ||  ----          ||  ----          ||");
 		System.out.printf("     ||  財宝 +");
-		System.out.printf("%s||  ＨＰ -%s||  ||  なし          ||  ＨＰ -%s||%n",enemy.win_money,infos[0],infos[1]);
+		System.out.printf("%s||  ＨＰ -%s||  ||  なし          ||  ＨＰ -%s||c",enemy.win_money,infos[0],infos[1]);
 		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||");
 		System.out.printf("     ||  ");
-		System.out.printf("%s||  なし          ||  ||  なし          ||  財宝 -%s||",infos[2],infos[3]);
+		System.out.printf("%s||  なし          ||  ||  なし          ||  財宝 -%s||%n",infos[2],infos[3]);
 		System.out.println("     ||  ------------  ||  ------------  ||  ||  ------------  ||  ------------  ||%n");
 		System.out.println("     ++==================================++  ++==================================++");
 		System.out.println();
@@ -131,7 +131,7 @@ public class Directing_Battle {
 		System.out.println("     ||     プレイヤーステータス     ||");
 		System.out.println("     ++==============================++");
 		System.out.println("     ++==============================++=========================================++");
-		System.out.printf("     ||  HP %3d/100  |  財産 %3d/50  || 銃(%d)…勝率25%UP | 煙幕(%d)…成功率25%UP ||%n",h.getHp(),h.getMoney(),h.getItem_gun(),h.getItem_smoke());
+		//System.out.printf("     ||  HP %3d/100  |  財産 %3d/50  || 銃(%d)…勝率25%UP | 煙幕(%d)…成功率25%UP ||%n",h.getHp(),h.getMoney(),h.getItem_gun(),h.getItem_smoke());
 		System.out.println("     ++==============================++=========================================++");
 		System.out.println("");
 		System.out.println("     -----------------------------------------------------------------------------");

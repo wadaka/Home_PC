@@ -7,11 +7,8 @@ public class Tiger extends Enemy{
 	int run_per;
 	int win_money;
 
-	Tiger(){
-		this.name="タイガー";
-		this.win_per=25;
-		this.run_per=50;
-		this.win_money=10;
+	Tiger(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
 
 	@Override

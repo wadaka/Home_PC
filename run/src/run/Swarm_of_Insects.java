@@ -2,16 +2,8 @@ package run;
 
 public class Swarm_of_Insects extends Enemy{
 
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
-
-	Swarm_of_Insects(){
-		this.name="毒虫の大群";
-		this.win_per=50;
-		this.run_per=60;
-		this.win_money=3;
+	Swarm_of_Insects(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
 
 	@Override

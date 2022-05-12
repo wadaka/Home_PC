@@ -2,16 +2,8 @@ package run;
 
 public class ManEater extends Enemy{
 
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
-
-	ManEater(){
-		this.name="食人植物";
-		this.win_per=80;
-		this.run_per=50;
-		this.win_money=5;
+	ManEater(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
 
 	@Override

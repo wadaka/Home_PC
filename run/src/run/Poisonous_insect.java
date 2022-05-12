@@ -2,17 +2,10 @@ package run;
 
 public class Poisonous_insect extends Enemy{
 
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
+	Poisonous_insect(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
+	}	
 
-	Poisonous_insect(){
-		this.name="毒虫";
-		this.win_per=80;
-		this.run_per=90;
-		this.win_money=1;
-	}
 
 	@Override
 	public void setGet_Item(Hero h) {

@@ -9,6 +9,13 @@ public abstract class Enemy {
 	int run_per;
 	int win_money;
 
+	Enemy(String name,int win_per,int run_per,int win_money) {
+		this.name=name;
+		this.win_per=win_per;
+		this.run_per=run_per;
+		this.win_money=win_money;
+	}
+
 	public abstract String[] getBattleInfo();
 
 	public abstract void setGet_Item(Hero h);

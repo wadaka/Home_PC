@@ -2,16 +2,8 @@ package run;
 
 public class GiantSnake extends Enemy{
 
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
-
-	GiantSnake(){
-		this.name="大蛇";
-		this.win_per=50;
-		this.run_per=50;
-		this.win_money=5;
+	GiantSnake(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
 
 	@Override
@@ -50,7 +42,7 @@ public class GiantSnake extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"30      ","15      ","ゴミ     (25%)","3(50%)  "};
+		String[] infos = {"30          ","15      ","ゴミ     (25%)","3(50%)  "};
 		return infos;
 	}
 

@@ -2,16 +2,8 @@ package run;
 
 public class Mercenary extends Enemy{
 
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
-
-	Mercenary(){
-		this.name="傭兵";
-		this.win_per=40;
-		this.run_per=50;
-		this.win_money=7;
+	Mercenary(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
 
 	@Override

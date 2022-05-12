@@ -1,19 +1,10 @@
 package run;
 
 public class Barbarian extends Enemy{
-
-	String name;
-	int win_per;
-	int run_per;
-	int win_money;
-
-	Barbarian(){
-		this.name="蛮族";
-		this.win_per=60;
-		this.run_per=60;
-		this.win_money=3;
+	
+	Barbarian(String name,int win_per,int run_per,int win_money){
+		super(name,win_per,run_per,win_money);
 	}
-
 	@Override
 	public void setGet_Item(Hero h) {
 		// TODO 自動生成されたメソッド・スタブ

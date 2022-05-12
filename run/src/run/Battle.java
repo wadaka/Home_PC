@@ -13,16 +13,16 @@ public class Battle {
 	public static void lottery_easy(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<40) {
-			Enemy enemy = new Poisonous_insect();
+			Enemy enemy = new Poisonous_insect("毒虫",80,90,1);
 			battle_start(enemy,h);
 		}else if(num<70) {
-			Enemy enemy = new Rogue();
+			Enemy enemy = new Rogue("ならず者",70,90,2);
 			battle_start(enemy,h);
 		}else if(num<80) {
-			Enemy enemy = new ManEater();
+			Enemy enemy = new ManEater("食人植物",80,50,5);
 			battle_start(enemy,h);
 		}else {
-			Enemy enemy = new Barbarian();
+			Enemy enemy = new Barbarian("蛮族",60,60,3);
 			battle_start(enemy,h);
 		}
 	}
@@ -31,22 +31,22 @@ public class Battle {
 	public static void lottery_a_bit_easy(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<30) {
-			Enemy enemy = new Poisonous_insect();
+			Enemy enemy = new Poisonous_insect("毒虫",80,90,1);
 			battle_start(enemy,h);
 		}else if(num<50) {
-			Enemy enemy = new Rogue();
+			Enemy enemy = new Rogue("ならず者",70,90,2);
 			battle_start(enemy,h);
 		}else if(num<55) {
-			Enemy enemy = new ManEater();
+			Enemy enemy = new ManEater("食人植物",80,50,5);
 			battle_start(enemy,h);
 		}else if(num<75) {
-			Enemy enemy = new Barbarian();
+			Enemy enemy = new Barbarian("蛮族",60,60,3);
 			battle_start(enemy,h);
 		}else if(num<95) {
-			Enemy enemy = new Swarm_of_Insects();
+			Enemy enemy = new Swarm_of_Insects("毒虫の大群",50,60,3);
 			battle_start(enemy,h);
 		}else {
-			Enemy enemy = new GiantSnake();
+			Enemy enemy = new GiantSnake("大蛇",50,50,5);
 			battle_start(enemy,h);
 		}
 	}
@@ -55,22 +55,22 @@ public class Battle {
 	public static void lottery_normal(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<10) {
-			Enemy enemy = new Poisonous_insect();
+			Enemy enemy = new Poisonous_insect("毒虫",80,90,1);
 			battle_start(enemy,h);
 		}else if(num<20) {
-			Enemy enemy = new Rogue();
+			Enemy enemy = new Rogue("ならず者",70,90,2);
 			battle_start(enemy,h);
 		}else if(num<30) {
-			Enemy enemy = new ManEater();
+			Enemy enemy = new ManEater("食人植物",80,50,5);
 			battle_start(enemy,h);
 		}else if(num<55) {
-			Enemy enemy = new Barbarian();
+			Enemy enemy = new Barbarian("蛮族",60,60,3);
 			battle_start(enemy,h);
 		}else if(num<80) {
-			Enemy enemy = new Swarm_of_Insects();
+			Enemy enemy = new Swarm_of_Insects("毒虫の大群",50,60,3);
 			battle_start(enemy,h);
 		}else {
-			Enemy enemy = new GiantSnake();
+			Enemy enemy = new GiantSnake("大蛇",50,50,5);
 			battle_start(enemy,h);
 		}
 	}
@@ -79,19 +79,19 @@ public class Battle {
 	public static void lottery_a_bit_difficult(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<20) {
-			Enemy enemy = new Barbarian();
+			Enemy enemy = new Barbarian("蛮族",60,60,3);
 			battle_start(enemy,h);
 		}else if(num<40) {
-			Enemy enemy = new Swarm_of_Insects();
+			Enemy enemy = new Swarm_of_Insects("毒虫の大群",50,60,3);
 			battle_start(enemy,h);
 		}else if(num<60){
-			Enemy enemy = new GiantSnake();
+			Enemy enemy = new GiantSnake("大蛇",50,50,5);
 			battle_start(enemy,h);
 		}else if(num<85){
-			Enemy enemy = new Mercenary();
+			Enemy enemy = new Mercenary("傭兵",40,50,7);
 			battle_start(enemy,h);
 		}else{
-			Enemy enemy = new Tiger();
+			Enemy enemy = new Tiger("タイガー",25,50,10);
 			battle_start(enemy,h);
 		}
 	}
@@ -99,19 +99,20 @@ public class Battle {
 	public static void lottery_difficult(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<10) {
-			Enemy enemy = new Barbarian();
+			Enemy enemy = new Barbarian("蛮族",60,60,3);
 			battle_start(enemy,h);
 		}else if(num<20) {
-			Enemy enemy = new Swarm_of_Insects();
+			Enemy enemy = new Swarm_of_Insects("毒虫の大群",50,60,3);
 			battle_start(enemy,h);
 		}else if(num<40){
-			Enemy enemy = new GiantSnake();
+			Enemy enemy = new GiantSnake("大蛇",50,50,5);
 			battle_start(enemy,h);
 		}else if(num<70){
-			Enemy enemy = new Mercenary();
+			Enemy enemy = new Mercenary("傭兵",40,50,7);
 			battle_start(enemy,h);
 		}else{
-			Enemy enemy = new Tiger();
+			Enemy enemy = new Tiger("タイガー",25,50,10);
+			
 			battle_start(enemy,h);
 		}
 	}
@@ -148,12 +149,14 @@ public class Battle {
 						h.getItem_ointment(), h.getItem_gun(),h.getItem_smoke(),h.getItem_litter()
 				};
 				
-				if(rdm.nextInt(100)>=(enemy.win_per+item_use)) {
+				if(rdm.nextInt(100)<=(enemy.win_per+item_use)) {
 					
 				}else {
 					//勝ち
-					h.setMoney(h.getMoney()+enemy.win_money);
+					int getMoney = enemy.win_money;
+					h.setMoney(h.getMoney()+getMoney);
 					enemy.setGet_Item(h);
+					Directing_Battle.showResult(h,1,0,getMoney,itemUsedChecker);
 				}
 				
 				
