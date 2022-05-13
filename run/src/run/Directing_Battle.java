@@ -5,12 +5,12 @@ public class Directing_Battle {
 
 		String[] infos = enemy.getBattleInfo();
 
-		System.out.println("    …………！？");
+		System.out.print("    …………！");
 		Thread.sleep(1000);
-		System.out.println("    敵だ！！");
+		System.out.println(" 敵だ！！");
 		Thread.sleep(1500);
 
-
+		/*
 		System.out.println("=======================================================================================");
 		System.out.println();
 		System.out.println("     +============================================================================+");
@@ -45,6 +45,8 @@ public class Directing_Battle {
 		System.out.println("=======================================================================================");
 		//System.out.printf("                                  第 %02d 歩                                  %n",count);
 		//System.out.println("");
+		 * *
+		 */
 		Thread.sleep(1500);
 		System.out.println("=======================================================================================");
 		System.out.println();
@@ -81,7 +83,7 @@ public class Directing_Battle {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		Thread.sleep(1500);
+		Thread.sleep(2500);
 		System.out.println();
 		System.out.println();
 		System.out.println("     ++================++                    ++================++                      ");
@@ -121,7 +123,7 @@ public class Directing_Battle {
 		System.out.print("      >>");
 	}
 
-	static void battleStart() throws InterruptedException{
+	static void battleStart(boolean isBattle) throws InterruptedException{
 		for(int i=0;i<32;i++) {
 			System.out.println()
 ;		}
@@ -141,7 +143,9 @@ public class Directing_Battle {
 		System.out.println();
 		System.out.println("                       +======================================+");
 		System.out.println("                       ||                                    ||");
-		System.out.println("                       ||        戦    闘    開    始        ||");
+		System.out.println("                       ||        ");
+		System.out.printf(isBattle ? "戦    闘    開    始" : "逃    走    開    始");
+		System.out.println("        ||");
 		System.out.println("                       ||                                    ||");
 		System.out.println("                       +======================================+");
 		System.out.println();
@@ -182,6 +186,15 @@ public class Directing_Battle {
 		System.out.println("");
 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	static void showResult(Hero h,int result,int hp,int money,int[] itemGetChecker) {
 		System.out.println("      -----------------------------------------------------------------------------");
