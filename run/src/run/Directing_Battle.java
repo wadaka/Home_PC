@@ -205,6 +205,8 @@ public class Directing_Battle {
 				gun_unUsed();
 			}
 		}else {
+			common_Run_Direction();
+			Thread.sleep(1500);
 		}
 	}
 
@@ -563,6 +565,124 @@ public class Directing_Battle {
 		System.out.println("                                                        .Ta...B(d3,3 .-D                 .7\"\"!");
 		System.out.println("                                                           ??` M");
 		System.out.println("                                                                                                              ");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+	}
+	static void common_Run_Direction() {
+		for(int i=0;i<32;i++) {
+			System.out.println();
+		}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  `       `               `       `.,   -7^(UM#\"\"^   \"\"! @ ");
+		System.out.println("          `                     ...                 T]                   T9Nm");
+		System.out.println("                                  ,F    `.......   (]        .J..         dMR    ...JJJd\"! ");
+		System.out.println("                                  .NJJT\"\"^      ???M]    .JdM9  ?TMF      .d!????? ");
+		System.out.println("                  `                                M]   .Mi?T?WB0TjJJHJ    .F ");
+		System.out.println("                          `                        M].MFWeUMNgggkQUH\"`    .] ");
+		System.out.println("          `                                       .M]     MM##`(NN.       .]");
+		System.out.println("                  `                               .M].    MMMb.gMMYW(.    .]");
+		System.out.println("                                                  .M  M.Fd^.MD`,M[ JMm.   .]");
+		System.out.println("                          `                       MM`M_TFM .]   . .MM\"N,  .]");
+		System.out.println("                                                 .MF M,.MD.#    N.MMb  \"M .]");
+		System.out.println("          `       `                              JM] MFdN .F    d!MMMm. M,.]");
+		System.out.println("                          `               `      MM\\ MF N .F    d! dNMN .M ]");
+		System.out.println("                                                 MM .M%.# .F    d! .NdM} .M]");
+		System.out.println("       .. ....gg..,  .......g..                  MM (NMMF .F....d-  (QF .#.]");
+		System.out.println("    .+#\"?M\"\"``` _TMNM#^`     _Tm.               .MM MFM<YN.#f7\"M7Wa,.#  J%.] ");
+		System.out.println("   .#!                         .N,        `     .M MMa.Tag.sY\"\"8?\"\"^JNMa@ .]");
+		System.out.println("  J@                       .@W, .@              .MMb..+@.,   .]  NJNTMMt  .]");
+		System.out.println("  #`     .h.           4,   \"T= .N,             dM MMM#?^   ..;    (]     .]");
+		System.out.println("  N;     .MN,.   -[    .Mr.     .M!             M#  .M~     (Ma,    N.    .]");
+		System.out.println("  dN     .MMMN, .M]    (M#WN(((dM=        `    .M]  (N.     (@MMp   -b    .] ");
+		System.out.println("  -MN.    W[ .MMMHN.    Tb  _                  (M%  MM:     MF,MN.   d;   .N.");
+		System.out.println("   .M]   .M[      .#    .M_                    (M~  MM'    .M) ?Mp    M,   ?b ");
+		System.out.println(" .JdMBW&+MN0XaJ...-5.J00XMhJ...               .MM`  M#    .MM   ?M-    d,   W&.\"\"M.");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  `  -.   77_TN#\"\"\"`  ?\"= d  ");
+		System.out.println("  ...     `          ,N                   ?9WN,");
+		System.out.println("    M      .......  .#        ...J         .MN-.   ..JJJd@?");
+		System.out.println("    WaJV\"\"\"      ??!,#     dMY\"` ?MNJ,      (M#????! ");
+		System.out.println("                    (#   .JJ/50dY59=,M]     M@! ");
+		System.out.println("                    (# (NM#MUmQgggMMM=      MF");
+		System.out.println("                    .#  (NJN.Mg].ddMg,      MF");
+		System.out.println("                    .#  .MMWMMM#Q,(MMMN.    MF ");
+		System.out.println("                    (# dMMW8M.M' TM~,#MN,   MF ");
+		System.out.println("                    (t #?M(N8#   .  dNDTM,  MF");
+		System.out.println("                    d -# MM5d'   J2gMN. ?MR.MF");
+		System.out.println("                   .@ J#,M} M    .]JMMN, .MNMF ");
+		System.out.println("          `        .@ JM J} M    .] ?NMM[ TMMF ");
+		System.out.println("                   J] J@.M} M    .]  dJMF .dMF");
+		System.out.println("                   M].MMM#` M ....b  .NM` (@MF            `              .......NN.... ...gggggg, ");
+		System.out.println("                   MNM#(FTW&MB?\"4FTN,.M: .M<MF                    `   .d#^`T\"^     ?\"MM#'      (WN,");
+		System.out.println("                  .MMMN,.N.agH\"Y\"7\"\"\"(M?NJF M)                       .M!                          WN.");
+		System.out.println("          `       (M#..(#(,    #  wmUMMMMY' M)            `         -@`                  uem.  ... g]");
+		System.out.println("                  dVMMMM?7   ..p    .MN\"!   M)                      M`      N,         . TNMM, .NF J$");
+		System.out.println("                  M\\  ,]     .MNg    dM]    M)                    ` Wb      MMm.   (b  TN,        .F");
+		System.out.println("                 .#   .&     .MMMN.  .MN    Mb                      (M,     d#\"Mp  d#   (Mb     .g# ");
+		System.out.println("                 (F   .F     .#` M]   .Mb   4N.           `          WMx    ?F  TW\"YWp   .\"MMMMM#^");
+		System.out.println("          `      J]   JF    .#`  (N.   JMp  .Mb                       Mb   .dF      .M~    M]");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+		}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("      `   (.,  `  `  `  ` .J+d\"\"!```````?HM_      MM.............,");
+		System.out.println("          ,I]             J\"8Q.,.......(g#da     .M#\"\"WMMM\"! \"TMdNgN.");
+		System.out.println("          .b]            (\\     ~~?777`   .M;    .M]                _TN,");
+		System.out.println("   `  `   .Mb      .J\"774MMN,            .MML    ,M)                   ,L");
+		System.out.println("          .MF    ,F      ?TMMN+,. .,..gMMMM?!TW, .M#         ....,      ?] ");
+		System.out.println("          .MF    TMN..      TMMMMMMMMMM@^     .d_MM# ....  .d\"\"!(M      .F ");
+		System.out.println("          .MF      ?TMMN,.                   ,.# dMMMMMMD J$..gMM\"   ?\"\"\\  ");
+		System.out.println("   `  `   .MF          ,b(TMNNNJ..,       .(NJ\"  ,MMMMh,  ?\"\"D!         .. ");
+		System.out.println("          .NF           N/N#,HHHMMMMMNNgMM9!     ,M#\"YMm       ..H\"WN(NT^");
+		System.out.println("          .#b   `      .,T?# ..    .,?MMM;       dM@   .,  .JH=   \"W !  ");
+		System.out.println("          ((#          ,Mg(N#Jg]  .d^.&Mh|      .M@@  .\"_.MD      JM,       ` ");
+		System.out.println("   `  `   7.#     ..Y\"ML,YMMMam.....JM4MNbj,.   -MNMUn.#9\"  .Mm..MMM^   ,L.Y\"S-.");
+		System.out.println("           .#   .d#E  `N|~  ?YMNJJJdF(MJF ?MYW, ,MMJ}  .JJ..MMMMMMM:   .M#     (h, ");
+		System.out.println("           ,F .Y.Djb  ?M}     Jb .  ^ .#   -b.M] ,MMNa.MMMMMMM#(T^  .(MuM\\       /p ");
+		System.out.println("       `     .nM#=-\\   #      .F    m     .F 4bNx MMMMMMMMMMMN@`   .MMWMq!        X ");
+		System.out.println("   `        ,MF   -F  ,F     .F     d`    K .F dd .MMMMMMM' .D  .dNM@`JdW`       .F ");
+		System.out.println("            ,1\\   -\\  .]     d'     .S    b J! dd  MMl  ?!.T^ .MMD   (MA   `    .d ");
+		System.out.println("      `  `   .Z`  -eJJd)    .F......JNgG..MHn  ?d  MMMY\"\"^  .MM\"    J4N$        (`");
+		System.out.println("             .{   .TBmJ\\    .mX5F              .g  ,MM}  ..MMd'    .WMt ");
+		System.out.println("   `                 (F     M  -,             .d^  .MMY\"\"\"??`      .g3  ");
+		System.out.println("                           .=................#\"     ?\"             .^   ");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
 		try {
 			Thread.sleep(1500);
 		} catch (InterruptedException e) {
