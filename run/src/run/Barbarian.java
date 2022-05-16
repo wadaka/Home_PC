@@ -20,14 +20,14 @@ public class Barbarian extends Enemy{
 	@Override
 	public int setLost_Lose_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -20;
+		return 20;
 		//h.setHp(h.getHp()-10);
 	}
 
 	@Override
 	public int setLost_RunFail_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -10;
+		return 10;
 		//h.setHp(h.getHp()-5);
 	}
 

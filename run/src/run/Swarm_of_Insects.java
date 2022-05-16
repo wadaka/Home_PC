@@ -18,14 +18,14 @@ public class Swarm_of_Insects extends Enemy{
 	@Override
 	public int setLost_Lose_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -25;
+		return 25;
 		//h.setHp(h.getHp()-10);
 	}
 
 	@Override
 	public int setLost_RunFail_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -15;
+		return 15;
 		//h.setHp(h.getHp()-5);
 	}
 

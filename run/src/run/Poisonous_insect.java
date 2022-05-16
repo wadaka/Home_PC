@@ -19,14 +19,14 @@ public class Poisonous_insect extends Enemy{
 	@Override
 	public int setLost_Lose_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -10;
+		return 10;
 		//h.setHp(h.getHp()-10);
 	}
 
 	@Override
 	public int setLost_RunFail_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -5;
+		return 5;
 		//h.setHp(h.getHp()-5);
 	}
 
@@ -44,7 +44,7 @@ public class Poisonous_insect extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"10      ","5       ","煙幕 (25%)   ","1～3(50%"};
+		String[] infos = {"10      ","5       ","煙幕 (25%)    ","1～3(50%"};
 		return infos;
 	}
 

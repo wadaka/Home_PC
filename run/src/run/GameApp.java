@@ -90,7 +90,7 @@ public class GameApp {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
-						h.setMoney(money+1);
+						getMoney_TurnEnd(2,h);
 						System.out.println();
 						System.out.println("  ============================================================================");
 						System.out.println("    探索終了。");
@@ -108,7 +108,10 @@ public class GameApp {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
-						h.setMoney(money+2);
+
+						getMoney_TurnEnd(3,h);
+
+						//h.setMoney(money+2);
 						System.out.println();
 						System.out.println("  ============================================================================");
 						System.out.println("    探索終了。");
@@ -136,16 +139,16 @@ public class GameApp {
 							System.out.println("  ============================================================================");
 							System.out.println("    探索終了。");
 						}
+					}
+					System.out.println();
+					System.out.println("    ※エンターキー入力で次へ進みます。");
+					System.out.println();
+					sc.nextLine();
+					String turnendClick = sc.nextLine();
 
-				}
-				System.out.println();
-				System.out.println("    ※エンターキー入力で次へ進みます。");
-				System.out.println();
-				sc.nextLine();
-				String turnendClick = sc.nextLine();
-				if(h.getHp()<0) {
-					break;
-				}
+					if(h.getHp()<1) {
+						break;
+					}
 			}
 
 			//エンディングの分岐処理
@@ -185,13 +188,17 @@ public class GameApp {
 
 		Thread.sleep(1000);
 		System.out.println();
+		System.out.println();
 		System.out.println("    …………");
+		System.out.println();
 		System.out.println();
 		Thread.sleep(1000);
 		System.out.println("    ……………………");
 		System.out.println();
+		System.out.println();
 		Thread.sleep(1000);
 		System.out.println("    ………………………………");
+		System.out.println();
 		System.out.println();
 		Thread.sleep(1000);
 
@@ -200,7 +207,6 @@ public class GameApp {
 		int first_j = rdm.nextInt(100);
 		int second_j = rdm.nextInt(100);
 		//int third_j = rdm.nextInt(100);
-		int get_m = 0;
 
 		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
 		if(turn<11) {
@@ -261,7 +267,7 @@ public class GameApp {
 		}else if(root>=3 && first_j>=30) {
 			if(second_j>70) {
 				getItem(root,h);
-			}else if(second_j>50) {
+			}else if(second_j>0) {
 				goToDungeon(h);
 			}else if(second_j>24) {
 				//アイテム獲得イベント
@@ -274,20 +280,42 @@ public class GameApp {
 		}else {
 			//お宝を発見できるか判定
 			if((rdm.nextInt(2))>0) {
-				get_m = 1;
-				if(root==2) get_m+=rdm.nextInt(3);
-				if(root==3) get_m+=rdm.nextInt(3)+2;
 
-				System.out.println("    ラッキー！宝を発見した！");
-				Thread.sleep(1000);
-				System.out.printf("    財宝+%d%n",get_m);
-				Thread.sleep(1000);
+				getMoney(root,h);
+
 			}else {
 				System.out.println("    安全に進むことができた。");
 			}
 
 		}
 	}
+
+	static void getMoney_TurnEnd(int root,Hero h){
+		if(root==2) {
+			h.setMoney(h.getMoney()+1);
+		}else {
+			h.setMoney(h.getMoney()+2);
+		}
+	}
+
+	static void getMoney(int root,Hero h) throws InterruptedException{
+
+		int get_m = 1;
+
+		if(root==2) {
+			get_m+=rdm.nextInt(3);
+		}
+		if(root==3) {
+			get_m+=rdm.nextInt(3)+2;
+		}
+
+		h.setMoney(h.getMoney()+get_m);
+		System.out.println("    ラッキー！宝を発見した！");
+		Thread.sleep(1000);
+		System.out.printf("    財宝+%d%n",get_m);
+		Thread.sleep(1000);
+	}
+
 	static void getItem(int root,Hero h) throws InterruptedException{
 		System.out.println("    ……なにか落ちているぞ？");
 		Thread.sleep(2000);
@@ -472,7 +500,7 @@ public class GameApp {
 		}
 	}
 	static void goToDungeon(Hero h) throws InterruptedException{
-		System.out.println("    ……ムム！遺跡があるぞ、入ってみよう！");
+		System.out.println("    ……おぉ！遺跡があるぞ、入ってみよう！");
 		Thread.sleep(2000);
 		int d_f = rdm.nextInt(3);
 		if(d_f>2) {
@@ -532,7 +560,7 @@ public class GameApp {
 				System.out.println();
 				System.out.println("    ゴゴゴゴ！");
 				Thread.sleep(1000);
-				System.out.println("    おお、像を持ち上げたら外への入口が！なんて親切な遺跡なのだ！");
+				System.out.println("    おお、像を持ち上げたら外への出口が！なんて親切な遺跡なのだ！");
 				Thread.sleep(2000);
 				System.out.println("    財宝+10");
 				Thread.sleep(1000);

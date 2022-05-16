@@ -26,14 +26,14 @@ public class ManEater extends Enemy{
 	@Override
 	public int setLost_Lose_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -100;
+		return 100;
 		//h.setHp(h.getHp()-10);
 	}
 
 	@Override
 	public int setLost_RunFail_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return -10;
+		return 10;
 		//h.setHp(h.getHp()-5);
 	}
 
@@ -46,7 +46,7 @@ public class ManEater extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"100     ","10      ","傷薬,煙幕(40%)","なし          "};
+		String[] infos = {"100     ","10      ","傷薬,銃,他   ","なし          "};
 		return infos;
 	}
 
