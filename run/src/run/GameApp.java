@@ -154,7 +154,7 @@ public class GameApp {
 			//エンディングの分岐処理
 			//エンディングは3種類で、１.HP0で死亡、2.借金が返せずLife is Over、3.生存+借金返済のはっぴーえんど。
 			int ending = 0;
-			if(h.getHp()<0) {
+			if(h.getHp()<1) {
 				ending = 0;
 			}
 			else if(h.getMoney()>=50) {
