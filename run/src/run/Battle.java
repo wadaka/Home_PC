@@ -254,6 +254,9 @@ public class Battle {
 			for(int i=0;i<32;i++) {
 				System.out.println();
 			}
+			
+			if(h.getHp()<1) break;
+			
 			stopTime();
 			System.out.println();
 			System.out.println();

@@ -72,7 +72,7 @@ public class Directing_Tutorial {
 		System.out.println();
 		System.out.println();
 		System.out.println("============================================================================");
-		System.out.print("  エンターキーを押すと、タイトル画面へ戻ります。>>");
+		System.out.print("  エンターキーを押すと、次へ進みます。>>");
 		String in2 = scan.nextLine();
 	}
 

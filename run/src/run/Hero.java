@@ -1,7 +1,7 @@
 package run;
 
 public class Hero {
-	private int hp=50;
+	private int hp=100;
 	private int money=0;
 	private int item_ointment=1;
 	private int item_gun=1;

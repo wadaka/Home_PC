@@ -41,7 +41,10 @@ public class GameApp {
 			}else {
 				continue;
 			}
-
+			
+			Directing_Op.showOp();
+			
+			Directing_Tutorial.showTutorial();
 
 			Hero h = new Hero();
 
@@ -55,11 +58,12 @@ public class GameApp {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
+				
 				Directing_GameMain.showMain(h,i+1);
 				int input = sc.nextInt();
 				int hp = h.getHp();
 				int money = h.getMoney();
-
+				
 				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
@@ -68,6 +72,74 @@ public class GameApp {
 						System.out.println("  ============================================================================");
 						System.out.println();
 						System.out.println("    安全な道を進むことにした。");
+						try {
+							BattleJudgement(input,i,h);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						break;
+					//普通の道を選択した時の処理-----------------------------------------------------------------------------
+					case 2:
+						System.out.println();
+						System.out.println("  ============================================================================");
+						System.out.println();
+						System.out.println("    普通の道を進むことにした。");
+						try {
+							BattleJudgement(input,i,h);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						break;
+					//危険な道を選択した時の処理-----------------------------------------------------------------------------
+					case 3:
+						System.out.println();
+						System.out.println("  ============================================================================");
+						System.out.println();
+						System.out.println("    危険な道を進むことにした。");
+						try {
+							BattleJudgement(input,i,h);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						break;
+					//傷薬を使用するときの処理、もし所持していない場合は安全な道を進むことになる。--------------------------
+					default:
+						if(h.getItem_ointment()>0) {
+							h.setHp(hp+30);
+							h.setItem_ointment(h.getItem_ointment()-1);
+							System.out.println();
+							System.out.println("  ============================================================================");
+							System.out.println();
+							System.out.println("    傷薬を使用し、HPが30ポイント回復した！");
+						}else {
+							System.out.println();
+							System.out.println("  ============================================================================");
+							System.out.println();
+							System.out.println("    しかし、傷薬を持っていなかった！");
+							System.out.println();
+							System.out.println("    仕方がないので、安全な道を進むことにした……。");
+							try {
+								EventJudgement(1,i,h);
+							} catch (InterruptedException e) {
+								// TODO 自動生成された catch ブロック
+								e.printStackTrace();
+							}
+							System.out.println();
+							System.out.println("  ============================================================================");
+							System.out.println("    探索終了。");
+						}
+				}
+				
+				//戦闘で死亡した場合、ここでbreakし、死亡イベントへ移行
+				if(h.getHp()<1) break;
+				
+				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
+				switch(input) {
+					//安全な道を選択した時の処理-----------------------------------------------------------------------------
+					case 1:
 						try {
 							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
@@ -80,10 +152,6 @@ public class GameApp {
 						break;
 					//普通の道を選択した時の処理-----------------------------------------------------------------------------
 					case 2:
-						System.out.println();
-						System.out.println("  ============================================================================");
-						System.out.println();
-						System.out.println("    普通の道を進むことにした。");
 						try {
 							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
@@ -98,61 +166,40 @@ public class GameApp {
 						break;
 					//危険な道を選択した時の処理-----------------------------------------------------------------------------
 					case 3:
-						System.out.println();
-						System.out.println("  ============================================================================");
-						System.out.println();
-						System.out.println("    危険な道を進むことにした。");
 						try {
 							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
-
 						getMoney_TurnEnd(3,h);
-
-						//h.setMoney(money+2);
 						System.out.println();
 						System.out.println("  ============================================================================");
 						System.out.println("    探索終了。");
 						System.out.println("    危険な道ボーナス:財宝+2。");
 						break;
-					//傷薬を使用するときの処理、もし所持していない場合は安全な道を進むことになる。--------------------------
+					//傷薬を使用した場合の処理
 					default:
-						if(h.getItem_ointment()>0) {
-							h.setHp(hp+30);
-							h.setItem_ointment(h.getItem_ointment()-1);
-							System.out.println("    傷薬を使用し、HPが30ポイント回復した！");
-							System.out.println();
-							System.out.println("    その後は、再三の注意を払いながら、道を進んでいった……。");
-						}else {
-							System.out.println("    しかし、傷薬を持っていなかった！");
-							System.out.println();
-							System.out.println("    仕方がないので、安全な道を進むことにした……。");
-							try {
-								EventJudgement(1,i,h);
-							} catch (InterruptedException e) {
-								// TODO 自動生成された catch ブロック
-								e.printStackTrace();
-							}
-							System.out.println();
-							System.out.println("  ============================================================================");
-							System.out.println("    探索終了。");
-						}
-					}
-					System.out.println();
-					System.out.println("    ※エンターキー入力で次へ進みます。");
-					System.out.println();
-					sc.nextLine();
-					String turnendClick = sc.nextLine();
-
-					if(h.getHp()<1) {
-						break;
-					}
+						System.out.println();
+						System.out.println("    その後は、再三の注意を払いながら、道を進んでいった……。");
+						System.out.println();
+						System.out.println("  ============================================================================");
+						System.out.println("    探索終了。");
+						System.out.println();
+				}
+				
+				System.out.println();
+				System.out.println("    ※エンターキー入力で次へ進みます。");
+				System.out.println();
+				sc.nextLine();
+				String turnendClick = sc.nextLine();
+				
+				//イベントで死亡した場合、ここでbreakし、死亡イベントへ移行
+				if(h.getHp()<1) break;
 			}
 
 			//エンディングの分岐処理
-			//エンディングは3種類で、１.HP0で死亡、2.借金が返せずLife is Over、3.生存+借金返済のはっぴーえんど。
+			//エンディングは4種類で、１.HP0で死亡、2.借金が返せずLife is Over、3.生存+借金返済のはっぴーえんど。4は隠し（未実装）
 			int ending = 0;
 			if(h.getHp()<1) {
 				ending = 0;
@@ -168,6 +215,7 @@ public class GameApp {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
+			sc.nextLine();
 			String lastClick = sc.nextLine();
 
 		}
@@ -175,17 +223,42 @@ public class GameApp {
 	}
 	static void preparation() {
 		System.out.println("============================================================================");
-		for(int i=0;i<29;i++) {
-			System.out.println();
-		}
+		System.out.println("      合わせ終わったらエンターキーを押してください。ゲームが始まります    ");
+		System.out.println("              -上下の線とコンソールの表示幅を合わせてください-            ");
+		System.out.println("");
+		System.out.println("                                     上");
+		System.out.println("                                     下");
+		System.out.println("                                     の");
+		System.out.println("                                     線");
+		System.out.println("                                     と");
+		System.out.println("                                     コ");
+		System.out.println("                                     ン");
+		System.out.println("                                     ソ");
+		System.out.println("                                     |");
+		System.out.println("                                     ル");
+		System.out.println("                                     の");
+		System.out.println("                                     表");
+		System.out.println("                                     示");
+		System.out.println("                                     幅");
+		System.out.println("                                     を");
+		System.out.println("                                     合");
+		System.out.println("                                     わ");
+		System.out.println("                                     せ");
+		System.out.println("                                     て");
+		System.out.println("                                     く");
+		System.out.println("                                     だ");
+		System.out.println("                                     さ");
+		System.out.println("                                     い");
+		System.out.println("                                     。");
+		System.out.println("");
 		System.out.println("              -上下の線とコンソールの表示幅を合わせてください-            ");
 		System.out.println("      合わせ終わったらエンターキーを押してください。ゲームが始まります    ");
 		System.out.print("============================================================================");
 		String pre = sc.nextLine();
 	}
-	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
+	
+	static void BattleJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
-
 		Thread.sleep(1000);
 		System.out.println();
 		System.out.println();
@@ -202,12 +275,8 @@ public class GameApp {
 		System.out.println();
 		Thread.sleep(1000);
 
-
 		int battle_j = rdm.nextInt(100);
-		int first_j = rdm.nextInt(100);
-		int second_j = rdm.nextInt(100);
-		//int third_j = rdm.nextInt(100);
-
+		
 		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
 		if(turn<11) {
 			if(battle_j>69 && root==1) {
@@ -234,7 +303,15 @@ public class GameApp {
 				Battle.lottery_difficult(h);
 			}
 		}
-
+	}
+	
+	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
+		//イベント判定は、選択した「道」で変化。
+		
+		int first_j = rdm.nextInt(100);
+		int second_j = rdm.nextInt(100);
+		//int third_j = rdm.nextInt(100);
+		
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
 		if(root<=2 && first_j>=50) {
 			//安全な道を選んだ時の抽選-------------------------------------------------------
