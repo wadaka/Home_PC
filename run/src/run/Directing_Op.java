@@ -41,7 +41,6 @@ public class Directing_Op {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		System.out.println();
 		System.out.println("  並みいる冒険者の亡骸を啜り続け、");
 		Thread.sleep(2000);
 		System.out.println();
@@ -51,11 +50,12 @@ public class Directing_Op {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		System.out.println();
 		System.out.println("  そんな地に、敢えて自ら足を踏み入れる");
 		Thread.sleep(1500);
 		System.out.println();
 		System.out.println("  命知らずの若者達がいた！！");
+		System.out.println();
+		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
