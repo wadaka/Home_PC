@@ -41,7 +41,7 @@ public class Directing_GameMain {
 		System.out.println();
 		System.out.println("  ============");
 		System.out.println(" |////////////|-----------------------  =================================");
-		System.out.printf(" |//第 %02d 歩//|=======================||  HP  %3d/100  |  財宝  %3d/50   ||%n",count,h.getHp(),h.getMoney());
+		System.out.printf(" |//第 %02d 歩//|=======================||  HP  %3d/100  |  財宝  %3d/100  ||%n",count,h.getHp(),h.getMoney());
 		System.out.println(" |////////////|                         ================================= ");
 		System.out.println("  ============                                                            |");
 		System.out.println(" |                                                                        |");

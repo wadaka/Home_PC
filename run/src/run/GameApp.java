@@ -72,7 +72,7 @@ public class GameApp {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
 					case 1:
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println();
 						System.out.println("    安全な道を進むことにした。");
 						try {
@@ -85,7 +85,7 @@ public class GameApp {
 					//普通の道を選択した時の処理-----------------------------------------------------------------------------
 					case 2:
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println();
 						System.out.println("    普通の道を進むことにした。");
 						try {
@@ -98,7 +98,7 @@ public class GameApp {
 					//危険な道を選択した時の処理-----------------------------------------------------------------------------
 					case 3:
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println();
 						System.out.println("    危険な道を進むことにした。");
 						try {
@@ -114,12 +114,12 @@ public class GameApp {
 							h.setHp(hp+30);
 							h.setItem_ointment(h.getItem_ointment()-1);
 							System.out.println();
-							System.out.println("  ============================================================================");
+							System.out.println("  =====================================================================================");
 							System.out.println();
 							System.out.println("    傷薬を使用し、HPが30ポイント回復した！");
 						}else {
 							System.out.println();
-							System.out.println("  ============================================================================");
+							System.out.println("  =====================================================================================");
 							System.out.println();
 							System.out.println("    しかし、傷薬を持っていなかった！");
 							System.out.println();
@@ -131,7 +131,7 @@ public class GameApp {
 								e.printStackTrace();
 							}
 							System.out.println();
-							System.out.println("  ============================================================================");
+							System.out.println("  =====================================================================================");
 							System.out.println("    探索終了。");
 						}
 				}
@@ -150,7 +150,7 @@ public class GameApp {
 							e.printStackTrace();
 						}
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println("    探索終了。");
 						break;
 					//普通の道を選択した時の処理-----------------------------------------------------------------------------
@@ -163,7 +163,7 @@ public class GameApp {
 						}
 						getMoney_TurnEnd(2,h);
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println("    探索終了。");
 						System.out.println("    普通の道ボーナス:財宝+1。");
 						break;
@@ -177,7 +177,7 @@ public class GameApp {
 						}
 						getMoney_TurnEnd(3,h);
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println("    探索終了。");
 						System.out.println("    危険な道ボーナス:財宝+2。");
 						break;
@@ -186,7 +186,7 @@ public class GameApp {
 						System.out.println();
 						System.out.println("    その後は、再三の注意を払いながら、道を進んでいった……。");
 						System.out.println();
-						System.out.println("  ============================================================================");
+						System.out.println("  =====================================================================================");
 						System.out.println("    探索終了。");
 						System.out.println();
 				}
@@ -216,7 +216,7 @@ public class GameApp {
 			if(h.getHp()<1) {
 				ending = 0;
 			}
-			else if(h.getMoney()>=50) {
+			else if(h.getMoney()>=100) {
 				ending = 1;
 			}else {
 				ending = 2;
@@ -235,9 +235,9 @@ public class GameApp {
 	}
 	static void preparation() {
 		System.out.println("============================================================================");
+		System.out.println("============================================================================");
 		System.out.println("      合わせ終わったらエンターキーを押してください。ゲームが始まります    ");
 		System.out.println("              -上下の線とコンソールの表示幅を合わせてください-            ");
-		System.out.println("");
 		System.out.println("                                     上");
 		System.out.println("                                     下");
 		System.out.println("                                     の");
@@ -265,7 +265,8 @@ public class GameApp {
 		System.out.println("");
 		System.out.println("              -上下の線とコンソールの表示幅を合わせてください-            ");
 		System.out.println("      合わせ終わったらエンターキーを押してください。ゲームが始まります    ");
-		System.out.print("============================================================================");
+		System.out.println("============================================================================");
+		System.out.printf("============================================================================");
 		String pre = sc.nextLine();
 	}
 	
@@ -510,8 +511,8 @@ public class GameApp {
 			System.out.println("    HP-15");
 			Thread.sleep(2000);
 		}
-
 	}
+	
 	static void attackNature(int root,Hero h) throws InterruptedException{
 		int attackN_j = rdm.nextInt(100);
 		int[] attackNs = new int[attackN_E.length];
@@ -707,9 +708,21 @@ public class GameApp {
 		System.out.println("           ---------------------------");
 		System.out.println("");
 		System.out.printf("              ＨＰ      :  ");
-		System.out.printf("%3d%n",h.getHp()-ba[0]);
+		if((h.getHp()-ba[0])>0) {
+			System.out.printf("+%3d%n",h.getHp()-ba[0]);
+		}else if((h.getHp()-ba[0])==0) {
+			System.out.println("   0");
+		}else {
+			System.out.printf("-%3d%n",ba[0]-h.getHp());
+		}
 		System.out.printf("              財宝      :  ");
-		System.out.printf("%3d%n",h.getMoney()-ba[1]);
+		if((h.getMoney()-ba[1])>0) {
+			System.out.printf("+%3d%n",h.getMoney()-ba[1]);
+		}else if((h.getMoney()-ba[1])==0) {
+			System.out.println("   0");
+		}else {
+			System.out.printf("-%3d%n",ba[1]-h.getMoney());
+		}
 		System.out.printf("              アイテム  :  傷薬  %d  銃  %d  煙幕  %d  ゴミ  %d  %n",
 				h.getItem_ointment()-ba[2],h.getItem_gun()-ba[3],h.getItem_smoke()-ba[4],h.getItem_litter()-ba[5]);
 		System.out.println("");
@@ -717,8 +730,8 @@ public class GameApp {
 		System.out.println("           ◇現在のプレイヤーステータス ");
 		System.out.println("           -----------------------------");
 		System.out.println("");
-		System.out.printf("               HP %3d/100     財産 %3d/50  %n",h.getHp(),h.getMoney());
-		System.out.printf("               傷薬(%d)       銃(%d)       煙幕(%d)       ゴミ(%d)%n",h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
+		System.out.printf("               HP %3d/100     財産 %3d/100  %n",h.getHp(),h.getMoney());
+		System.out.printf("               傷薬 (%d)        銃 (%d)        煙幕 (%d)        ゴミ (%d)%n",h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
 		System.out.println();
 		System.out.println();
 		System.out.println("          ---------------------------------------------------------------------");

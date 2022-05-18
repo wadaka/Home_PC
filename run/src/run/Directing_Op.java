@@ -390,7 +390,7 @@ public class Directing_Op {
 		Thread.sleep(2000);
 		sister_normal_talk_5();
 		System.out.println("               それでね、今回の冒険に必要な経費なんだけど……。");
-		System.out.println("               えーと、移動費用が、20万ゼニ―で……。");
+		System.out.println("               えーと、移動費用が、40万ゼニ―で……。");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -403,7 +403,7 @@ public class Directing_Op {
 		System.out.println("");
 		Thread.sleep(1000);
 		sister_normal_talk_6();
-		System.out.println("               （……20万ゼニ―!？）");
+		System.out.println("               （……40万ゼニ―!？）");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -438,12 +438,12 @@ public class Directing_Op {
 		System.out.println("");
 		Thread.sleep(3000);
 		sister_angry();
-		System.out.println("               ちょ、ちょっと！ いきなり、50万ゼニ―の大赤字じゃない！？");
+		System.out.println("               ちょ、ちょっと！ いきなり、100万ゼニ―の大赤字じゃない！？");
 		System.out.println("");
 		System.out.println("");
 		Thread.sleep(1500);
 		sister_angry();
-		System.out.println("               ちょ、ちょっと！ いきなり、50万ゼニ―の大赤字じゃない！？");
+		System.out.println("               ちょ、ちょっと！ いきなり、100万ゼニ―の大赤字じゃない！？");
 		System.out.println("               こんなに返すアテ、どこにあるの！？");
 		System.out.println("");
 		Thread.sleep(4000);

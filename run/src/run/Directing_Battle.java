@@ -116,7 +116,7 @@ public class Directing_Battle {
 		System.out.println("     ||     プレイヤーステータス     ||");
 		System.out.println("     ++==============================++");
 		System.out.println("     ++==============================++=========================================++");
-		System.out.printf("     ||  HP %3d/100  |  財産 %3d/50  || 銃(%d)…勝率25%%UP | 煙幕(%d)…成功率25%%UP ||%n",h.getHp(),h.getMoney(),h.getItem_gun(),h.getItem_smoke());
+		System.out.printf("     ||  HP %3d/100  |  財産 %3d/100 || 銃(%d)…勝率25%%UP | 煙幕(%d)…成功率25%%UP ||%n",h.getHp(),h.getMoney(),h.getItem_gun(),h.getItem_smoke());
 		System.out.println("     ++==============================++=========================================++");
 		System.out.println("");
 		System.out.println("     -----------------------------------------------------------------------------");
@@ -361,7 +361,7 @@ public class Directing_Battle {
 		System.out.println("              基本ステータス");
 		System.out.println("              --------------");
 		System.out.println("");
-		System.out.printf("                HP %3d/100  |  財産 %3d/50%n",h.getHp(),h.getMoney());
+		System.out.printf("                HP %3d/100  |  財産 %3d/100%n",h.getHp(),h.getMoney());
 		System.out.println("");
 		System.out.println("");
 		System.out.println("              所持アイテム");
