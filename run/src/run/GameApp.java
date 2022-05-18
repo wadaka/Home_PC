@@ -200,7 +200,7 @@ public class GameApp {
 				dayResult(i,h,before_action_pl_data);
 				
 				System.out.println();
-				System.out.println("    ※エンターキー入力で次へ進みます。");
+				System.out.println("      ※エンターキー入力で次へ進みます。");
 				System.out.println();
 				sc.nextLine();
 				String turnendClick = sc.nextLine();
