@@ -42,9 +42,9 @@ public class GameApp {
 				continue;
 			}
 			
-			Directing_Op.showOp();
+			//Directing_Op.showOp();
 			
-			Directing_Tutorial.showTutorial();
+			//Directing_Tutorial.showTutorial();
 
 			Hero h = new Hero();
 
@@ -697,34 +697,33 @@ public class GameApp {
 		}
 	}
 	static void dayResult(int turn,Hero h,int[] ba) {
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("      -----------------------------------------------------------------------------");
 		System.out.println("          ---------------------------------------------------------------------");
 		System.out.println("");
-		System.out.printf("            ◇本日の探索結果 (第%02d歩)%n",turn);
+		System.out.printf("            ◇本日の探索結果 (第%02d歩)%n",turn+1);
 		System.out.println("           ---------------------------");
 		System.out.println("");
 		System.out.printf("              ＨＰ      :  ");
-		System.out.printf("%s%n",h.getHp()-ba[0]);
+		System.out.printf("%3d%n",h.getHp()-ba[0]);
 		System.out.printf("              財宝      :  ");
-		System.out.printf("%s%n",h.getMoney()-ba[1]);
+		System.out.printf("%3d%n",h.getMoney()-ba[1]);
 		System.out.printf("              アイテム  :  傷薬  %d  銃  %d  煙幕  %d  ゴミ  %d  %n",
 				h.getItem_ointment()-ba[2],h.getItem_gun()-ba[3],h.getItem_smoke()-ba[4],h.getItem_litter()-ba[5]);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("            ◇現在のプレイヤーステータス ");
-		System.out.println("            -----------------------------");
+		System.out.println("           ◇現在のプレイヤーステータス ");
+		System.out.println("           -----------------------------");
 		System.out.println("");
-		System.out.println("              基本ステータス");
-		System.out.println("              --------------");
-		System.out.println("");
-		System.out.printf("                HP %3d/100  |  財産 %3d/50%n",h.getHp(),h.getMoney());
-		System.out.println("");
-		System.out.println("");
-		System.out.println("              所持アイテム");
-		System.out.println("              ------------");
-		System.out.println("");
-		System.out.printf("                傷薬(%d) | 銃(%d) | 煙幕(%d) | ゴミ(%d)%n",h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
+		System.out.printf("               HP %3d/100     財産 %3d/50  %n",h.getHp(),h.getMoney());
+		System.out.printf("               傷薬(%d)       銃(%d)       煙幕(%d)       ゴミ(%d)%n",h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
+		System.out.println();
 		System.out.println();
 		System.out.println("          ---------------------------------------------------------------------");
 		System.out.println("      -----------------------------------------------------------------------------");
+		System.out.println("");
+		System.out.println("");
 	}
 }
