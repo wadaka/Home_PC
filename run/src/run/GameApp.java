@@ -42,9 +42,9 @@ public class GameApp {
 				continue;
 			}
 			
-			//Directing_Op.showOp();
+			Directing_Op.showOp();
 			
-			//Directing_Tutorial.showTutorial();
+			Directing_Tutorial.showTutorial();
 
 			Hero h = new Hero();
 
