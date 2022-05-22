@@ -42,15 +42,19 @@ public class GameApp {
 				continue;
 			}
 			
-			Directing_Op.showOp();
+			//Directing_Op.showOp();
 			
-			Directing_Tutorial.showTutorial();
-
+			//Directing_Tutorial.showTutorial();
+			
 			Hero h = new Hero();
-
+			
+			int[] before_pl_data = {
+					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
+			};
+			
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=0;i<30;i++) {
+			for(int i=9;i<30;i++) {
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -197,7 +201,32 @@ public class GameApp {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
-				dayResult(i,h,before_action_pl_data);
+				if(i==9 || i==19) {
+					
+					System.out.println();
+					System.out.println("    ※エンターキー入力で次へ進みます。");
+					System.out.println();
+					sc.nextLine();
+					String turnendClick = sc.nextLine();
+					
+					try {
+						Camp.start_Camp(i,h,before_pl_data);
+					} catch (InterruptedException e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					}
+					
+					//次回の経過報告に向け、参照用のデータを更新
+					before_pl_data[0] = h.getHp();
+					before_pl_data[1] = h.getMoney();
+					before_pl_data[2] = h.getItem_ointment();
+					before_pl_data[3] = h.getItem_gun();
+					before_pl_data[4] = h.getItem_smoke();
+					before_pl_data[5] = h.getItem_litter();
+					
+				}else {
+					dayResult(i,h,before_action_pl_data);
+				}
 				
 				System.out.println();
 				System.out.println("      ※エンターキー入力で次へ進みます。");
@@ -731,7 +760,7 @@ public class GameApp {
 		System.out.println("           -----------------------------");
 		System.out.println("");
 		System.out.printf("               HP %3d/100     財産 %3d/100  %n",h.getHp(),h.getMoney());
-		System.out.printf("               傷薬 (%d)        銃 (%d)        煙幕 (%d)        ゴミ (%d)%n",h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
+		System.out.printf("               傷薬 (%d)       銃 (%d)        煙幕 (%d)        ゴミ (%d)%n",h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
 		System.out.println();
 		System.out.println();
 		System.out.println("          ---------------------------------------------------------------------");

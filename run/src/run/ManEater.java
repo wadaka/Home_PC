@@ -11,12 +11,12 @@ public class ManEater extends Enemy{
 		// TODO 自動生成されたメソッド・スタブ
 		int num = rdm.nextInt(4);
 
-		if(num>3) {
+		if(num>2) {
 			h.setItem_ointment(h.getItem_ointment()+1);
 			//h.setMoney(h.getMoney()-(rdm.nextInt(3)+1));
-		}else if(num>2) {
-			h.setItem_gun(h.getItem_gun()+1);
 		}else if(num>1) {
+			h.setItem_gun(h.getItem_gun()+1);
+		}else if(num>0) {
 			h.setItem_smoke(h.getItem_smoke()+1);
 		}else {
 			h.setItem_litter(h.getItem_litter()+1);
@@ -40,13 +40,13 @@ public class ManEater extends Enemy{
 	@Override
 	public int setLost_RunFail_Money() {
 		// TODO 自動生成されたメソッド・スタブ
-		return 0;
+		return 5;
 	}
 
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"100     ","10      ","傷薬,銃,他   ","なし          "};
+		String[] infos = {"100     ","10      ","傷薬,銃,他    ","5       "};
 		return infos;
 	}
 

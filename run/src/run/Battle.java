@@ -172,7 +172,7 @@ public class Battle {
 					System.out.println();
 					System.out.println("    【1】使用する  【2】 使用しない");
 					System.out.println();
-					System.out.println("     >>");
+					System.out.print("     >>");
 					int input_2 = sc.nextInt();
 
 					if(input_2==1) {

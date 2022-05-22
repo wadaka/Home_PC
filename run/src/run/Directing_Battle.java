@@ -329,7 +329,7 @@ public class Directing_Battle {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-		
+		System.out.println("      -----------------------------------------------------------------------------");
 		System.out.println("          ---------------------------------------------------------------------");
 		System.out.println("");
 		System.out.println("            ◇リザルト");
