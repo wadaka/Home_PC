@@ -22,7 +22,7 @@ public class Camp {
 					System.out.println("                     正しい番号を入力してください！");
 					continue;
 				}
-				
+
 				switch(input) {
 				case 1:
 					supplyShop(h);
@@ -48,9 +48,10 @@ public class Camp {
 		}
 	}
 	static void supplyShop(Hero h) throws InterruptedException{
-		
+
+		int no_count = 1;
 		Directing_Camp.connect();
-		
+
 		Directing_Camp.pre_supply_first();
 		Directing_Camp.supply_start_sister();
 		Directing_Camp.supply_sister(h);
@@ -65,11 +66,19 @@ public class Camp {
 				Directing_Camp.supply_check_sister(item);
 				int input = sc.nextInt();
 				if(input==1) {
-					
+					if(h.getMoney()>=10) {
+						Directing_Camp.supply_check_ok_sister();
+						h.setItem_ointment(h.getItem_ointment()+1);
+						h.setMoney(h.getMoney()-10);
+					}else {
+						Directing_Camp.supply_check_no_money_sister();
+					}
 				}else {
+					Directing_Camp.supply_check_no_sister(no_count);
+					no_count++;
 					
 				}
-				
+
 			}else if(input_shop.equals("2")) {
 				String item = "銃  ";
 			}else if(input_shop.equals("3")) {
@@ -77,11 +86,11 @@ public class Camp {
 			}else if(input_shop.equals("4")) {
 				String item = "ガラクタ";
 			}else if(input_shop.equals("5")) {
-				
+
 			}else {
-				
+
 			}
-			
+
 			if(input_shop.equals("5")) break;
 		}
 	}
