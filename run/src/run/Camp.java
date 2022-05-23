@@ -64,6 +64,7 @@ public class Camp {
 			if(input_shop.equals("1")) {
 				String item = "傷薬";
 				Directing_Camp.supply_check_sister(item);
+				System.out.print("       >>");
 				int input = sc.nextInt();
 				if(input==1) {
 					if(h.getMoney()>=10) {
@@ -76,21 +77,75 @@ public class Camp {
 				}else {
 					Directing_Camp.supply_check_no_sister(no_count);
 					no_count++;
-					
 				}
 
 			}else if(input_shop.equals("2")) {
 				String item = "銃  ";
+				Directing_Camp.supply_check_sister(item);
+				System.out.print("       >>");
+				int input = sc.nextInt();
+				if(input==1) {
+					if(h.getMoney()>=5) {
+						Directing_Camp.supply_check_ok_sister();
+						h.setItem_gun(h.getItem_gun()+1);
+						h.setMoney(h.getMoney()-5);
+					}else {
+						Directing_Camp.supply_check_no_money_sister();
+					}
+				}else {
+					Directing_Camp.supply_check_no_sister(no_count);
+					no_count++;
+				}
 			}else if(input_shop.equals("3")) {
 				String item = "煙幕";
+				Directing_Camp.supply_check_sister(item);
+				System.out.print("       >>");
+				int input = sc.nextInt();
+				if(input==1) {
+					if(h.getMoney()>=3) {
+						Directing_Camp.supply_check_ok_sister();
+						h.setItem_smoke(h.getItem_smoke()+1);
+						h.setMoney(h.getMoney()-3);
+					}else {
+						Directing_Camp.supply_check_no_money_sister();
+					}
+				}else {
+					Directing_Camp.supply_check_no_sister(no_count);
+					no_count++;
+				}
 			}else if(input_shop.equals("4")) {
-				String item = "ガラクタ";
+				String item = "ゴミ";
+				Directing_Camp.supply_check_sister(item);
+				System.out.print("       >>");
+				int input = sc.nextInt();
+				if(input==1) {
+					if(h.getMoney()>=2) {
+						Directing_Camp.supply_check_ok_sister();
+						h.setItem_litter(h.getItem_litter()+1);
+						h.setMoney(h.getMoney()-2);
+					}else {
+						Directing_Camp.supply_check_no_money_sister();
+					}
+				}else {
+					Directing_Camp.supply_check_no_sister(no_count);
+					no_count++;
+				}
 			}else if(input_shop.equals("5")) {
-
+				Directing_Camp.supply_check_end_shop_sister();
+				System.out.print("       >>");
+				int input = sc.nextInt();
+				if(input==1) {
+					Directing_Camp.supply_check_end_shop_ok_sister();
+					Directing_Camp.supply_end_sister();
+					Directing_Camp.disconnect();
+				}else {
+					Directing_Camp.supply_check_end_shop_no_sister();
+					input_shop = "0";
+				}
 			}else {
-
+				
 			}
-
+			
 			if(input_shop.equals("5")) break;
 		}
 	}

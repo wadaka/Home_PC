@@ -37,9 +37,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(2000);
-		
+
 		String day = "";
 		if(turn<11) {
 			day = "1～10歩までの探索結果";
@@ -121,9 +121,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(2000);
-		
+
 		System.out.println("");
 		System.out.println("                          MMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMN.");
 		System.out.println("                     (MMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMNa.. ");
@@ -155,9 +155,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(1000);
-		
+
 		System.out.println("");
 		System.out.println("                          MMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMN.");
 		System.out.println("                     (MMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMMMNMMMMMMMMMMNa.. ");
@@ -190,14 +190,14 @@ public class Directing_Camp {
 		System.out.println("                     -----------------------------------------------------------------------------------");
 		System.out.println("");
 	}
-	
+
 	static void connect() throws InterruptedException{
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		
+
 		Thread.sleep(1000);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -230,9 +230,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(500);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -265,15 +265,15 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(1000);
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		
+
 		Thread.sleep(500);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -306,9 +306,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(150);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -341,9 +341,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -376,9 +376,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -411,9 +411,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -446,9 +446,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -481,9 +481,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -516,9 +516,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -551,9 +551,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -586,9 +586,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -621,9 +621,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -656,9 +656,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -691,9 +691,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(100);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -726,49 +726,832 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(125);
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		
+
 		Thread.sleep(250);
 	}
-	
+
+	static void disconnect() throws InterruptedException{
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                               .                   .");
+		System.out.println("                                               ");
+		System.out.println("                                 ");
+		System.out.println("                                 ");
+		System.out.println("                       .                                 .");
+		System.out.println("                                                     ");
+		System.out.println("");
+		System.out.println("                                  ");
+		System.out.println("                                 ");
+		System.out.println("                                               ");
+		System.out.println("                               ゜                  ゜");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                ＼               ／");
+		System.out.println("                                 ");
+		System.out.println("                                 ");
+		System.out.println("                                                 ");
+		System.out.println("                        ＼                             ／");
+		System.out.println("");
+		System.out.println("                                  ");
+		System.out.println("                                 ");
+		System.out.println("                                ／               ＼");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                ／               ＼");
+		System.out.println("                                ＼／           ＼／");
+		System.out.println("                                                 ");
+		System.out.println("                          ／＼      ! connect !     ／＼");
+		System.out.println("                                                ");
+		System.out.println("                                ／＼           ／＼ ");
+		System.out.println("                                ＼               ／");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                ＼／           ＼／");
+		System.out.println("                                  ＼           ／");
+		System.out.println("                            ＼／    ! connect !    ＼／");
+		System.out.println("                                  ／           ＼");
+		System.out.println("                                ／＼           ／＼ ");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                ＼／           ＼／");
+		System.out.println("                                  ＼           ／");
+		System.out.println("                            ＼／    ! connect !    ＼／");
+		System.out.println("                                  ／           ＼");
+		System.out.println("                                ／＼           ／＼ ");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                  ＼           ／");
+		System.out.println("                               ／＼ ! connect ! ／＼");
+		System.out.println("                                  ／           ＼");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                   .           .");
+		System.out.println("                               ／＼ ! connect ! ／＼");
+		System.out.println("                                   ゜          ゜");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                 ＼ ! connect ! ／");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                  . ! connect ! .");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(500);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     disconnect");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(1000);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(500);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     disconnect");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(1000);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     -isconnec-");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     --sconne--");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     ---conn---");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     ----on----");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     ----------");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                      --------");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                       ------");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                        ----");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                         --");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(100);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+
+		Thread.sleep(1000);
+	}
+
 	static void pre_supply_first() throws InterruptedException{
 		//"                                                             "テキストの長さ
-		
+
 		Directing_Sister_mini.noise1();
 		Thread.sleep(250);
 		Directing_Sister_mini.noise2();
 		Thread.sleep(250);
 		String word1_1 = "……                                                         ";
-		
+
 		blank_line_11();
 		Directing_Sister_mini.smile_one_line(word1_1);
 		blank_line_11();
-		
+
 		Thread.sleep(2000);
 		String word1_2 = "……あ、もしもし？                                           ";
 		String word1_3 = "                                                             ";
 		blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word1_2,word1_3);
 		blank_line_11();
-		
+
 		Thread.sleep(750);
 		String word1_4 = "おにいちゃん、聞こえる？                                     ";
 		blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word1_2,word1_4);
 		blank_line_11();
-		
+
 		Thread.sleep(2500);
-		
+
 		String word2 = "                                                             ";
 		blank_line_11();
 		Directing_Sister_mini.smile_one_line(word2);
 		blank_line_11();
-		
+
 		Thread.sleep(1500);
 		String word3_0 = "                                                             ";
 		String word3_1 = "あー、よかった。                                             ";
@@ -777,20 +1560,20 @@ public class Directing_Camp {
 		blank_line_11();
 		Directing_Sister_mini.nonki1_talk_two_line(word3_1,word3_0);
 		blank_line_11();
-		
+
 		Thread.sleep(1500);
-		
+
 		blank_line_11();
 		Directing_Sister_mini.nonki1_talk_two_line(word3_2,word3_3);
 		blank_line_11();
-		
+
 		Thread.sleep(2500);
-		
+
 		String word4_1 = "ごほん。気を取り直して……。                                 ";
 		blank_line_11();
 		Directing_Sister_mini.gohon_one_line(word4_1);
 		blank_line_11();
-		
+
 		Thread.sleep(1500);
 		String word5_1 = "さあ、何が必要なのかな？おにいちゃん！                       ";
 		blank_line_11();
@@ -798,7 +1581,7 @@ public class Directing_Camp {
 		blank_line_11();
 		Thread.sleep(1500);
 	}
-	
+
 	static void supply_start_sister() throws InterruptedException{
 		System.out.println("");
 		System.out.println("");
@@ -832,9 +1615,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(125);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -867,9 +1650,9 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(125);
-		
+
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -901,12 +1684,121 @@ public class Directing_Camp {
 		System.out.println("    | |                                                                                      |______________|         | |");
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
-	
+
 		Thread.sleep(1250);
-		
+
 		blank_line_11();
 	}
-	
+
+	static void supply_end_sister() throws InterruptedException{
+
+		System.out.println("     ___________________________________________________________________________________________________________________");
+		System.out.println("    |          |______________________________________________________________________________________________________  | ");
+		System.out.println("    | 補       |                                                                                                      | |");
+		System.out.println("    |   給     |  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --                          | | ");
+		System.out.println("    |     物   |______________________________________________________________________________________________________| |");
+		System.out.println("    |       資 |                                                                                                      | |");
+		System.out.println("    |__________|         (-)                     (-)                     (-)                     (-)                  | |");
+		System.out.println("    | |         |===================|   |===================|   |===================|   |===================|         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | |");
+		System.out.println("    | |         |  ----    -------  |   |   --     -------  |   |  ----    -------  |   |  ----    -------  |         | | ");
+		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         |  ------------     |   |  --------------   |   |  --------------   |   |  ----------       |         | |");
+		System.out.println("    | |         |  ----             |   |  ----------       |   |  ------------     |   |  --------------   |         | | ");
+		System.out.println("    | |         |  ---------------  |   |  ---------------  |   |  ---------------  |   |  ----------       |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
+		System.out.println("    | |         |          ---- (-) |   |          ---- (-) |   |          ---- (-) |   |          ---- (-) |         | |");
+		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
+		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
+		System.out.println("    | |                                                                                       ______________          | |");
+		System.out.println("    | |          _____________________________________________________________________       |              |         | | ");
+		System.out.println("    | |         |                                                                     |      |  〃\"\"\"-＝ヽ⌒|         | |");
+		System.out.println("    | |         |  ----------                                                         |  ☆  |,\" ノノ乀 ,ヽ |         | |");
+		System.out.println("    | |         |  ----------                                                         |    ゜|(ノ。  _ ノノ |         | |");
+		System.out.println("    | |         |    --  --/--   ----  --/--    ---- (-) -- (-) ---- (-) ---- (-)     |      | (-  ᴗ        -[]   |         | |");
+		System.out.println("    | |         |_____________________________________________________________________|      |   ――〃 ´  |         | | ");
+		System.out.println("    | |                                                                                      |____〃_〃ヽ___|         | |");
+		System.out.println("    | |                                                                                      |______________|         | |");
+		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
+		System.out.println("    |___________________________________________________________________________________________________________________|  ");
+
+		Thread.sleep(1250);
+		blank_line_11();
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("     ___________________________________________________________________________________________________________________");
+		System.out.println("    |          |______________________________________________________________________________________________________  | ");
+		System.out.println("    | 補       |                                                                                                      | |");
+		System.out.println("    |   給     |  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --                          | | ");
+		System.out.println("    |     物   |______________________________________________________________________________________________________| |");
+		System.out.println("    |       資 |                                                                                                      | |");
+		System.out.println("    |__________|         (-)                     (-)                     (-)                     (-)                  | |");
+		System.out.println("    | |         |===================|   |===================|   |===================|   |===================|         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | |");
+		System.out.println("    | |         |  ----    -------  |   |   --     -------  |   |  ----    -------  |   |  ----    -------  |         | | ");
+		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         |  ------------     |   |  --------------   |   |  --------------   |   |  ----------       |         | |");
+		System.out.println("    | |         |  ----             |   |  ----------       |   |  ------------     |   |  --------------   |         | | ");
+		System.out.println("    | |_________|_____________________________________________________________________________________________________|_|");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(125);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("     ___________________________________________________________________________________________________________________");
+		System.out.println("    |          |______________________________________________________________________________________________________  | ");
+		System.out.println("    | 補       |                                                                                                      | |");
+		System.out.println("    |   給     |  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --                          | | ");
+		System.out.println("    |     物   |______________________________________________________________________________________________________| |");
+		System.out.println("    |       資 |                                                                                                      | |");
+		System.out.println("    |__________|______________________________________________________________________________________________________|_|");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+
+		Thread.sleep(125);
+
+	}
+
 	static void supply_sister(Hero h) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
@@ -940,7 +1832,7 @@ public class Directing_Camp {
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
-	
+
 	static void supply_no_stock_sister() throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
@@ -974,7 +1866,7 @@ public class Directing_Camp {
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
-	
+
 	static void supply_check_sister(String item) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
@@ -1008,7 +1900,7 @@ public class Directing_Camp {
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
-	
+
 	static void supply_check_ok_sister() throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
@@ -1042,7 +1934,7 @@ public class Directing_Camp {
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
-	
+
 	static void supply_check_no_sister(int no_count) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
@@ -1064,8 +1956,8 @@ public class Directing_Camp {
 		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
-		
-		
+
+
 		switch(no_count) {
 		case 1:
 			System.out.println("    | |                                                                                       ______________          | |");
@@ -1137,9 +2029,9 @@ public class Directing_Camp {
 			System.out.println("    |___________________________________________________________________________________________________________________|  ");
 			Thread.sleep(2000);
 		}
-		
+
 	}
-	
+
 	static void supply_check_no_money_sister() throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
@@ -1174,8 +2066,8 @@ public class Directing_Camp {
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 		Thread.sleep(2000);
 	}
-	
-	static void supply_check_no_3_sister(String item) throws InterruptedException{
+
+	static void supply_check_end_shop_sister() throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1188,7 +2080,7 @@ public class Directing_Camp {
 		System.out.println("    | |         |  傷薬    費用:10  |   |   銃     費用: 5  |   |  煙幕    費用: 3  |   |  ゴミ    費用: 2  |         | | ");
 		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
-		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで   　　|         | |");
+		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで       |         | |");
 		System.out.println("    | |         |  HPが             |   |  戦闘勝率が       |   |  逃走成功率が     |   |  財宝が減るのを   |         | | ");
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
@@ -1200,23 +2092,93 @@ public class Directing_Camp {
 		System.out.println("    | |                                                                                      |              |         | | ");
 		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-		System.out.println("    | |         |    ま、またやめるの……？                                           |      |(ノ。  。 ノノ|         | |%n");
-		System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
-		System.out.println("    | |         |    了解、おにいちゃん！                                             |      |   ――〃 ´  |         | | ");
-		System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
+		System.out.println("    | |         |    うーん、買い忘れはないかな？                                     |      |(ノ゜  ゜ ノノ|         | |%n");
+		System.out.println("    | |         |                                                                      ＞    | (- 口  -[]   |         | |");
+		System.out.println("    | |         |   【1】はい    【2】いいえ                                          |      | /⌒;―〃  ´ |         | | ");
+		System.out.println("    | |         |_____________________________________________________________________|      |〃-〃_〃ヽ____|         | |");
 		System.out.println("    | |                                                                                      |______________|         | |");
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
-	
+
+	static void supply_check_end_shop_ok_sister() throws InterruptedException{
+		System.out.println("     ___________________________________________________________________________________________________________________");
+		System.out.println("    |          |______________________________________________________________________________________________________  | ");
+		System.out.println("    | 補       |                                                                                                      | |");
+		System.out.println("    |   給     |  購  入  し  た  い  ア  イ  テ  ム  の  番  号  を  入  力  し  て  ね  。                          | | ");
+		System.out.println("    |     物   |______________________________________________________________________________________________________| |");
+		System.out.println("    |       資 |                                                                                                      | |");
+		System.out.println("    |__________|         (1)                     (2)                     (3)                     (4)                  | |");
+		System.out.println("    | |         |===================|   |===================|   |===================|   |===================|         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | |");
+		System.out.println("    | |         |  傷薬    費用:10  |   |   銃     費用: 5  |   |  煙幕    費用: 3  |   |  ゴミ    費用: 2  |         | | ");
+		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで       |         | |");
+		System.out.println("    | |         |  HPが             |   |  戦闘勝率が       |   |  逃走成功率が     |   |  財宝が減るのを   |         | | ");
+		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
+		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
+		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
+		System.out.println("    | |                                                                                       ______________          | |");
+		System.out.println("    | |                                                                                      |              |         | | ");
+		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
+		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
+		System.out.println("    | |         |    了解～！                                                         |      |(ノ。  。 ノノ|         | |%n");
+		System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
+		System.out.println("    | |         |    頑張ってね。おにいちゃん！                                       |      | /⌒;―〃  ´ |         | | ");
+		System.out.println("    | |         |_____________________________________________________________________|      |〃-〃_〃ヽ____|         | |");
+		System.out.println("    | |                                                                                      |______________|         | |");
+		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
+		System.out.println("    |___________________________________________________________________________________________________________________|  ");
+		Thread.sleep(2000);
+	}
+
+	static void supply_check_end_shop_no_sister() throws InterruptedException{
+		System.out.println("     ___________________________________________________________________________________________________________________");
+		System.out.println("    |          |______________________________________________________________________________________________________  | ");
+		System.out.println("    | 補       |                                                                                                      | |");
+		System.out.println("    |   給     |  購  入  し  た  い  ア  イ  テ  ム  の  番  号  を  入  力  し  て  ね  。                          | | ");
+		System.out.println("    |     物   |______________________________________________________________________________________________________| |");
+		System.out.println("    |       資 |                                                                                                      | |");
+		System.out.println("    |__________|         (1)                     (2)                     (3)                     (4)                  | |");
+		System.out.println("    | |         |===================|   |===================|   |===================|   |===================|         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | |");
+		System.out.println("    | |         |  傷薬    費用:10  |   |   銃     費用: 5  |   |  煙幕    費用: 3  |   |  ゴミ    費用: 2  |         | | ");
+		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで       |         | |");
+		System.out.println("    | |         |  HPが             |   |  戦闘勝率が       |   |  逃走成功率が     |   |  財宝が減るのを   |         | | ");
+		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
+		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
+		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
+		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
+		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
+		System.out.println("    | |                                                                                       ______________          | |");
+		System.out.println("    | |                                                                                      |              |         | | ");
+		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
+		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
+		System.out.println("    | |         |    買い忘れ、あったんだね。                                         |      |(ノ。  。 ノノ|         | |%n");
+		System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
+		System.out.println("    | |         |    それじゃ、何が欲しいのかな？                                     |      | /⌒;―〃  ´ |         | | ");
+		System.out.println("    | |         |_____________________________________________________________________|      |〃-〃_〃ヽ____|         | |");
+		System.out.println("    | |                                                                                      |______________|         | |");
+		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
+		System.out.println("    |___________________________________________________________________________________________________________________|  ");
+		Thread.sleep(2000);
+	}
+
 	static void blank_line_11() {
 		for(int i=0;i<11;i++) {
 			System.out.println("");
 		}
 	}
-	
+
 	static void sn() throws InterruptedException{
-		
+
 
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -1227,8 +2189,8 @@ public class Directing_Camp {
 		System.out.println("                |                                                                      ＞    |   ――〃 ´  |   ");
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
-		
-		
+
+
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1260,7 +2222,7 @@ public class Directing_Camp {
 		System.out.println("    | |                                                                                      |______________|         | |");
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
-		
+
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | キ       |                                                                                                      | |");
@@ -1292,7 +2254,7 @@ public class Directing_Camp {
 		System.out.println("    | |_______________________________________________________________________________________________________________| |");
 		System.out.println("    |___________________________________________________________________________________________________________________|");
 		System.out.println("");
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
