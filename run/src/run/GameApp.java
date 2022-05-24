@@ -467,33 +467,34 @@ public class GameApp {
 		}
 
 		if(item_j<items[0]) {
-			System.out.println();
-			h.setHp(hp+3);
-			System.out.println("    トカゲだ！");
-			System.out.println("    まあ、食えなくもない……。");
-			Thread.sleep(1000);
-			System.out.println("    HP+3");
-			Thread.sleep(1000);
-		}else if(item_j<items[1]){
+			Directing_Pick_Items.Lizards();
 			System.out.println();
 			h.setHp(hp+5);
-			System.out.println("    果物だ！");
-			System.out.println("    うーん、とても甘い。");
+			Directing_Pick_Items.Lizards();
+			System.out.println("    ……まあ、食えなくもない。");
 			Thread.sleep(1000);
 			System.out.println("    HP+5");
 			Thread.sleep(1000);
-		}else if(item_j<items[2]){
+		}else if(item_j<items[1]){
+			Directing_Pick_Items.fruit();
 			System.out.println();
-			h.setHp(hp+7);
-			System.out.println("    さかなだ！");
+			h.setHp(hp+8);
+			System.out.println("    うーん、とても甘い。");
+			Thread.sleep(1000);
+			System.out.println("    HP+8");
+			Thread.sleep(1000);
+		}else if(item_j<items[2]){
+			Directing_Pick_Items.fish();
+			System.out.println();
+			h.setHp(hp+10);
 			System.out.println("    とれたてだから、鮮度がいいぜ！");
 			Thread.sleep(1000);
-			System.out.println("    HP+7");
+			System.out.println("    HP+10");
 			Thread.sleep(1000);
 		}else if(item_j<items[3]){
+			Directing_Pick_Items.ration();
 			System.out.println();
 			h.setHp(hp+15);
-			System.out.println("    携帯食料だ！");
 			System.out.println("    ありがとう、文明！ごちでーす！！");
 			Thread.sleep(1000);
 			System.out.println("    HP+15");
@@ -531,11 +532,15 @@ public class GameApp {
 			}
 		}else {
 			h.setHp(hp-15);
+			Directing_Pick_Items.hand_grenade_1();
 			System.out.println();
 			System.out.println("    ……手りゅう弾？");
+			Thread.sleep(2000);
+			Directing_Pick_Items.hand_grenade_2();
 			Thread.sleep(1000);
-			System.out.println("    しまった、ブービートラップだ！！");
+			Directing_Pick_Items.hand_grenade_3();
 			Thread.sleep(1000);
+			System.out.println();
 			System.out.println("    HP-15");
 			Thread.sleep(2000);
 		}
