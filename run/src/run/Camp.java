@@ -143,10 +143,14 @@ public class Camp {
 					input_shop = "0";
 				}
 			}else {
-				
+
 			}
-			
+
 			if(input_shop.equals("5")) break;
 		}
+	}
+	static void sister_talk() throws InterruptedException{
+		Directing_Camp.connect();
+
 	}
 }

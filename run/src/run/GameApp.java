@@ -41,17 +41,17 @@ public class GameApp {
 			}else {
 				continue;
 			}
-			
+
 			//Directing_Op.showOp();
-			
+
 			//Directing_Tutorial.showTutorial();
-			
+
 			Hero h = new Hero();
-			
+
 			int[] before_pl_data = {
 					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
 			};
-			
+
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
 			for(int i=9;i<30;i++) {
@@ -62,7 +62,7 @@ public class GameApp {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
-				
+
 				Directing_GameMain.showMain(h,i+1);
 				int input = sc.nextInt();
 				int hp = h.getHp();
@@ -70,7 +70,7 @@ public class GameApp {
 				int[] before_action_pl_data = {
 					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
 				};
-				
+
 				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
@@ -139,10 +139,10 @@ public class GameApp {
 							System.out.println("    探索終了。");
 						}
 				}
-				
+
 				//戦闘で死亡した場合、ここでbreakし、死亡イベントへ移行
 				if(h.getHp()<1) break;
-				
+
 				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
@@ -194,7 +194,7 @@ public class GameApp {
 						System.out.println("    探索終了。");
 						System.out.println();
 				}
-				
+
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
@@ -202,20 +202,20 @@ public class GameApp {
 					e.printStackTrace();
 				}
 				if(i==9 || i==19) {
-					
+
 					System.out.println();
 					System.out.println("    ※エンターキー入力で次へ進みます。");
 					System.out.println();
 					sc.nextLine();
 					String turnendClick = sc.nextLine();
-					
+
 					try {
 						Camp.start_Camp(i,h,before_pl_data);
 					} catch (InterruptedException e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
 					}
-					
+
 					//次回の経過報告に向け、参照用のデータを更新
 					before_pl_data[0] = h.getHp();
 					before_pl_data[1] = h.getMoney();
@@ -223,20 +223,20 @@ public class GameApp {
 					before_pl_data[3] = h.getItem_gun();
 					before_pl_data[4] = h.getItem_smoke();
 					before_pl_data[5] = h.getItem_litter();
-					
+
 				}else {
 					dayResult(i,h,before_action_pl_data);
 				}
-				
+
 				System.out.println();
 				System.out.println("      ※エンターキー入力で次へ進みます。");
 				System.out.println();
 				sc.nextLine();
 				String turnendClick = sc.nextLine();
-				
+
 				//イベントで死亡した場合、ここでbreakし、死亡イベントへ移行
 				if(h.getHp()<1) break;
-				
+
 			}
 
 			//エンディングの分岐処理
@@ -298,7 +298,7 @@ public class GameApp {
 		System.out.printf("============================================================================");
 		String pre = sc.nextLine();
 	}
-	
+
 	static void BattleJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
 		Thread.sleep(1000);
@@ -318,7 +318,7 @@ public class GameApp {
 		Thread.sleep(1000);
 
 		int battle_j = rdm.nextInt(100);
-		
+
 		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
 		if(turn<11) {
 			if(battle_j>69 && root==1) {
@@ -346,14 +346,14 @@ public class GameApp {
 			}
 		}
 	}
-	
+
 	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
-		
+
 		int first_j = rdm.nextInt(100);
 		int second_j = rdm.nextInt(100);
 		//int third_j = rdm.nextInt(100);
-		
+
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
 		if(root<=2 && first_j>=50) {
 			//安全な道を選んだ時の抽選-------------------------------------------------------
@@ -468,33 +468,34 @@ public class GameApp {
 		}
 
 		if(item_j<items[0]) {
-			System.out.println();
-			h.setHp(hp+3);
-			System.out.println("    トカゲだ！");
-			System.out.println("    まあ、食えなくもない……。");
-			Thread.sleep(1000);
-			System.out.println("    HP+3");
-			Thread.sleep(1000);
-		}else if(item_j<items[1]){
+			Directing_Pick_Items.Lizards();
 			System.out.println();
 			h.setHp(hp+5);
-			System.out.println("    果物だ！");
-			System.out.println("    うーん、とても甘い。");
+			Directing_Pick_Items.Lizards();
+			System.out.println("    ……まあ、食えなくもない。");
 			Thread.sleep(1000);
 			System.out.println("    HP+5");
 			Thread.sleep(1000);
-		}else if(item_j<items[2]){
+		}else if(item_j<items[1]){
+			Directing_Pick_Items.fruit();
 			System.out.println();
-			h.setHp(hp+7);
-			System.out.println("    さかなだ！");
+			h.setHp(hp+8);
+			System.out.println("    うーん、とても甘い。");
+			Thread.sleep(1000);
+			System.out.println("    HP+8");
+			Thread.sleep(1000);
+		}else if(item_j<items[2]){
+			Directing_Pick_Items.fish();
+			System.out.println();
+			h.setHp(hp+10);
 			System.out.println("    とれたてだから、鮮度がいいぜ！");
 			Thread.sleep(1000);
-			System.out.println("    HP+7");
+			System.out.println("    HP+10");
 			Thread.sleep(1000);
 		}else if(item_j<items[3]){
+			Directing_Pick_Items.ration();
 			System.out.println();
 			h.setHp(hp+15);
-			System.out.println("    携帯食料だ！");
 			System.out.println("    ありがとう、文明！ごちでーす！！");
 			Thread.sleep(1000);
 			System.out.println("    HP+15");
@@ -532,16 +533,20 @@ public class GameApp {
 			}
 		}else {
 			h.setHp(hp-15);
+			Directing_Pick_Items.hand_grenade_1();
 			System.out.println();
 			System.out.println("    ……手りゅう弾？");
+			Thread.sleep(2000);
+			Directing_Pick_Items.hand_grenade_2();
 			Thread.sleep(1000);
-			System.out.println("    しまった、ブービートラップだ！！");
+			Directing_Pick_Items.hand_grenade_3();
 			Thread.sleep(1000);
+			System.out.println();
 			System.out.println("    HP-15");
 			Thread.sleep(2000);
 		}
 	}
-	
+
 	static void attackNature(int root,Hero h) throws InterruptedException{
 		int attackN_j = rdm.nextInt(100);
 		int[] attackNs = new int[attackN_E.length];
