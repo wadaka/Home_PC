@@ -1057,38 +1057,9 @@ public class Directing_Camp {
 
 		Thread.sleep(100);
 
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
 
 		Thread.sleep(500);
 
@@ -1127,38 +1098,9 @@ public class Directing_Camp {
 
 		Thread.sleep(1000);
 
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
 
 		Thread.sleep(500);
 
@@ -1194,9 +1136,50 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-
+		
 		Thread.sleep(1000);
 
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+
+		Thread.sleep(500);
+
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                                     disconnect");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		Thread.sleep(1000);
+		
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -1799,7 +1782,7 @@ public class Directing_Camp {
 
 	}
 
-	static void supply_sister(Hero h) throws InterruptedException{
+	static void supply_sister(Hero h,int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1817,7 +1800,7 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
@@ -1833,7 +1816,7 @@ public class Directing_Camp {
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
 
-	static void supply_no_stock_sister() throws InterruptedException{
+	static void supply_no_stock_sister(int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1846,12 +1829,12 @@ public class Directing_Camp {
 		System.out.println("    | |         |  傷薬    費用:10  |   |   銃     費用: 5  |   |  煙幕    費用: 3  |   |  ゴミ    費用: 2  |         | | ");
 		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
-		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで   　　|         | |");
+		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで       |         | |");
 		System.out.println("    | |         |  HPが             |   |  戦闘勝率が       |   |  逃走成功率が     |   |  財宝が減るのを   |         | | ");
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
@@ -1865,9 +1848,10 @@ public class Directing_Camp {
 		System.out.println("    | |                                                                                      |______________|         | |");
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
+		Thread.sleep(2000);
 	}
 
-	static void supply_check_sister(String item) throws InterruptedException{
+	static void supply_check_sister(String item,int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1880,12 +1864,12 @@ public class Directing_Camp {
 		System.out.println("    | |         |  傷薬    費用:10  |   |   銃     費用: 5  |   |  煙幕    費用: 3  |   |  ゴミ    費用: 2  |         | | ");
 		System.out.println("    | |         | ================= |   | ================= |   | ================= |   | ================= |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
-		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで   　　|         | |");
+		System.out.println("    | |         |  使用すると、     |   |  戦闘時の使用で   |   |  戦闘時の使用で   |   |  イベントで       |         | |");
 		System.out.println("    | |         |  HPが             |   |  戦闘勝率が       |   |  逃走成功率が     |   |  財宝が減るのを   |         | | ");
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
@@ -1901,7 +1885,7 @@ public class Directing_Camp {
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
 
-	static void supply_check_ok_sister() throws InterruptedException{
+	static void supply_check_ok_sister(int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1919,23 +1903,24 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
 		System.out.println("    | |                                                                                      |              |         | | ");
 		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-		System.out.println("    | |         |    OK！発注したよ！                                                 |      |(ノ。  。 ノノ|         | |%n");
+		System.out.println("    | |         |    OK！発注したよ！                                                 |      |(ノ。  。 ノノ|         | |");
 		System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 		System.out.println("    | |         |    到着を心待ちにしててね、おにいちゃん！                           |      |   ――〃 ´  |         | | ");
 		System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
 		System.out.println("    | |                                                                                      |______________|         | |");
 		System.out.println("    | |_______________________________________________________________________________________________________________| | ");
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
+		Thread.sleep(2000);
 	}
 
-	static void supply_check_no_sister(int no_count) throws InterruptedException{
+	static void supply_check_no_sister(int no_count,int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -1953,7 +1938,7 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 
@@ -1964,7 +1949,7 @@ public class Directing_Camp {
 			System.out.println("    | |                                                                                      |              |         | | ");
 			System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 			System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-			System.out.println("    | |         |    ありゃ、やめちゃうんだね。                                       |      |(ノ。  。 ノノ|         | |%n");
+			System.out.println("    | |         |    ありゃ、やめちゃうんだね。                                       |      |(ノ。  。 ノノ|         | |");
 			System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 			System.out.println("    | |         |    了解、おにいちゃん！                                             |      |   ――〃 ´  |         | | ");
 			System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
@@ -1978,7 +1963,7 @@ public class Directing_Camp {
 			System.out.println("    | |                                                                                      |              |         | | ");
 			System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 			System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-			System.out.println("    | |         |    そっか、やめちゃうんだね。                                       |      |(ノ。  。 ノノ|         | |%n");
+			System.out.println("    | |         |    そっか、やめちゃうんだね。                                       |      |(ノ。  。 ノノ|         | |");
 			System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 			System.out.println("    | |         |    OKだよ、おにいちゃん！                                           |      |   ――〃 ´  |         | | ");
 			System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
@@ -1992,7 +1977,7 @@ public class Directing_Camp {
 			System.out.println("    | |                                                                                      |              |         | | ");
 			System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 			System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-			System.out.println("    | |         |    ま、またやめるの……？                                           |      |(ノ。  。 ノノ|         | |%n");
+			System.out.println("    | |         |    ま、またやめるの……？                                           |      |(ノ。  。 ノノ|         | |");
 			System.out.println("    | |         |                                                                      ＞    | (- 口   -[]   |         | |");
 			System.out.println("    | |         |    りょ、了解。                                                     |      |   ――〃 ´  |         | | ");
 			System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
@@ -2006,7 +1991,7 @@ public class Directing_Camp {
 			System.out.println("    | |                                                                                      |              |         | | ");
 			System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 			System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-			System.out.println("    | |         |    ……結構、優柔不断だよね。                                       |      |(ノт т  ノノ|         | |%n");
+			System.out.println("    | |         |    ……結構、優柔不断だよね。                                       |      |(ノт т  ノノ|         | |");
 			System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 			System.out.println("    | |         |    おにいちゃん。                                                   |      |   ――〃 ´  |         | | ");
 			System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
@@ -2020,7 +2005,7 @@ public class Directing_Camp {
 			System.out.println("    | |                                                                                      |              |         | | ");
 			System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 			System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-			System.out.println("    | |         |    ……まあ、命に関わる事だしね。                                   |      |(ノт т  ノノ|         | |%n");
+			System.out.println("    | |         |    ……まあ、命に関わる事だしね。                                   |      |(ノт т  ノノ|         | |");
 			System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 			System.out.println("    | |         |    慎重に選ぶといいよ、おにいちゃん……。                           |      |   ――〃 ´  |         | | ");
 			System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
@@ -2032,7 +2017,7 @@ public class Directing_Camp {
 
 	}
 
-	static void supply_check_no_money_sister() throws InterruptedException{
+	static void supply_check_no_money_sister(int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -2050,14 +2035,14 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
 		System.out.println("    | |                                                                                      |              |         | | ");
 		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-		System.out.println("    | |         |                                                                     |      |(ノт  т ノノ|         | |%n");
+		System.out.println("    | |         |                                                                     |      |(ノт  т ノノ|         | |");
 		System.out.println("    | |         |    お金足りないよ、おにいちゃん……。                                ＞    | (- ワ  -[]   |         | |");
 		System.out.println("    | |         |                                                                     |      |   ――〃 ´  |         | | ");
 		System.out.println("    | |         |_____________________________________________________________________|      |____〃_〃ヽ___|         | |");
@@ -2067,7 +2052,7 @@ public class Directing_Camp {
 		Thread.sleep(2000);
 	}
 
-	static void supply_check_end_shop_sister() throws InterruptedException{
+	static void supply_check_end_shop_sister(int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -2085,14 +2070,14 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
 		System.out.println("    | |                                                                                      |              |         | | ");
 		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-		System.out.println("    | |         |    うーん、買い忘れはないかな？                                     |      |(ノ゜  ゜ ノノ|         | |%n");
+		System.out.println("    | |         |    うーん、買い忘れはないかな？                                     |      |(ノ゜  ゜ ノノ|         | |");
 		System.out.println("    | |         |                                                                      ＞    | (- 口  -[]   |         | |");
 		System.out.println("    | |         |   【1】はい    【2】いいえ                                          |      | /⌒;―〃  ´ |         | | ");
 		System.out.println("    | |         |_____________________________________________________________________|      |〃-〃_〃ヽ____|         | |");
@@ -2101,7 +2086,7 @@ public class Directing_Camp {
 		System.out.println("    |___________________________________________________________________________________________________________________|  ");
 	}
 
-	static void supply_check_end_shop_ok_sister() throws InterruptedException{
+	static void supply_check_end_shop_ok_sister(int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -2119,14 +2104,14 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
 		System.out.println("    | |                                                                                      |              |         | | ");
 		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-		System.out.println("    | |         |    了解～！                                                         |      |(ノ。  。 ノノ|         | |%n");
+		System.out.println("    | |         |    了解～！                                                         |      |(ノ。  。 ノノ|         | |");
 		System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 		System.out.println("    | |         |    頑張ってね。おにいちゃん！                                       |      | /⌒;―〃  ´ |         | | ");
 		System.out.println("    | |         |_____________________________________________________________________|      |〃-〃_〃ヽ____|         | |");
@@ -2136,7 +2121,7 @@ public class Directing_Camp {
 		Thread.sleep(2000);
 	}
 
-	static void supply_check_end_shop_no_sister() throws InterruptedException{
+	static void supply_check_end_shop_no_sister(int[] supply_stock) throws InterruptedException{
 		System.out.println("     ___________________________________________________________________________________________________________________");
 		System.out.println("    |          |______________________________________________________________________________________________________  | ");
 		System.out.println("    | 補       |                                                                                                      | |");
@@ -2154,14 +2139,14 @@ public class Directing_Camp {
 		System.out.println("    | |         |  30%回復します。  |   |  25%上昇します。  |   |  25%上昇します。  |   |  防ぎます。       |         | |");
 		System.out.println("    | |         |                   |   |                   |   |                   |   |                   |         | |");
 		System.out.println("    | |         | ----------------- |   | ----------------- |   | ----------------- |   | ----------------- |         | | ");
-		System.out.println("    | |         |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |   |          在庫 ( ) |         | |");
+		System.out.printf("    | |         |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |   |          在庫 (%d) |         | |%n",supply_stock[0],supply_stock[1],supply_stock[2],supply_stock[3]);
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |  ");
 		System.out.println("    | |         |___________________|   |___________________|   |___________________|   |___________________|         | |");
 		System.out.println("    | |                                                                                       ______________          | |");
 		System.out.println("    | |                                                                                      |              |         | | ");
 		System.out.println("    | |          _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |                                                                     |      |,\" ノノ乀 ,ヽ |         | |");
-		System.out.println("    | |         |    買い忘れ、あったんだね。                                         |      |(ノ。  。 ノノ|         | |%n");
+		System.out.println("    | |         |    買い忘れ、あったんだね。                                         |      |(ノ。  。 ノノ|         | |");
 		System.out.println("    | |         |                                                                      ＞    | (- ワ  -[]   |         | |");
 		System.out.println("    | |         |    それじゃ、何が欲しいのかな？                                     |      | /⌒;―〃  ´ |         | | ");
 		System.out.println("    | |         |_____________________________________________________________________|      |〃-〃_〃ヽ____|         | |");
@@ -2178,8 +2163,7 @@ public class Directing_Camp {
 	}
 
 	static void sn() throws InterruptedException{
-
-
+		
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
 		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");

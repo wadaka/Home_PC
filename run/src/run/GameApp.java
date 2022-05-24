@@ -42,9 +42,9 @@ public class GameApp {
 				continue;
 			}
 			
-			//Directing_Op.showOp();
+			Directing_Op.showOp();
 			
-			//Directing_Tutorial.showTutorial();
+			Directing_Tutorial.showTutorial();
 			
 			Hero h = new Hero();
 			
@@ -54,7 +54,7 @@ public class GameApp {
 			
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=9;i<30;i++) {
+			for(int i=0;i<30;i++) {
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -203,10 +203,10 @@ public class GameApp {
 				}
 				if(i==9 || i==19) {
 					
+					sc.nextLine();
 					System.out.println();
 					System.out.println("    ※エンターキー入力で次へ進みます。");
 					System.out.println();
-					sc.nextLine();
 					String turnendClick = sc.nextLine();
 					
 					try {
@@ -227,11 +227,10 @@ public class GameApp {
 				}else {
 					dayResult(i,h,before_action_pl_data);
 				}
-				
+				sc.nextLine();
 				System.out.println();
 				System.out.println("      ※エンターキー入力で次へ進みます。");
 				System.out.println();
-				sc.nextLine();
 				String turnendClick = sc.nextLine();
 				
 				//イベントで死亡した場合、ここでbreakし、死亡イベントへ移行
