@@ -342,7 +342,7 @@ public class Directing_Battle {
 		if(money>=0) {
 			System.out.printf("+%s%n",money);
 		}else {
-			System.out.printf("-%s%n",money);
+			System.out.printf("%s%n",money);
 		}
 		System.out.println("");
 		System.out.println("              獲得アイテム");

@@ -233,7 +233,8 @@ public class Battle {
 					int lostHp = enemy.setLost_RunFail_Hp();
 					int lostMoney = enemy.setLost_RunFail_Money();
 					h.setHp(h.getHp()-lostHp);
-					Directing_Battle.showResult(h,4,lostHp,lostMoney,itemGetChecker);
+					h.setMoney(h.getMoney()-lostMoney);
+					Directing_Battle.showResult(h,4,lostHp,-(lostMoney),itemGetChecker);
 				}else {
 					//成功
 					Directing_Battle.showResult(h,3,0,0,itemGetChecker);
