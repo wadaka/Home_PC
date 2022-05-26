@@ -41,17 +41,17 @@ public class GameApp {
 			}else {
 				continue;
 			}
-			
+
 			//Directing_Op.showOp();
-			
+
 			//Directing_Tutorial.showTutorial();
-			
+
 			Hero h = new Hero();
-			
+
 			int[] before_pl_data = {
 					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
 			};
-			
+
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
 			for(int i=0;i<30;i++) {
@@ -62,7 +62,7 @@ public class GameApp {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
-				
+
 				Directing_GameMain.showMain(h,i+1);
 				int input = sc.nextInt();
 				int hp = h.getHp();
@@ -70,7 +70,7 @@ public class GameApp {
 				int[] before_action_pl_data = {
 					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
 				};
-				
+
 				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
@@ -139,10 +139,10 @@ public class GameApp {
 							System.out.println("    探索終了。");
 						}
 				}
-				
+
 				//戦闘で死亡した場合、ここでbreakし、死亡イベントへ移行
 				if(h.getHp()<1) break;
-				
+
 				//コマンド選択時に発生する処理。以後、戦闘判定→イベント判定を経由しながら
 				switch(input) {
 					//安全な道を選択した時の処理-----------------------------------------------------------------------------
@@ -194,7 +194,7 @@ public class GameApp {
 						System.out.println("    探索終了。");
 						System.out.println();
 				}
-				
+
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
@@ -202,20 +202,20 @@ public class GameApp {
 					e.printStackTrace();
 				}
 				if(i==9 || i==19) {
-					
+
 					sc.nextLine();
 					System.out.println();
 					System.out.println("    ※エンターキー入力で次へ進みます。");
 					System.out.println();
 					String turnendClick = sc.nextLine();
-					
+
 					try {
 						Camp.start_Camp(i,h,before_pl_data);
 					} catch (InterruptedException e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
 					}
-					
+
 					//次回の経過報告に向け、参照用のデータを更新
 					before_pl_data[0] = h.getHp();
 					before_pl_data[1] = h.getMoney();
@@ -223,7 +223,7 @@ public class GameApp {
 					before_pl_data[3] = h.getItem_gun();
 					before_pl_data[4] = h.getItem_smoke();
 					before_pl_data[5] = h.getItem_litter();
-					
+
 				}else {
 					dayResult(i,h,before_action_pl_data);
 				}
@@ -232,10 +232,10 @@ public class GameApp {
 				System.out.println("      ※エンターキー入力で次へ進みます。");
 				System.out.println();
 				String turnendClick = sc.nextLine();
-				
+
 				//イベントで死亡した場合、ここでbreakし、死亡イベントへ移行
 				if(h.getHp()<1) break;
-				
+
 			}
 
 			//エンディングの分岐処理
@@ -297,7 +297,7 @@ public class GameApp {
 		System.out.printf("============================================================================");
 		String pre = sc.nextLine();
 	}
-	
+
 	static void BattleJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
 		Thread.sleep(1000);
@@ -317,7 +317,7 @@ public class GameApp {
 		Thread.sleep(1000);
 
 		int battle_j = rdm.nextInt(100);
-		
+
 		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
 		if(turn<11) {
 			if(battle_j>69 && root==1) {
@@ -345,14 +345,14 @@ public class GameApp {
 			}
 		}
 	}
-	
+
 	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
 		//イベント判定は、選択した「道」で変化。
-		
+
 		int first_j = rdm.nextInt(100);
 		int second_j = rdm.nextInt(100);
 		//int third_j = rdm.nextInt(100);
-		
+
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
 		if(root<=2 && first_j>=50) {
 			//安全な道を選んだ時の抽選-------------------------------------------------------
@@ -545,7 +545,7 @@ public class GameApp {
 			Thread.sleep(2000);
 		}
 	}
-	
+
 	static void attackNature(int root,Hero h) throws InterruptedException{
 		int attackN_j = rdm.nextInt(100);
 		int[] attackNs = new int[attackN_E.length];
@@ -612,13 +612,14 @@ public class GameApp {
 		}else {
 			//金食い虫
 			int bad = rdm.nextInt(5)+1;
-			h.setMoney(h.getMoney()-bad);
 			System.out.println("    うわ、金食い虫に財宝を食われた！");
 			Thread.sleep(1000);
 			System.out.println();
 			System.out.println("    チクショー！金返せ！！");
 			Thread.sleep(1000);
 			System.out.printf("    財宝-%s%n",bad);
+			Thread.sleep(500);
+			h.setMoney_judge(h.getItem_litter(),bad);
 			Thread.sleep(1000);
 		}
 	}
@@ -634,7 +635,6 @@ public class GameApp {
 			Thread.sleep(1000);
 			System.out.println("    ポチ！");
 			if(rdm.nextInt(2)>0) {
-				h.setMoney(h.getMoney()-5);
 				Thread.sleep(1000);
 				System.out.println();
 				System.out.println("    パカ！");
@@ -643,7 +643,9 @@ public class GameApp {
 				System.out.println("    落下した時に、財宝を一部落としてしまった！");
 				Thread.sleep(2000);
 				System.out.println("    財宝-5");
-				Thread.sleep(2000);
+				Thread.sleep(500);
+				h.setMoney_judge(h.getItem_litter(),5);
+				Thread.sleep(1000);
 
 			}else {
 				h.setMoney(h.getMoney()+10);
@@ -701,7 +703,6 @@ public class GameApp {
 			Thread.sleep(2000);
 			if(rdm.nextInt(2)>0) {
 				h.setHp(h.getHp()-5);
-				h.setMoney(h.getMoney()-5);
 				System.out.println();
 				System.out.println();
 				System.out.println();
@@ -714,8 +715,9 @@ public class GameApp {
 				System.out.println("    とっちめられた上に、金も取られちまった……。");
 				Thread.sleep(2000);
 				System.out.println("    HP-5、財宝-5");
+				Thread.sleep(500);
+				h.setMoney_judge(h.getItem_litter(),5);
 				Thread.sleep(1000);
-
 			}else {
 				h.setMoney(h.getMoney()+10);
 				Thread.sleep(1000);

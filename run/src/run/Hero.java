@@ -25,6 +25,15 @@ public class Hero {
 		this.money = money;
 	}
 
+	public void setMoney_judge(int litter,int money) {
+		if(litter>0) {
+			setItem_litter(getItem_litter()-1);
+			System.out.println("    だが、ゴミを身代わりにして、財宝の喪失を防いだ！");
+		}else {
+			setMoney(getMoney()-money);
+		}
+	}
+
 	public int getItem_ointment() {
 		return this.item_ointment;
 	}
