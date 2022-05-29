@@ -210,7 +210,7 @@ public class Directing_Battle {
 		}
 	}
 
-	static void showResult(Hero h,int result,int hp,int money,int[] itemGetChecker) {
+	static void showResult(Hero h,int result,int hp,int money,int[] itemGetChecker,int playerMoney) {
 		for(int i=0;i<32;i++) {
 			System.out.println();
 		}
@@ -342,7 +342,11 @@ public class Directing_Battle {
 		if(money>=0) {
 			System.out.printf("+%s%n",money);
 		}else {
-			System.out.printf("%s%n",money);
+			if(playerMoney > h.getMoney()) {
+				System.out.printf("%s%n",money);
+			}else {
+				System.out.println("  0 (ゴミを身代わりにして、財宝の喪失を防ぎました。)");
+			}
 		}
 		System.out.println("");
 		System.out.println("              獲得アイテム");

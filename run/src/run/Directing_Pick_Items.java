@@ -41,8 +41,6 @@ public class Directing_Pick_Items {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("");
-		System.out.println("");
 		System.out.println("                `    `  `  `  `  `  `  `   JN");
 		System.out.println("                                         .Y` M) ");
 		System.out.println("                              ......JJJMK~   M)");
@@ -67,9 +65,6 @@ public class Directing_Pick_Items {
 		System.out.println("        ...gNMx.H     .\"        ...J+NMMMMMMMNMF ");
 		System.out.println("        WMMMMMMN......a((((gNNMMMMMMMMMMMMMMMM^");
 		System.out.println("         _7\"\"\"WHHHBMMMMMMMMMMMMH\"\"\"\"");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("    果物だ！");
@@ -112,6 +107,8 @@ public class Directing_Pick_Items {
 	}
 
 	static void ration() {
+		System.out.println("");
+		System.out.println("");
 		System.out.println("   `           ..V\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"a.");
 		System.out.println("      `  ` ..T^                          4,");
 		System.out.println("         .J\"                              J");
@@ -141,8 +138,6 @@ public class Directing_Pick_Items {
 		System.out.println("                                                 7WMNgJNNM9!");
 		System.out.println("                                                      ?=");
 		System.out.println("");
-		System.out.println("");
-		System.out.println("    携帯食料だ！");
 		System.out.println("");
 	}
 

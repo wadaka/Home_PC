@@ -54,7 +54,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=0;i<30;i++) {
+			for(int i=9;i<30;i++) {
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -354,7 +354,7 @@ public class GameApp {
 		//int third_j = rdm.nextInt(100);
 
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
-		if(root<=2 && first_j>=50) {
+		if(root<=2 && first_j>=0) {
 			//安全な道を選んだ時の抽選-------------------------------------------------------
 			if(root==1) {
 				if(second_j>=74) {
@@ -469,8 +469,8 @@ public class GameApp {
 		if(item_j<items[0]) {
 			Directing_Pick_Items.Lizards();
 			System.out.println();
+			Thread.sleep(1000);
 			h.setHp(hp+5);
-			Directing_Pick_Items.Lizards();
 			System.out.println("    ……まあ、食えなくもない。");
 			Thread.sleep(1000);
 			System.out.println("    HP+5");
@@ -478,6 +478,7 @@ public class GameApp {
 		}else if(item_j<items[1]){
 			Directing_Pick_Items.fruit();
 			System.out.println();
+			Thread.sleep(1000);
 			h.setHp(hp+8);
 			System.out.println("    うーん、とても甘い。");
 			Thread.sleep(1000);
@@ -486,6 +487,7 @@ public class GameApp {
 		}else if(item_j<items[2]){
 			Directing_Pick_Items.fish();
 			System.out.println();
+			Thread.sleep(1000);
 			h.setHp(hp+10);
 			System.out.println("    とれたてだから、鮮度がいいぜ！");
 			Thread.sleep(1000);
@@ -494,6 +496,10 @@ public class GameApp {
 		}else if(item_j<items[3]){
 			Directing_Pick_Items.ration();
 			System.out.println();
+			Thread.sleep(1000);
+			System.out.println("    携帯食料だ！");
+			System.out.println("");
+			Thread.sleep(1000);
 			h.setHp(hp+15);
 			System.out.println("    ありがとう、文明！ごちでーす！！");
 			Thread.sleep(1000);
@@ -533,6 +539,7 @@ public class GameApp {
 		}else {
 			h.setHp(hp-15);
 			Directing_Pick_Items.hand_grenade_1();
+			Thread.sleep(2000);
 			System.out.println();
 			System.out.println("    ……手りゅう弾？");
 			Thread.sleep(2000);
@@ -619,7 +626,7 @@ public class GameApp {
 			Thread.sleep(1000);
 			System.out.printf("    財宝-%s%n",bad);
 			Thread.sleep(500);
-			h.setMoney_judge(h.getItem_litter(),bad);
+			h.setMoney_judge(h.getItem_litter(),bad,false);
 			Thread.sleep(1000);
 		}
 	}
@@ -644,7 +651,7 @@ public class GameApp {
 				Thread.sleep(2000);
 				System.out.println("    財宝-5");
 				Thread.sleep(500);
-				h.setMoney_judge(h.getItem_litter(),5);
+				h.setMoney_judge(h.getItem_litter(),5,false);
 				Thread.sleep(1000);
 
 			}else {
@@ -716,7 +723,7 @@ public class GameApp {
 				Thread.sleep(2000);
 				System.out.println("    HP-5、財宝-5");
 				Thread.sleep(500);
-				h.setMoney_judge(h.getItem_litter(),5);
+				h.setMoney_judge(h.getItem_litter(),5,false);
 				Thread.sleep(1000);
 			}else {
 				h.setMoney(h.getMoney()+10);

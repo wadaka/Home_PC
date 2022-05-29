@@ -218,13 +218,13 @@ public class Battle {
 				if(rdm.nextInt(100)>(enemy.win_per+item_use)) {
 					int lostHp = enemy.setLost_Lose_Hp();
 					h.setHp(h.getHp()-lostHp);
-					Directing_Battle.showResult(h,2,lostHp,0,itemGetChecker);
+					Directing_Battle.showResult(h,2,lostHp,0,itemGetChecker,0);
 				}else {
 					//勝ち
 					int getMoney = enemy.win_money;
 					h.setMoney(h.getMoney()+getMoney);
 					enemy.setGet_Item(h);
-					Directing_Battle.showResult(h,1,0,getMoney,itemGetChecker);
+					Directing_Battle.showResult(h,1,0,getMoney,itemGetChecker,0);
 				}
 			}else {
 				//逃走時の処理、成否判定
@@ -232,12 +232,13 @@ public class Battle {
 					//失敗
 					int lostHp = enemy.setLost_RunFail_Hp();
 					int lostMoney = enemy.setLost_RunFail_Money();
+					int playerMoney = h.getMoney();
 					h.setHp(h.getHp()-lostHp);
-					h.setMoney(h.getMoney()-lostMoney);
-					Directing_Battle.showResult(h,4,lostHp,-(lostMoney),itemGetChecker);
+					h.setMoney_judge(h.getItem_litter(),lostMoney,true);
+					Directing_Battle.showResult(h,4,lostHp,-(lostMoney),itemGetChecker,playerMoney);
 				}else {
 					//成功
-					Directing_Battle.showResult(h,3,0,0,itemGetChecker);
+					Directing_Battle.showResult(h,3,0,0,itemGetChecker,0);
 				}
 			}
 			

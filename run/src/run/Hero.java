@@ -25,10 +25,12 @@ public class Hero {
 		this.money = money;
 	}
 
-	public void setMoney_judge(int litter,int money) {
+	public void setMoney_judge(int litter,int money,boolean isBattle) {
 		if(litter>0) {
 			setItem_litter(getItem_litter()-1);
-			System.out.println("    だが、ゴミを身代わりにして、財宝の喪失を防いだ！");
+			if(isBattle == false) {
+				System.out.println("    だが、ゴミを身代わりにして、財宝の喪失を防いだ！");
+			}
 		}else {
 			setMoney(getMoney()-money);
 		}

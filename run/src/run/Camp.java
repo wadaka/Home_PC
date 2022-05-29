@@ -7,7 +7,7 @@ public class Camp {
 	final static Scanner sc = new Scanner(System.in);
 	final static Random rdm = new Random();
 	static void start_Camp(int turn,Hero h,int[] ba) throws InterruptedException{
-		
+
 		//ショップの在庫を抽選する
 		int[] supply_stock_lot = {1,1,1,1} ;
 		int[] supply_stock_per = {30,30,50,50};
@@ -17,7 +17,7 @@ public class Camp {
 				supply_stock_per[i]-=20;
 			}
 		}
-		
+
 		try {
 			Directing_Camp.show_Intermediate_Grade(turn,h,ba);
 			System.out.println();
@@ -39,7 +39,7 @@ public class Camp {
 					supplyShop(h,supply_stock_lot);
 					break;
 				case 2:
-					System.out.println("      ");
+					sister_talk(h,turn);
 					break;
 				case 3:
 					Directing_Camp.show_Intermediate_Grade(turn,h,ba);
@@ -185,8 +185,33 @@ public class Camp {
 			if(input_shop.equals("5")) break;
 		}
 	}
-	static void sister_talk() throws InterruptedException{
+	static void sister_talk(Hero h,int turn) throws InterruptedException{
+		sc.nextLine();
 		Directing_Camp.connect();
+		Directing_Camp.sister_talk_Opening_common();
+		Thread.sleep(2000);
+		int op = rdm.nextInt(2);
+		if(op>0) {
+			Directing_Camp.sister_talk_Opening_pattern_1();
+		}else {
+			Directing_Camp.sister_talk_Opening_pattern_2();
+		}
+
+		while(true) {
+			Directing_Camp.sister_talk_idle();
+			System.out.print("                  >>");
+			String input = sc.nextLine();
+
+			if(input.equals("1")){
+				System.out.println("未実装");
+			}else if(input.equals("2")) {
+				Directing_Camp.sister_talk_grade_judge(h,turn);
+			}else if(input.equals("3")) {
+				break;
+			}else {
+				Directing_Camp.sister_talk_no_word();
+			}
+		}
 
 	}
 }
