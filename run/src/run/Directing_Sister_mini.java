@@ -119,7 +119,7 @@ public class Directing_Sister_mini {
 		System.out.println("                                                                                             |              |   ");
 		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
 		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
-		System.out.println("                |    ");
+		System.out.print("                |    ");
 		System.out.printf("%s",word1);
 		System.out.println("    |      |(ノ。  。ノノ |   ");
 		System.out.println("                |                                                                     |      | (-  ᴗ        -[]   |   ");
@@ -255,6 +255,37 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
+	
+	static void akire2_one_line(String word) {
+		System.out.println("                                                                                              ______________    ");
+		System.out.println("                                                                                             |              |   ");
+		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
+		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
+		System.out.println("                |                                                                     |      |(ノт т ノノ |   ");
+		System.out.print("                |    ");
+		System.out.printf("%s",word);
+		System.out.println("    |      | (- -    -[]  |   ");
+		System.out.println("                |                                                                      ＞    |   ――〃 ´  |   ");
+		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
+		System.out.println("                                                                                             |______________|   ");
+	}
+
+	static void akire2_two_line(String word1,String word2) {
+		System.out.println("                                                                                              ______________    ");
+		System.out.println("                                                                                             |              |   ");
+		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
+		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
+		System.out.print("                |    ");
+		System.out.printf("%s",word1);
+		System.out.println("    |      |(ノт т ノノ |   ");
+		System.out.println("                |                                                                     |      | (- -    -[]  |   ");
+
+		System.out.print("                |    ");
+		System.out.printf("%s",word2);
+		System.out.println("     ＞    |   ――〃 ´  |   ");
+		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
+		System.out.println("                                                                                             |______________|   ");
+	}
 
 	static void akire1_talk_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
@@ -286,7 +317,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
-
+	
 	static void doya1_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -465,6 +496,37 @@ public class Directing_Sister_mini {
 		System.out.printf("%s",word1);
 		System.out.println("    |      |(ノ゜  ゜ノノ |   ");
 		System.out.println("                |                                                                     |      | (- 口  -[]   |   ");
+
+		System.out.print("                |    ");
+		System.out.printf("%s",word2);
+		System.out.println("     ＞    | /⌒;―〃 ´  |   ");
+		System.out.println("                |_____________________________________________________________________|      |〃-〃_〃ヽ___ |   ");
+		System.out.println("                                                                                             |______________|   ");
+	}
+	
+	static void think4_one_line(String word) {
+		System.out.println("                                                                                              ______________    ");
+		System.out.println("                                                                                             |              |   ");
+		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
+		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
+		System.out.println("                |                                                                     |      |(ノ゜  ゜ノノ |   ");
+		System.out.print("                |    ");
+		System.out.printf("%s",word);
+		System.out.println("    |      | (- -   -[]   |   ");
+		System.out.println("                |                                                                      ＞    | /⌒;―〃 ´  |   ");
+		System.out.println("                |_____________________________________________________________________|      |〃-〃_〃ヽ___ |   ");
+		System.out.println("                                                                                             |______________|   ");
+	}
+
+	static void think4_two_line(String word1,String word2) {
+		System.out.println("                                                                                              ______________    ");
+		System.out.println("                                                                                             |              |   ");
+		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
+		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
+		System.out.print("                |    ");
+		System.out.printf("%s",word1);
+		System.out.println("    |      |(ノ゜  ゜ノノ |   ");
+		System.out.println("                |                                                                     |      | (- -   -[]   |   ");
 
 		System.out.print("                |    ");
 		System.out.printf("%s",word2);
