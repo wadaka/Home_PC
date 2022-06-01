@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Directing_Camp {
 	final static Random rdm = new Random();
-	
+
 	static void show_Intermediate_Grade(int turn,Hero h,int[] ba) throws InterruptedException{
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -2295,7 +2295,7 @@ public class Directing_Camp {
 		}else {
 			moneyJudge = 66;
 		}
-		
+
 		for(int i=0;i<31;i++) {
 			System.out.println("");
 		}
@@ -2325,6 +2325,46 @@ public class Directing_Camp {
 				}
 			}else {
 				sister_talk_grade_H();
+			}
+		}
+	}
+
+	static void sister_talk_limit() throws InterruptedException{
+		System.out.println("打ち止め会話：現在、実装中");
+	}
+
+	static void sister_talk_sp(int turn) throws InterruptedException{
+		if(turn==9) {
+			System.out.println("特殊会話１：現在、実装中");
+		}else {
+			System.out.println("特殊会話２：現在、実装中");
+		}
+	}
+
+	static void sister_talk_judge(Sister s,int turn) throws InterruptedException{
+		System.out.println("現在、実装中");
+		if(s.Conversation.size()>0){
+			int num = rdm.nextInt(s.Conversation.size());
+			switch(s.Conversation.get(num)) {
+			case 0:
+				System.out.println("会話パターン1再生");
+				break;
+			case 1:
+				System.out.println("会話パターン2再生");
+				break;
+			case 2:
+				System.out.println("会話パターン3再生");
+				break;
+			case 3:
+				System.out.println("会話パターン4再生");
+				break;
+			case 4:
+				System.out.println("会話パターン5再生");
+				break;
+			case 5:
+				System.out.println("会話パターン6再生");
+				break;
+				default :
 			}
 		}
 	}
@@ -2426,7 +2466,7 @@ public class Directing_Camp {
 		Directing_Sister_mini.smlie_talk_two_line(word1_1,word1_2);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 	}
 
 	static void sister_talk_grade_D() throws InterruptedException{
@@ -2457,10 +2497,10 @@ public class Directing_Camp {
 		Directing_Sister_mini.look1_sheet_two_line(word1_1,word1_2);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 		String word2_1 = "ここはひとつ、安全な道で                                     ";
 		String word2_2 = "体調を整えてみるのがいいかも。                               ";
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word2_1,word2_2);
 		Directing_Camp.blank_line_11();
@@ -2471,12 +2511,12 @@ public class Directing_Camp {
 		String word1_1 = "むむ、あんまり稼げてないみたいだね。                         ";
 		String word2_1 = "幸い、体調は万全みたいだから                                 ";
 		String word2_2 = "少し難しいルートを進んでみていいんじゃないかな。             ";
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.look1_sheet_one_line(word1_1);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word2_1,word2_2);
 		Directing_Camp.blank_line_11();
@@ -2488,17 +2528,17 @@ public class Directing_Camp {
 		String word1_1 = "うーん、ちょっと進捗芳しくないねぇ。                         ";
 		String word1_2 = "……このままじゃ、借金のカタに身柄取られちゃうよ？           ";
 		String word2_1 = "ちょっと攻めたルート取りでもいいんじゃないかな？             ";
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.look1_sheet_two_line(word1_1,word0_0);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.akire1_talk_two_line(word1_1,word1_2);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.think3_one_line(word2_1);
 		Directing_Camp.blank_line_11();
@@ -2512,22 +2552,22 @@ public class Directing_Camp {
 		String word1_3 = "……い、色々とボロボロだね……。                             ";
 		String word2_1 = "とはいえ、命あっての物種なんだから                           ";
 		String word2_2 = "まずは、安全な道で体調を整えよう！                           ";
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.look1_sheet_one_line(word1_1);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.look2_sheet_one_line(word1_2);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.akire1_talk_one_line(word1_3);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2500);
-		
+
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word2_1,word2_2);
 		Directing_Camp.blank_line_11();

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Camp {
 	final static Scanner sc = new Scanner(System.in);
 	final static Random rdm = new Random();
-	static void start_Camp(int turn,Hero h,int[] ba) throws InterruptedException{
+	static void start_Camp(int turn,Hero h,Sister s,int[] ba) throws InterruptedException{
 
 		//ショップの在庫を抽選する
 		int[] supply_stock_lot = {1,1,1,1} ;
@@ -17,6 +17,8 @@ public class Camp {
 				supply_stock_per[i]-=20;
 			}
 		}
+
+		int sisiter_talk_count = 0;
 
 		try {
 			Directing_Camp.show_Intermediate_Grade(turn,h,ba);
@@ -39,7 +41,7 @@ public class Camp {
 					supplyShop(h,supply_stock_lot);
 					break;
 				case 2:
-					sister_talk(h,turn);
+					sister_talk(h,s,turn,sisiter_talk_count);
 					break;
 				case 3:
 					Directing_Camp.show_Intermediate_Grade(turn,h,ba);
@@ -185,7 +187,7 @@ public class Camp {
 			if(input_shop.equals("5")) break;
 		}
 	}
-	static void sister_talk(Hero h,int turn) throws InterruptedException{
+	static void sister_talk(Hero h,Sister s,int turn,int sister_talk_count) throws InterruptedException{
 		sc.nextLine();
 		Directing_Camp.connect();
 		Directing_Camp.sister_talk_Opening_common();
@@ -203,7 +205,16 @@ public class Camp {
 			String input = sc.nextLine();
 
 			if(input.equals("1")){
-				System.out.println("未実装");
+				//妹ちゃんとの会話は、１キャンプ、３回まで
+				if(sister_talk_count>2) {
+					Directing_Camp.sister_talk_limit();
+				}
+				else if(sister_talk_count==1) {
+					Directing_Camp.sister_talk_sp(turn);
+				}else {
+					Directing_Camp.sister_talk_judge(s,turn);
+				}
+				sister_talk_count++;
 			}else if(input.equals("2")) {
 				Directing_Camp.sister_talk_grade_judge(h,turn);
 			}else if(input.equals("3")) {

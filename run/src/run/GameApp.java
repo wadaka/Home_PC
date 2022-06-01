@@ -47,6 +47,7 @@ public class GameApp {
 			//Directing_Tutorial.showTutorial();
 
 			Hero h = new Hero();
+			Sister s = new Sister();
 
 			int[] before_pl_data = {
 					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
@@ -210,7 +211,7 @@ public class GameApp {
 					String turnendClick = sc.nextLine();
 
 					try {
-						Camp.start_Camp(i,h,before_pl_data);
+						Camp.start_Camp(i,h,s,before_pl_data);
 					} catch (InterruptedException e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
