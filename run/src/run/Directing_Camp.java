@@ -2238,7 +2238,7 @@ public class Directing_Camp {
 		Thread.sleep(2000);
 		String word3_1 = "……。                                                       ";
 		Directing_Camp.blank_line_11();
-		Directing_Sister_mini.akire1_talk_one_line(word3_1);
+		Directing_Sister_mini.akire2_one_line(word3_1);
 		Directing_Camp.blank_line_11();
 
 		Thread.sleep(2000);
@@ -2347,19 +2347,19 @@ public class Directing_Camp {
 		System.out.println("現在、実装中");
 		if(s.Conversation.size()>0){
 			int num = rdm.nextInt(s.Conversation.size());
-			
+
 			if(rdm.nextInt(2)>0) {
 				sister_talk_pre_1();
 			}else {
 				sister_talk_pre_2();
 			}
-			
+
 			switch(s.Conversation.get(num)) {
 			case 0:
 				sister_talk_pattern_1();
 				break;
 			case 1:
-				System.out.println("会話パターン2再生");
+				sister_talk_pattern_2();
 				break;
 			case 2:
 				System.out.println("会話パターン3再生");
@@ -2462,13 +2462,13 @@ public class Directing_Camp {
 			Directing_Sister_mini.smlie_talk_two_line(word2_1_2,word2_1_3);
 			Directing_Camp.blank_line_11();
 			Thread.sleep(2000);
-			
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.smile_two_line(word0_0,word0_0);
 			Directing_Camp.blank_line_11();
 			Thread.sleep(1500);
-			
-			
+
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.think3_two_line(word2_1_5,word0_0);
 			Directing_Camp.blank_line_11();
@@ -2482,27 +2482,27 @@ public class Directing_Camp {
 			String word2_2_1 = "まあ、そりゃそっか。                                         ";
 			String word2_2_2 = "沸かす湯も風呂桶も、こんな密林にないわけだしね。             ";
 			String word2_2_3 = "それじゃ、歯はどうしてるの？                                 ";
-			
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.smlie_talk_two_line(word2_2_1,word0_0);
 			Directing_Camp.blank_line_11();
 			Thread.sleep(1500);
-			
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.smlie_talk_two_line(word2_2_1,word2_2_2);
 			Directing_Camp.blank_line_11();
 			Thread.sleep(2500);
-			
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.think4_two_line(word0_0,word0_0);
 			Directing_Camp.blank_line_11();
 			Thread.sleep(2000);
-			
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.smile_talk_one_line(word2_2_3);
 			Directing_Camp.blank_line_11();
 			Thread.sleep(2000);
-			
+
 			Directing_Camp.blank_line_11();
 			Directing_Sister_mini.smile_one_line(word2_2_3);
 			for(int i=0;i<4;i++) {
@@ -2513,7 +2513,7 @@ public class Directing_Camp {
 				System.out.println("");
 			}
 			System.out.print("                   >>");
-			
+
 			int input_2 = scan.nextInt();
 
 			if(input_2 == 1) {
@@ -2522,68 +2522,68 @@ public class Directing_Camp {
 				String word3_1_3 = "……え、違う？                                               ";
 				String word3_1_4 = "白い歯じゃないと、女の子にモテないからって？                 ";
 				String word3_1_5 = "……スケベ。                                                 ";
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.smlie_talk_two_line(word3_1_1,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(1500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.smlie_talk_two_line(word3_1_1,word3_1_2);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.smile_two_line(word0_0,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(1500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.think2_two_line(word3_1_3,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2000);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.think3_two_line(word3_1_3,word3_1_4);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.akire2_two_line(word0_0,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2000);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.akire1_talk_one_line(word3_1_5);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2000);
-				
+
 			}else {
 				String word3_2_1 = "え！？                                                       ";
 				String word3_2_2 = "じゃ、                                                       ";
 				String word3_2_3 = "じゃ、じゃあ、                                               ";
 				String word3_2_4 = "じゃ、じゃあ、着替えは……。                                 ";
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.surprise1_talk_two_line(word3_2_1,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2000);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.surprise1_talk_two_line(word3_2_1,word3_2_2);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(1000);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.surprise1_talk_two_line(word3_2_1,word3_2_3);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(1500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.surprise1_talk_two_line(word3_2_1,word3_2_4);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(1500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.surprise1_talk_two_line(word3_2_1,word3_2_4);
 				for(int i=0;i<4;i++) {
@@ -2599,23 +2599,79 @@ public class Directing_Camp {
 
 				String word4_1 = "…………。                                                   ";
 				String word4_2 = "体キレイにするまで、私に近づかないでね。                     ";
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.surprise2_talk_two_line(word0_0,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(3500);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.akire2_two_line(word4_1,word0_0);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2000);
-				
+
 				Directing_Camp.blank_line_11();
 				Directing_Sister_mini.akire1_talk_two_line(word4_1,word4_2);
 				Directing_Camp.blank_line_11();
 				Thread.sleep(2500);
 			}
 		}
+	}
+
+	static void sister_talk_pattern_2() throws InterruptedException{
+		String word0_0 = "                                                             ";
+		String word1_1 = "……ん、なに？私が不自由してないか心配？                     ";
+		String word1_2 = "あはは、それなら安心してよ。                                 ";
+		String word2_1 = "ここのキャンプ地、冒険者目当ての                             ";
+		String word2_2 = "お店がたくさんあるから衣食住には困らないし、                 ";
+		String word3_1 = "荒くれが多い分、自治意識が高くて                             ";
+		String word3_2 = "狼藉を働こう物ならすぐに追い出されちゃうんだ。               ";
+		String word4_1 = "だから、かなり安全。                                         ";
+		String word4_2 = "……                                                         ";
+		String word4_3 = "……まあ、お金が続くうちは、なんだけどね。                   ";
+		String word5_1 = "だから、早く戻ってくること！                                 ";
+		String word5_2 = "いいね、おにいちゃん！                                       ";
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.think3_two_line(word1_1,word0_0);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(2000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.nonki1_talk_two_line(word1_1,word1_2);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(2000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.think3_two_line(word2_1,word2_2);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(4000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.smlie_talk_two_line(word3_1,word3_2);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.smile_talk_one_line(word4_1);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(2000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.smile_one_line(word4_2);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(1000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.akire1_talk_one_line(word4_3);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(2500);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.smlie_talk_two_line(word5_1,word5_2);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
+
 	}
 
 	static void sister_talk_grade_A() throws InterruptedException{
