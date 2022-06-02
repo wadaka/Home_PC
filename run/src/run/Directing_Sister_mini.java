@@ -162,6 +162,37 @@ public class Directing_Sister_mini {
 		System.out.println("                                                                                             |______________|   ");
 	}
 
+	static void nonki1_one_line(String word) {
+		System.out.println("                                                                                              ______________    ");
+		System.out.println("                                                                                             |              |   ");
+		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
+		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
+		System.out.println("                |                                                                     |      |(ノ=   = ノノ |   ");
+		System.out.print("                |    ");
+		System.out.printf("%s",word);
+		System.out.println("    |      | (- -   -[]   |   ");
+		System.out.println("                |                                                                      ＞    |   ――〃 ´  |   ");
+		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
+		System.out.println("                                                                                             |______________|   ");
+	}
+
+	static void nonki1_two_line(String word1,String word2) {
+		System.out.println("                                                                                              ______________    ");
+		System.out.println("                                                                                             |              |   ");
+		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
+		System.out.println("                |                                                                     |      |,\" ノノ乀 ,ヽ |  ");
+		System.out.print("                |    ");
+		System.out.printf("%s",word1);
+		System.out.println("    |      |(ノ=   = ノノ |   ");
+		System.out.println("                |                                                                     |      | (- -   -[]   |   ");
+
+		System.out.print("                |    ");
+		System.out.printf("%s",word2);
+		System.out.println("     ＞    |   ――〃 ´  |   ");
+		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
+		System.out.println("                                                                                             |______________|   ");
+	}
+
 	static void nonki1_talk_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -255,7 +286,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
-	
+
 	static void akire2_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -317,7 +348,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
-	
+
 	static void doya1_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -472,7 +503,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
-	
+
 	static void think3_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -503,7 +534,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |〃-〃_〃ヽ___ |   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
-	
+
 	static void think4_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
@@ -534,7 +565,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |_____________________________________________________________________|      |〃-〃_〃ヽ___ |   ");
 		System.out.println("                                                                                             |______________|   ");
 	}
-	
+
 
 	static void play_the_fool1_one_line(String word) {
 		System.out.println("                                                                                              ______________    ");
