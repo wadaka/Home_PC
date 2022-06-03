@@ -210,7 +210,7 @@ public class Camp {
 					Directing_Camp.sister_talk_limit();
 				}
 				else if(sister_talk_count==1) {
-					Directing_Camp.sister_talk_sp(turn);
+					Directing_Camp.sister_talk_sp(s,turn);
 				}else {
 					Directing_Camp.sister_talk_judge(s,turn);
 				}
