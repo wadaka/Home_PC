@@ -2332,7 +2332,19 @@ public class Directing_Camp {
 	}
 
 	static void sister_talk_limit() throws InterruptedException{
-		System.out.println("打ち止め会話：現在、実装中");
+		int limit = rdm.nextInt(3);
+		switch(limit) {
+		case 0:
+			sister_talk_limit_1();
+			break;
+		case 1:
+			sister_talk_limit_2();
+			break;
+		case 2:
+			sister_talk_limit_3();
+			break;
+			default:
+		}
 	}
 
 	static void sister_talk_sp(Sister s,int turn) throws InterruptedException{
@@ -2346,7 +2358,6 @@ public class Directing_Camp {
 	}
 
 	static void sister_talk_judge(Sister s,int turn) throws InterruptedException{
-		System.out.println("現在、実装中");
 		if(s.Conversation.size()>0){
 			int num = rdm.nextInt(s.Conversation.size());
 
@@ -2415,6 +2426,53 @@ public class Directing_Camp {
 		Directing_Sister_mini.think4_two_line(word0_0,word0_0);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
+	}
+
+	static void sister_talk_limit_1() throws InterruptedException{
+		String word0_0 = "                                                             ";
+		String word1_1 = "う～ん、ごめん。今日はネタ切れかなぁ。                       ";
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.think3_two_line(word1_1,word0_0);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
+
+	}
+
+	static void sister_talk_limit_2() throws InterruptedException{
+		String word0_0 = "                                                             ";
+		String word1_1 = "お客さん、今日は看板だよ。                                   ";
+		String word1_2 = "……なんちゃって。                                           ";
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.angry1_talk_two_line(word1_1,word0_0);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(2000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.nonki1_talk_two_line(word1_1,word1_2);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
+	}
+
+	static void sister_talk_limit_3() throws InterruptedException{
+		String word0_0 = "                                                             ";
+		String word1_1 = "……むむっ！                                                 ";
+		String word1_2 = "……むむっ！むむむっ！                                       ";
+		String word1_3 = "はは、ダメだ。特に話題が思い浮かばないや。                   ";
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.doya1_two_line(word1_1,word0_0);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(2000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.angry1_two_line(word1_2,word0_0);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.nonki2_talk_two_line(word1_2,word1_3);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
 	}
 
 	static void sister_talk_sp_1() throws InterruptedException{
@@ -2943,8 +3001,8 @@ public class Directing_Camp {
 		String word0_0 = "                                                             ";
 		String word1_1 = "そう言えばさ、ここって電波が悪いよね                         ";
 		String word1_2 = "なんでか知ってる？                                           ";
-		String word2_1 = "ふっふっふ、それはね                                         ";
-		String word2_2 = "ここが、「出るから」なんだって。                             ";
+		String word2_1 = "ふっふっふ、それはね……                                     ";
+		String word2_2 = "……ここが、「出るから」なんだって。                         ";
 		String word3_1 = "秘境って元々、一大国家の首都だったんだけど、                 ";
 		String word3_2 = "同盟国から一斉に侵攻されて滅びたの。                         ";
 		String word3_3 = "同盟国から一斉に侵攻されて滅びたの。……最後は酷いもんでね。 ";
@@ -2955,6 +3013,7 @@ public class Directing_Camp {
 		String word5_3 = "それはもう、強い怨みを持った亡霊がうじゃうじゃと……。       ";
 		String word6_1 = "……え、                                                     ";
 		String word6_2 = "……え、それならよく見るって？                               ";
+		String word6_3 = "……は？                                                     ";
 		String word7_1 = "な、                                                         ";
 		String word7_2 = "な、なんなら、                                               ";
 		String word7_3 = "な、なんなら、今も近くを漂って……？                         ";
@@ -2968,12 +3027,12 @@ public class Directing_Camp {
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word1_1,word1_2);
 		Directing_Camp.blank_line_11();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.akire1_talk_two_line(word2_1,word0_0);
 		Directing_Camp.blank_line_11();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.akire2_two_line(word0_0,word0_0);
@@ -2983,7 +3042,7 @@ public class Directing_Camp {
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.akire1_talk_one_line(word2_2);
 		Directing_Camp.blank_line_11();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.smlie_talk_two_line(word3_1,word3_2);
@@ -2991,14 +3050,14 @@ public class Directing_Camp {
 		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
-		Directing_Sister_mini.smlie_talk_two_line(word3_1,word3_3);
+		Directing_Sister_mini.akire1_talk_two_line(word3_1,word3_3);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.think3_two_line(word4_1,word4_2);
 		Directing_Camp.blank_line_11();
-		Thread.sleep(3000);
+		Thread.sleep(3500);
 
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.akire1_talk_two_line(word5_1,word0_0);
@@ -3011,19 +3070,24 @@ public class Directing_Camp {
 		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
-		Directing_Sister_mini.nonki1_talk_two_line(word6_1,word0_0);
+		Directing_Sister_mini.nonki1_talk_one_line(word6_1);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
 
 		Directing_Camp.blank_line_11();
-		Directing_Sister_mini.nonki1_talk_two_line(word6_1,word6_2);
+		Directing_Sister_mini.nonki1_talk_one_line(word6_2);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
-		Directing_Sister_mini.nonki2_talk_one_line(word0_0);
+		Directing_Sister_mini.nonki1_talk_one_line(word0_0);
 		Directing_Camp.blank_line_11();
 		Thread.sleep(2000);
+
+		Directing_Camp.blank_line_11();
+		Directing_Sister_mini.nonki2_talk_one_line(word6_3);
+		Directing_Camp.blank_line_11();
+		Thread.sleep(3000);
 
 		Directing_Camp.blank_line_11();
 		Directing_Sister_mini.surprise1_talk_one_line(word7_1);

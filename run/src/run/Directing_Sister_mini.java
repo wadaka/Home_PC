@@ -232,7 +232,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |                                                                     |      |(ノ-   - ノノ |   ");
 		System.out.print("                |    ");
 		System.out.printf("%s",word);
-		System.out.println("    |      | (- ワ  -[]  |   ");
+		System.out.println("    |      | (- ワ  -[]   |   ");
 		System.out.println("                |                                                                      ＞    |   ――〃 ´  |   ");
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");

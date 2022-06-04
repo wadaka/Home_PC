@@ -55,7 +55,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=19;i<30;i++) {
+			for(int i=0;i<30;i++) {
 
 				try {
 					Directing_GameMain.showAvant(i+1);

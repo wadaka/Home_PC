@@ -206,7 +206,7 @@ public class Camp {
 
 			if(input.equals("1")){
 				//妹ちゃんとの会話は、１キャンプ、３回まで
-				if(sister_talk_count>6) {
+				if(sister_talk_count>2) {
 					Directing_Camp.sister_talk_limit();
 				}
 				else if(sister_talk_count==1) {
