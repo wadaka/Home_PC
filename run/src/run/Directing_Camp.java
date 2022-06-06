@@ -3467,6 +3467,7 @@ public class Directing_Camp {
 
 	static void sn() throws InterruptedException{
 
+
 		System.out.println("                                                                                              ______________    ");
 		System.out.println("                                                                                             |              |   ");
 		System.out.println("                 _____________________________________________________________________       |  〃\"\"\"-＝ヽ⌒|");
@@ -3574,5 +3575,625 @@ public class Directing_Camp {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
+	}
+
+	public static void after_event_2() throws Exception{
+		System.out.println("              ");
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(4000);
+
+		//-----------------------------------------------------------------
+		String name_3 = "Camp_2/s_03";
+		Tools.Graphic_Creator(name_3);
+		System.out.println("              ");
+		System.out.println("              ……");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_4 = "Camp_2/s_04";
+		Tools.Graphic_Creator(name_4);
+		System.out.println("              ");
+		System.out.println("              ……お父さん、帰ってこないね。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_5 = "Camp_2/s_05";
+		Tools.Graphic_Creator(name_5);
+		System.out.println("              ");
+		System.out.println("              ……お父さん、帰ってこないね。");
+		System.out.println("              もう、一週間だよ？どこで油を売ってるのかなぁ。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3500);
+		//-----------------------------------------------------------------
+		String name_6 = "Camp_2/s_06";
+		Tools.Graphic_Creator(name_6);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_7 = "Camp_2/s_07";
+		Tools.Graphic_Creator(name_7);
+		System.out.println("              ");
+		System.out.println("              ふふ、そうだね。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_8 = "Camp_2/s_08";
+		Tools.Graphic_Creator(name_8);
+		System.out.println("              ");
+		System.out.println("              ふふ、そうだね。");
+		System.out.println("              「ちゃらんぽらん」だもんね。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_7);
+		System.out.println("              ");
+		System.out.println("              ふふ、そうだね。");
+		System.out.println("              「ちゃらんぽらん」だもんね。気長に待たなきゃ……。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_3);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_6);
+		System.out.println("              ");
+		System.out.println("              …………？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_5);
+		System.out.println("              ");
+		System.out.println("              …………？");
+		System.out.println("              おにいちゃん、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              …………？");
+		System.out.println("              おにいちゃん、……泣いてるの？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              …………うそだ。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		String name_13_1 = "Camp_2/s_13_1";
+		Tools.Graphic_Creator(name_13_1);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_13_1);
+		System.out.println("              ");
+		System.out.println("              ごめん、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		String name_09 = "Camp_2/s_09";
+		Tools.Graphic_Creator(name_09);
+		System.out.println("              ");
+		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_09);
+		System.out.println("              ");
+		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
+		System.out.println("              だけど…、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_09);
+		System.out.println("              ");
+		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
+		System.out.println("              だけど…、こ、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_10 = "Camp_2/s_10";
+		Tools.Graphic_Creator(name_10);
+		System.out.println("              ");
+		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
+		System.out.println("              だけど…、こ、これだけしか、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		String name_11 = "Camp_2/s_11";
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
+		System.out.println("              だけど…、こ、これだけしか、持って…");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
+		System.out.println("              だけど…、こ、これだけしか、持って…これなくて……。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              …………");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              …………血…？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              …………血…？");
+		System.out.println("              …………ぁ…ぁ。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_12 = "Camp_2/s_12";
+		Tools.Graphic_Creator(name_12);
+		System.out.println("              ");
+		System.out.println("              俺が、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_12);
+		System.out.println("              ");
+		System.out.println("              俺が、俺がヘマしたばっかりに！！");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_12);
+		System.out.println("              ");
+		System.out.println("              俺が、俺がヘマしたばっかりに！！");
+		System.out.println("              許してくれ、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_12);
+		System.out.println("              ");
+		System.out.println("              俺が、俺がヘマしたばっかりに！！");
+		System.out.println("              許してくれ、勘弁してくれぇっ……！！！");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_13_1);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_13_2 = "Camp_2/s_13_2";
+		Tools.Graphic_Creator(name_13_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(250);
+		//-----------------------------------------------------------------
+		String name_14 = "Camp_2/s_14";
+		Tools.Graphic_Creator(name_14);
+		System.out.println("              ");
+		System.out.println("              バタン");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              リリー！？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              リリー！？");
+		System.out.println("              おい、リリーちゃん！！");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              リリー！？");
+		System.out.println("              おい、リリーちゃん！！");
+		System.out.println("              リリー、リリー！！");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……………");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_15 = "Camp_2/s_15";
+		Tools.Graphic_Creator(name_15);
+		System.out.println("              ");
+		System.out.println("              ……………");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_15);
+		System.out.println("              ");
+		System.out.println("              ……………ぁ…。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		String name_16 = "Camp_2/s_16";
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ……………ぁ…。");
+		System.out.println("              …………おにい…ちゃん…？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ……");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ……ぇ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ……ぇ、わたし、三日も…ねてたの？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		String name_17 = "Camp_2/s_17";
+		Tools.Graphic_Creator(name_17);
+		System.out.println("              ");
+		System.out.println("              ……ぇ、わたし、三日も…ねてたの？");
+		System.out.println("              …………");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_17);
+		System.out.println("              ");
+		System.out.println("              ……ぇ、わたし、三日も…ねてたの？");
+		System.out.println("              …………ごめんね、心配かけて。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_17);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              あれ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              あれ、おにいちゃん。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              あれ、おにいちゃん。");
+		System.out.println("              そういえば ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              あれ、おにいちゃん。");
+		System.out.println("              そういえば お父さんは？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		String name_18 = "Camp_2/s_18";
+		Tools.Graphic_Creator(name_18);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_18);
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_18);
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、さては、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_18);
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
+		System.out.println("              まったく、困ったもんだよね。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
+		System.out.println("              まったく、困ったもんだよね。帰ってくるって言って、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
+		System.out.println("              まったく、困ったもんだよね。帰ってくるって言って、");
+		System.out.println("              その日に帰ってきたことなんて、");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
+		System.out.println("              まったく、困ったもんだよね。帰ってくるって言って、");
+		System.out.println("              その日に帰ってきたことなんて、一度も……。");
+		System.out.println("              ");
+
+		Thread.sleep(4000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_01 = "Camp_2/s_01";
+		Tools.Graphic_Creator(name_01);
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_02 = "Camp_2/s_02";
+		Tools.Graphic_Creator(name_02);
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_24 = "Camp_2/s_24";
+		Tools.Graphic_Creator(name_24);
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_25 = "Camp_2/s_25";
+		Tools.Graphic_Creator(name_25);
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(3000);
 	}
 }

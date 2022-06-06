@@ -52,12 +52,30 @@ public class Camp {
 					String nextClick = sc.nextLine();
 					break;
 				default:
+					System.out.println();
+					System.out.println("                   ◇キャンプを終えて、次のターンへ進みますか？");
+					System.out.println("                   ---------------------------------------------");
+					System.out.println();
+					System.out.println("                    【1】はい    【2】いいえ");
+					System.out.println();
+					System.out.print("                      >>");
+					int last_check = sc.nextInt();
+					if(last_check!=1) input=0;
 				}
 				if(input ==4) break;
 			}
 		} catch (InterruptedException e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
+		}
+
+		if(turn ==19 && s.isCamp_2 == true) {
+			try {
+				Directing_Camp.after_event_2();
+			} catch (Exception e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			}
 		}
 	}
 	static void supplyShop(Hero h,int[] supply_stock) throws InterruptedException{
