@@ -3577,6 +3577,323 @@ public class Directing_Camp {
 		System.out.println("");
 	}
 
+	public static void after_event_1() throws Exception{
+		connect();
+		System.out.println("              ");
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(4000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              …………");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              …………あ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              …………あ、おにいちゃん……。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              …………あ、おにいちゃん……。");
+		System.out.println("              もう、寝てた？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ごめんね。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ごめんね。");
+		System.out.println("              その、疲れてるところ。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、ありがとう。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、ありがとう。");
+		System.out.println("              あのね、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、ありがとう。");
+		System.out.println("              あのね、どうしても聞いておきたいことがあって……。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              おにいちゃん、さっき言ったじゃん。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              おにいちゃん、さっき言ったじゃん。");
+		System.out.println("              私、お母さんに似てるって。");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……その、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……その、おにいちゃんから見てさ。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……その、おにいちゃんから見てさ。");
+		System.out.println("              お母さんって、どんな人だった？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、……");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、……うん。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、……うん。");
+		System.out.println("              そっか、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、……うん。");
+		System.out.println("              そっか、ふふ！");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、……うん。");
+		System.out.println("              そっか、ふふ！ それで、");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(750);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……うん、……うん。");
+		System.out.println("              そっか、ふふ！ それで、それで？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+	}
+
 	public static void after_event_2() throws Exception{
 		System.out.println("              ");
 		for(int i=0;i<32;i++) {
@@ -3789,7 +4106,7 @@ public class Directing_Camp {
 		System.out.println("              ");
 
 		Thread.sleep(3000);
-		
+
 		//-----------------------------------------------------------------
 		Tools.Graphic_Creator(name_11);
 		System.out.println("              ");
@@ -4088,7 +4405,7 @@ public class Directing_Camp {
 		System.out.println("              ");
 		System.out.println("              ");
 
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		//-----------------------------------------------------------------
 		Tools.Graphic_Creator(name_18);
 		System.out.println("              ");
@@ -4106,7 +4423,7 @@ public class Directing_Camp {
 		System.out.println("              ");
 		System.out.println("              ");
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		//-----------------------------------------------------------------
 		for(int i=0;i<32;i++) {
@@ -4114,7 +4431,7 @@ public class Directing_Camp {
 		}
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
-		System.out.println("              まったく、困ったもんだよね。");
+		System.out.println("              まったく、困ったもんだよ。");
 		System.out.println("              ");
 		System.out.println("              ");
 
@@ -4125,7 +4442,7 @@ public class Directing_Camp {
 		}
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
-		System.out.println("              まったく、困ったもんだよね。帰ってくるって言って、");
+		System.out.println("              まったく、困ったもんだよ。帰ってくるって言って、");
 		System.out.println("              ");
 		System.out.println("              ");
 
@@ -4136,7 +4453,7 @@ public class Directing_Camp {
 		}
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
-		System.out.println("              まったく、困ったもんだよね。帰ってくるって言って、");
+		System.out.println("              まったく、困ったもんだよ。帰ってくるって言って、");
 		System.out.println("              その日に帰ってきたことなんて、");
 		System.out.println("              ");
 
@@ -4147,7 +4464,7 @@ public class Directing_Camp {
 		}
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
-		System.out.println("              まったく、困ったもんだよね。帰ってくるって言って、");
+		System.out.println("              まったく、困ったもんだよ。帰ってくるって言って、");
 		System.out.println("              その日に帰ってきたことなんて、一度も……。");
 		System.out.println("              ");
 

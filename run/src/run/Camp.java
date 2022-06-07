@@ -69,6 +69,14 @@ public class Camp {
 			e.printStackTrace();
 		}
 
+		if(turn ==9 && s.isCamp_1 == true) {
+			try {
+				Directing_Camp.after_event_1();
+			} catch (Exception e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			}
+		}
 		if(turn ==19 && s.isCamp_2 == true) {
 			try {
 				Directing_Camp.after_event_2();
