@@ -14,7 +14,7 @@ public class GameApp {
 	final static int[] item_getEH = {25,40,75};
 	final static int[] item_N = {20,35,50,60,90};
 	final static int[] item_getN = {25,45,70};
-	final static int[] item_H = {25,35,45,50,70};
+	final static int[] item_H = {25,35,45,50,85};
 
 
 
@@ -55,7 +55,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=9;i<30;i++) {
+			for(int i=0;i<30;i++) {
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -387,7 +387,7 @@ public class GameApp {
 		}else if(root>=3 && first_j>=30) {
 			if(second_j>70) {
 				getItem(root,h);
-			}else if(second_j>0) {
+			}else if(second_j>50) {
 				goToDungeon(h);
 			}else if(second_j>24) {
 				//アイテム獲得イベント
@@ -636,7 +636,7 @@ public class GameApp {
 		System.out.println("    ……おぉ！遺跡があるぞ、入ってみよう！");
 		Thread.sleep(2000);
 		int d_f = rdm.nextInt(3);
-		if(d_f>2) {
+		if(d_f>1) {
 			System.out.println();
 			System.out.println();
 			System.out.println();
@@ -667,7 +667,7 @@ public class GameApp {
 				System.out.println("    財宝+10");
 				Thread.sleep(1000);
 			}
-		}else if(d_f>1) {
+		}else if(d_f>0) {
 			System.out.println();
 			System.out.println();
 			System.out.println();

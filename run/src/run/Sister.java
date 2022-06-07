@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Sister {
 
-	boolean isCamp_1 = true;
-	boolean isCamp_2 = true;
+	boolean isCamp_1 = false;
+	boolean isCamp_2 = false;
 	boolean isOintment = false;
 	boolean isGun = false;
 	boolean isSmoke = false;

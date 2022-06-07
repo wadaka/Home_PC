@@ -18,7 +18,7 @@ public class GiantSnake extends Enemy{
 	@Override
 	public int setLost_Lose_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return 30;
+		return 25;
 		//h.setHp(h.getHp()-10);
 	}
 
@@ -42,7 +42,7 @@ public class GiantSnake extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"30      ","15      ","ゴミ (25%)    ","3(50%)  "};
+		String[] infos = {"25      ","15      ","ゴミ (25%)    ","3(50%)  "};
 		return infos;
 	}
 

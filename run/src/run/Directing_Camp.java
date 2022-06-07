@@ -4088,8 +4088,7 @@ public class Directing_Camp {
 
 		Thread.sleep(2500);
 		//-----------------------------------------------------------------
-		String name_11 = "Camp_2/s_11";
-		Tools.Graphic_Creator(name_11);
+		Tools.Graphic_Creator(name_10);
 		System.out.println("              ");
 		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
 		System.out.println("              だけど…、こ、これだけしか、持って…");
@@ -4098,7 +4097,7 @@ public class Directing_Camp {
 
 		Thread.sleep(1000);
 		//-----------------------------------------------------------------
-		Tools.Graphic_Creator(name_11);
+		Tools.Graphic_Creator(name_10);
 		System.out.println("              ");
 		System.out.println("              ごめん、…本当は、連れて帰ってあげたかった。");
 		System.out.println("              だけど…、こ、これだけしか、持って…これなくて……。");
@@ -4108,29 +4107,57 @@ public class Directing_Camp {
 		Thread.sleep(3000);
 
 		//-----------------------------------------------------------------
+		String name_11 = "Camp_2/s_11";
 		Tools.Graphic_Creator(name_11);
 		System.out.println("              ");
+		System.out.println("              ……それ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              ……それ、お父さんの…銃に、帽子……。");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(4000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              ……それ、お父さんの…銃に、帽子……。");
 		System.out.println("              …………");
 		System.out.println("              ");
 		System.out.println("              ");
-		System.out.println("              ");
 
 		Thread.sleep(2000);
 		//-----------------------------------------------------------------
 		Tools.Graphic_Creator(name_11);
 		System.out.println("              ");
+		System.out.println("              ……それ、お父さんの…銃に、帽子……。");
 		System.out.println("              …………血…？");
-		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		//-----------------------------------------------------------------
 		Tools.Graphic_Creator(name_11);
 		System.out.println("              ");
+		System.out.println("              ……それ、お父さんの…銃に、帽子……。");
 		System.out.println("              …………血…？");
-		System.out.println("              …………ぁ…ぁ。");
+		System.out.println("              …………ぁ");
 		System.out.println("              ");
+
+		Thread.sleep(500);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_11);
+		System.out.println("              ");
+		System.out.println("              ……それ、お父さんの…銃に、帽子……。");
+		System.out.println("              …………血…？");
+		System.out.println("              …………ぁ…あぁっ！！");
 		System.out.println("              ");
 
 		Thread.sleep(2000);
@@ -4229,23 +4256,12 @@ public class Directing_Camp {
 			System.out.println("");
 		}
 		System.out.println("              ");
-		System.out.println("              リリー！？");
-		System.out.println("              おい、リリーちゃん！！");
-		System.out.println("              リリー、リリー！！");
-		System.out.println("              ");
-
-		Thread.sleep(2000);
-
-		for(int i=0;i<32;i++) {
-			System.out.println("");
-		}
-		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		//-----------------------------------------------------------------
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -4277,8 +4293,8 @@ public class Directing_Camp {
 
 		Thread.sleep(2500);
 		//-----------------------------------------------------------------
-		String name_16 = "Camp_2/s_16";
-		Tools.Graphic_Creator(name_16);
+		String name_15_2 = "Camp_2/s_15_2";
+		Tools.Graphic_Creator(name_15_2);
 		System.out.println("              ");
 		System.out.println("              ……………ぁ…。");
 		System.out.println("              …………おにい…ちゃん…？");
@@ -4286,6 +4302,16 @@ public class Directing_Camp {
 		System.out.println("              ");
 
 		Thread.sleep(3500);
+		//-----------------------------------------------------------------
+		String name_16 = "Camp_2/s_16";
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(1500);
 		//-----------------------------------------------------------------
 		Tools.Graphic_Creator(name_16);
 		System.out.println("              ");
@@ -4369,19 +4395,30 @@ public class Directing_Camp {
 
 		Thread.sleep(3000);
 		//-----------------------------------------------------------------
-		Tools.Graphic_Creator(name_16);
+		String name_23 = "Camp_2/s_23";
+		Tools.Graphic_Creator(name_23);
 		System.out.println("              ");
 		System.out.println("              あれ、おにいちゃん。");
 		System.out.println("              そういえば ");
 		System.out.println("              ");
 		System.out.println("              ");
 
-		Thread.sleep(1500);
+		Thread.sleep(1000);
 		//-----------------------------------------------------------------
-		Tools.Graphic_Creator(name_16);
+		String name_22 = "Camp_2/s_22";
+		Tools.Graphic_Creator(name_22);
 		System.out.println("              ");
 		System.out.println("              あれ、おにいちゃん。");
 		System.out.println("              そういえば お父さんは？");
+		System.out.println("              ");
+		System.out.println("              ");
+
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		Tools.Graphic_Creator(name_16);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 
@@ -4398,7 +4435,8 @@ public class Directing_Camp {
 		Thread.sleep(2000);
 
 		//-----------------------------------------------------------------
-		Tools.Graphic_Creator(name_18);
+		String name_18_2 = "Camp_2/s_18_2";
+		Tools.Graphic_Creator(name_18_2);
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、");
 		System.out.println("              ");
@@ -4407,7 +4445,7 @@ public class Directing_Camp {
 
 		Thread.sleep(1000);
 		//-----------------------------------------------------------------
-		Tools.Graphic_Creator(name_18);
+		Tools.Graphic_Creator(name_18_2);
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、さては、");
 		System.out.println("              ");
@@ -4416,14 +4454,14 @@ public class Directing_Camp {
 
 		Thread.sleep(500);
 		//-----------------------------------------------------------------
-		Tools.Graphic_Creator(name_18);
+		Tools.Graphic_Creator(name_18_2);
 		System.out.println("              ");
 		System.out.println("              ……はは～ん、さては、まだ帰ってきてないんだね？");
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 		//-----------------------------------------------------------------
 		for(int i=0;i<32;i++) {

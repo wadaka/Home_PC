@@ -18,14 +18,14 @@ public class Swarm_of_Insects extends Enemy{
 	@Override
 	public int setLost_Lose_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return 25;
+		return 20;
 		//h.setHp(h.getHp()-10);
 	}
 
 	@Override
 	public int setLost_RunFail_Hp() {
 		// TODO 自動生成されたメソッド・スタブ
-		return 15;
+		return 10;
 		//h.setHp(h.getHp()-5);
 	}
 
@@ -43,7 +43,7 @@ public class Swarm_of_Insects extends Enemy{
 	@Override
 	public String[] getBattleInfo() {
 		// TODO 自動生成されたメソッド・スタブ
-		String[] infos = {"25      ","15      ","傷薬 (30%)    ","1～3(50%"};
+		String[] infos = {"20      ","10      ","傷薬 (30%)    ","1～3(50%"};
 		return infos;
 	}
 
