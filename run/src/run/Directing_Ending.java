@@ -8,27 +8,33 @@ public class Directing_Ending {
 		for(int i=0;i<33;i++) {
 			System.out.println();
 		}
-		
+
 		if(ending==0) {
 			DeadEnd();
 			System.out.println("  エンターキーで、タイトルへ戻る");
 			Thread.sleep(2000);
 			System.out.print("  >>");
-		}else if(ending==1) {
-			GoodEnd();
-			System.out.println("  エンターキーで、タイトルへ戻る");
-			Thread.sleep(2000);
-			System.out.print("  >>");
-			
 		}else {
-			SlaveEnd();
-			System.out.println("  エンターキーで、進む");
-			Thread.sleep(2000);
-			System.out.print("  >>");
-			
+			try {
+				Goal();
+				if(ending==1) {
+					GoodEnd();
+					System.out.println("  エンターキーで、タイトルへ戻る");
+					Thread.sleep(2000);
+					System.out.print("  >>");
+				}else if(ending==2){
+					BadEnd();
+					System.out.println("  エンターキーで、タイトルへ戻る");
+					Thread.sleep(2000);
+					System.out.print("  >>");
+				}
+			} catch (Exception e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			}
 		}
 	}
-	
+
 	static void DeadEnd() throws InterruptedException {
 		System.out.println("");
 		System.out.println("");
@@ -62,9 +68,9 @@ public class Directing_Ending {
 		System.out.println("                            F  (=!   g#    .N,     ?dF ");
 		System.out.println("                            N. M:   .MF    .M1,     .t  ");
 		System.out.println(".                           ,b(F    .MF    JM ?[       ");
-		
+
 		Thread.sleep(2000);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -97,9 +103,9 @@ public class Directing_Ending {
 		System.out.println("                            .MM]  .MM\\g.Mb     .M| .bdJM`  ");
 		System.out.println("                            .MM....MMm.dMNJ..  d@\" .MMS[ ");
 		System.out.println(".                           .YMMUY7BMVTT9TQ\"\"T9TM#TwF.(F  ");
-		
+
 		Thread.sleep(2000);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -132,9 +138,9 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(4000);
-		
+
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -167,79 +173,446 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 	}
 
-	static void SlaveEnd() throws InterruptedException {
-		
+	static void Goal() throws Exception{
+		//-----------------------------------------------------------------
+		String name_01 = "Goal/s_01";
+		System.out.println("");
+		Tools.Graphic_Creator(name_01);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("■リリーの日記：");
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_04_2 = "Goal/s_04_2";
+		System.out.println("");
+		Tools.Graphic_Creator(name_04_2);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_04_3 = "Goal/s_04_3";
+		System.out.println("");
+		Tools.Graphic_Creator(name_04_3);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("　数々の困難を超え、秘境を無事脱出したけど……。");
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_04_4 = "Goal/s_04_4";
 		System.out.println("");
-		System.out.println("　それが、おにいちゃんにとって幸せだったのかは、わかりません。");
-		System.out.println("");
-		System.out.println("　結局、収支はマイナス。");
-		System.out.println("");
-		System.out.println("　帰ってきてすぐ、おにいちゃんは、");
-		System.out.println("");
-		System.out.println("　怖いお兄さんに連れられて、どこかへ消えていきました。");
+		Tools.Graphic_Creator(name_04_4);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_04_5 = "Goal/s_04_5";
 		System.out.println("");
-		System.out.println("　……詳しいことは、わかりませんが");
-		System.out.println("");
-		System.out.println("　遠くの海で、漁をするんだとか。");
-		System.out.println("");
-		System.out.println("　10年ほど、色々頑張らないといけないみたいです。");
-		System.out.println("");
+		Tools.Graphic_Creator(name_04_5);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		String name_05 = "Goal/s_05";
+		System.out.println("");
+		Tools.Graphic_Creator(name_05);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		String name_06 = "Goal/s_06";
+		System.out.println("");
+		Tools.Graphic_Creator(name_06);
 		System.out.println("");
 		System.out.println("");
 		Thread.sleep(2000);
-		System.out.println("  エンターキーで、進む >>");
-		scan.nextLine();
-		String i = scan.nextLine();
-		
+		//-----------------------------------------------------------------
+		String name_07 = "Goal/s_07";
+		System.out.println("");
+		Tools.Graphic_Creator(name_07);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("■リリーの日記：");
+		Thread.sleep(500);
+		//-----------------------------------------------------------------
+		String name_08 = "Goal/s_08";
+		System.out.println("");
+		Tools.Graphic_Creator(name_08);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_09 = "Goal/s_09";
+		System.out.println("");
+		Tools.Graphic_Creator(name_09);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("　今回のことで、私は計画性の大切さを学びました。");
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_10 = "Goal/s_10";
 		System.out.println("");
-		System.out.println("　一発を狙うだとか、大穴で逆転だとか、");
-		System.out.println("");
-		System.out.println("　そんなことよりまず、身近な小さいことからコツコツと");
-		System.out.println("");
-		System.out.println("　日々を積み重ねていくことが、何よりも大事なのだと。");
+		Tools.Graphic_Creator(name_10);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(1250);
+		//-----------------------------------------------------------------
+		String name_11 = "Goal/s_11";
 		System.out.println("");
-		
-		System.out.println("　……おにいちゃんにも、それが分かる日が来るといいんだけど。");
-		System.out.println("");
-		System.out.println("　ともかく、借金返済目指して、頑張れ！おにいちゃん！！");
-		System.out.println("");
-		System.out.println("");
+		Tools.Graphic_Creator(name_11);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(2500);
+		//-----------------------------------------------------------------
+		String name_12 = "Goal/s_12";
+		System.out.println("");
+		Tools.Graphic_Creator(name_12);
 		System.out.println("");
 		System.out.println("");
+		Thread.sleep(1000);
+		//-----------------------------------------------------------------
+		String name_13 = "Goal/s_13";
+		System.out.println("");
+		Tools.Graphic_Creator(name_13);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
+		Thread.sleep(2000);
 	}
-	
+
+	static void BadEnd() throws Exception{
+		//-----------------------------------------------------------------
+		String name_01 = "BadEnd/s_01";
+		System.out.println("");
+		Tools.Graphic_Creator(name_01);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(500);
+		//-----------------------------------------------------------------
+		String name_02 = "BadEnd/s_02";
+		System.out.println("");
+		Tools.Graphic_Creator(name_02);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(2000);
+		//-----------------------------------------------------------------
+		String name_03 = "BadEnd/s_03";
+		System.out.println("");
+		Tools.Graphic_Creator(name_03);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		String name_04 = "BadEnd/s_04";
+		System.out.println("");
+		Tools.Graphic_Creator(name_04);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(3000);
+		//-----------------------------------------------------------------
+		String name_05 = "BadEnd/s_05";
+		System.out.println("");
+		Tools.Graphic_Creator(name_05);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(2000);
+
+		String bad_back_up = "BadEnd/bad_back_1";
+		String bad_back_down = "BadEnd/bad_back_2";
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		for(int i=0;i<18;i++) {
+			System.out.println("");
+		}
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  数々の困難を超え、秘境を無事脱出したけど……");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  数々の困難を超え、秘境を無事脱出したけど……");
+		System.out.println("");
+		System.out.println("                  それが、おにいちゃんにとって幸せだったのかは、わかりません。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(4000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  数々の困難を超え、秘境を無事脱出したけど……");
+		System.out.println("");
+		System.out.println("                  それが、おにいちゃんにとって幸せだったのかは、わかりません。");
+		System.out.println("");
+		System.out.println("                  結局、収支はマイナス。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  数々の困難を超え、秘境を無事脱出したけど……");
+		System.out.println("");
+		System.out.println("                  それが、おにいちゃんにとって幸せだったのかは、わかりません。");
+		System.out.println("");
+		System.out.println("                  結局、収支はマイナス。");
+		System.out.println("");
+		System.out.println("                  帰ってきてすぐ、おにいちゃんは、");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  数々の困難を超え、秘境を無事脱出したけど……");
+		System.out.println("");
+		System.out.println("                  それが、おにいちゃんにとって幸せだったのかは、わかりません。");
+		System.out.println("");
+		System.out.println("                  結局、収支はマイナス。");
+		System.out.println("");
+		System.out.println("                  帰ってきてすぐ、おにいちゃんは、");
+		System.out.println("");
+		System.out.println("                  怖いお兄さんに連れられて、どこかへ消えていきました。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  数々の困難を超え、秘境を無事脱出したけど……");
+		System.out.println("");
+		System.out.println("                  それが、おにいちゃんにとって幸せだったのかは、わかりません。");
+		System.out.println("");
+		System.out.println("                  結局、収支はマイナス。");
+		System.out.println("");
+		System.out.println("                  帰ってきてすぐ、おにいちゃんは、");
+		System.out.println("");
+		System.out.println("                  怖いお兄さんに連れられて、どこかへ消えていきました。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  エンターキーで、次に進む >>");
+		Tools.Graphic_Creator_ED(bad_back_down);
+
+		String i = scan.nextLine();
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……色々言いたいことはあるんだけど");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……色々言いたいことはあるんだけど");
+		System.out.println("");
+		System.out.println("                  今はともかく、完済に向けて、頑張れ！");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……色々言いたいことはあるんだけど");
+		System.out.println("");
+		System.out.println("                  今はともかく、完済に向けて、頑張れ！おにいちゃん！");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……色々言いたいことはあるんだけど");
+		System.out.println("");
+		System.out.println("                  今はともかく、完済に向けて、頑張れ！おにいちゃん！");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(2000);
+
+	}
+
 	static void GoodEnd() {
 		System.out.println("");
 		System.out.println("");
@@ -274,8 +647,8 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 	}
-	
+
 	static void BestEnd() {
-	
+
 	}
 }

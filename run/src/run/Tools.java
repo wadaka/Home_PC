@@ -24,4 +24,19 @@ public class Tools {
 		}
 		br.close();
 	}
+	
+	public static void Graphic_Creator_ED(String name) throws Exception{
+		
+		String file_name =  "src/run/Graphic/"+name +".txt";
+
+		FileInputStream fis =new FileInputStream(file_name);
+		InputStreamReader isr = new InputStreamReader(fis,"utf-8");
+		BufferedReader br = new BufferedReader(isr);
+
+		String line;
+		while((line = br.readLine()) !=null){
+			System.out.println(line);
+		}
+		br.close();
+	}
 }
