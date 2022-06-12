@@ -13,17 +13,13 @@ public class Battle {
 	public static void lottery_easy(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<40) {
-			Enemy enemy = new Poisonous_insect("毒虫",90,90,1);
-			battle_start(enemy,h);
+			select_enemy_Poisonous_insect(h);
 		}else if(num<70) {
-			Enemy enemy = new Rogue("ならず者",80,90,2);
-			battle_start(enemy,h);
+			select_enemy_Rogue(h);
 		}else if(num<80) {
-			Enemy enemy = new ManEater("食人植物",80,50,5);
-			battle_start(enemy,h);
+			select_enemy_ManEater(h);
 		}else {
-			Enemy enemy = new Barbarian("蛮族",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Barbarian(h);
 		}
 	}
 
@@ -31,23 +27,17 @@ public class Battle {
 	public static void lottery_a_bit_easy(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<30) {
-			Enemy enemy = new Poisonous_insect("毒虫",90,90,1);
-			battle_start(enemy,h);
+			select_enemy_Poisonous_insect(h);
 		}else if(num<50) {
-			Enemy enemy = new Rogue("ならず者",80,90,2);
-			battle_start(enemy,h);
+			select_enemy_Rogue(h);
 		}else if(num<55) {
-			Enemy enemy = new ManEater("食人植物",80,50,5);
-			battle_start(enemy,h);
+			select_enemy_ManEater(h);
 		}else if(num<75) {
-			Enemy enemy = new Barbarian("蛮族",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Barbarian(h);
 		}else if(num<95) {
-			Enemy enemy = new Swarm_of_Insects("毒虫の大群",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Swarm_of_Insects(h);
 		}else {
-			Enemy enemy = new GiantSnake("大蛇",60,60,5);
-			battle_start(enemy,h);
+			select_enemy_GiantSnake(h);
 		}
 	}
 
@@ -55,23 +45,17 @@ public class Battle {
 	public static void lottery_normal(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<10) {
-			Enemy enemy = new Poisonous_insect("毒虫",90,90,1);
-			battle_start(enemy,h);
+			select_enemy_Poisonous_insect(h);
 		}else if(num<20) {
-			Enemy enemy = new Rogue("ならず者",80,90,2);
-			battle_start(enemy,h);
+			select_enemy_Rogue(h);
 		}else if(num<30) {
-			Enemy enemy = new ManEater("食人植物",80,50,5);
-			battle_start(enemy,h);
+			select_enemy_ManEater(h);
 		}else if(num<55) {
-			Enemy enemy = new Barbarian("蛮族",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Barbarian(h);
 		}else if(num<80) {
-			Enemy enemy = new Swarm_of_Insects("毒虫の大群",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Swarm_of_Insects(h);
 		}else {
-			Enemy enemy = new GiantSnake("大蛇",60,60,5);
-			battle_start(enemy,h);
+			select_enemy_GiantSnake(h);
 		}
 	}
 
@@ -79,42 +63,87 @@ public class Battle {
 	public static void lottery_a_bit_difficult(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<20) {
-			Enemy enemy = new Barbarian("蛮族",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Barbarian(h);;
 		}else if(num<40) {
-			Enemy enemy = new Swarm_of_Insects("毒虫の大群",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Swarm_of_Insects(h);
 		}else if(num<60){
-			Enemy enemy = new GiantSnake("大蛇",60,60,5);
-			battle_start(enemy,h);
+			select_enemy_GiantSnake(h);
 		}else if(num<85){
-			Enemy enemy = new Mercenary("傭兵",40,50,7);
-			battle_start(enemy,h);
+			select_enemy_Mercenary(h);
 		}else{
-			Enemy enemy = new Tiger("タイガー",25,50,10);
-			battle_start(enemy,h);
+			select_enemy_Tiger(h);
 		}
 	}
 	//5番目に簡単…、一番難しいパターン。本作最強の敵タイガーと30%の確率で遭遇する危険地帯
 	public static void lottery_difficult(Hero h) {
 		int num = rdm.nextInt(100);
 		if(num<10) {
-			Enemy enemy = new Barbarian("蛮族",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Barbarian(h);
 		}else if(num<20) {
-			Enemy enemy = new Swarm_of_Insects("毒虫の大群",70,70,3);
-			battle_start(enemy,h);
+			select_enemy_Swarm_of_Insects(h);
 		}else if(num<40){
-			Enemy enemy = new GiantSnake("大蛇",60,60,5);
-			battle_start(enemy,h);
+			select_enemy_GiantSnake(h);
 		}else if(num<70){
-			Enemy enemy = new Mercenary("傭兵",40,50,7);
-			battle_start(enemy,h);
+			select_enemy_Mercenary(h);
 		}else{
-			Enemy enemy = new Tiger("タイガー",25,50,10);
-
-			battle_start(enemy,h);
+			select_enemy_Tiger(h);
 		}
+	}
+
+	static void select_enemy_Poisonous_insect(Hero h) {
+		Enemy enemy = new Poisonous_insect("毒虫",90,90,1);
+		String event = "poisonous_insect";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_Rogue(Hero h) {
+		Enemy enemy = new Rogue("ならず者",80,90,2);
+		String event = "rogue";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_ManEater(Hero h) {
+		Enemy enemy = new ManEater("食人植物",80,50,5);
+		String event = "maneater";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_Barbarian(Hero h) {
+		Enemy enemy = new Barbarian("蛮族",70,70,3);
+		String event = "barbarian";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_Swarm_of_Insects(Hero h) {
+		Enemy enemy = new Swarm_of_Insects("毒虫の大群",70,70,3);
+		String event = "swarm_of_insects";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_GiantSnake(Hero h) {
+		Enemy enemy = new GiantSnake("大蛇",60,60,5);
+		String event = "giantsnake";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_Mercenary(Hero h) {
+		Enemy enemy = new Mercenary("傭兵",40,50,7);
+		String event = "mercenary";
+		h.setEvent(event);
+		battle_start(enemy,h);
+	}
+
+	static void select_enemy_Tiger(Hero h) {
+		Enemy enemy = new Tiger("タイガー",25,50,10);
+		String event = "tiger";
+		h.setEvent(event);
+		battle_start(enemy,h);
 	}
 
 	//エネミーの抽選終了後、戦闘パートが開始

@@ -11,9 +11,9 @@ public class Directing_Ending {
 
 		if(ending==0) {
 			DeadEnd();
-			System.out.println("  エンターキーで、タイトルへ戻る");
-			Thread.sleep(2000);
-			System.out.print("  >>");
+			System.out.println("");
+			System.out.println("            エンターキーで、次に進む >>");
+			System.out.print("");
 		}else {
 			try {
 				Goal();
@@ -24,9 +24,8 @@ public class Directing_Ending {
 					System.out.print("  >>");
 				}else if(ending==2){
 					BadEnd();
-					System.out.println("  エンターキーで、タイトルへ戻る");
-					Thread.sleep(2000);
-					System.out.print("  >>");
+					System.out.println("");
+					System.out.print("            エンターキーで、次に進む >>");
 				}
 			} catch (Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -454,7 +453,7 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		Tools.Graphic_Creator_ED(bad_back_down);
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
@@ -474,32 +473,13 @@ public class Directing_Ending {
 		System.out.println("                  怖いお兄さんに連れられて、どこかへ消えていきました。");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                  エンターキーで、次に進む >>");
+		System.out.println("");
 		Tools.Graphic_Creator_ED(bad_back_down);
+		System.out.println("");
+		System.out.println("            エンターキーで、次に進む >>");
 
 		String i = scan.nextLine();
 
-		Tools.Graphic_Creator_ED(bad_back_up);
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                ■リリーの日記：");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……詳しいことは、わかりませんが");
-		System.out.println("");
-		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		Tools.Graphic_Creator_ED(bad_back_down);
-		Thread.sleep(2000);
 
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
@@ -508,11 +488,6 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                  ……詳しいことは、わかりませんが");
-		System.out.println("");
-		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
-		System.out.println("");
-		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -520,24 +495,7 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		Tools.Graphic_Creator_ED(bad_back_down);
-		Thread.sleep(2000);
-
-		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
-		System.out.println("");
-		System.out.println("                ■リリーの日記：");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……詳しいことは、わかりませんが");
-		System.out.println("");
-		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
-		System.out.println("");
-		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……色々言いたいことはあるんだけど");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -552,7 +510,73 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                  ……詳しいことは、わかりませんが");
+		System.out.println("                  詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(4000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(4000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……色々言いたいことはあるんだけど");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  詳しいことは、わかりませんが");
 		System.out.println("");
 		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
 		System.out.println("");
@@ -565,51 +589,29 @@ public class Directing_Ending {
 		System.out.println("");
 		System.out.println("");
 		Tools.Graphic_Creator_ED(bad_back_down);
-		Thread.sleep(1000);
-
-		Tools.Graphic_Creator_ED(bad_back_up);
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                ■リリーの日記：");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……詳しいことは、わかりませんが");
-		System.out.println("");
-		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
-		System.out.println("");
-		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……色々言いたいことはあるんだけど");
-		System.out.println("");
-		System.out.println("                  今はともかく、完済に向けて、頑張れ！おにいちゃん！");
-		System.out.println("");
-		System.out.println("");
-		Tools.Graphic_Creator_ED(bad_back_down);
-		Thread.sleep(1000);
-
-		Tools.Graphic_Creator_ED(bad_back_up);
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                ■リリーの日記：");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……詳しいことは、わかりませんが");
-		System.out.println("");
-		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
-		System.out.println("");
-		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("                  ……色々言いたいことはあるんだけど");
-		System.out.println("");
-		System.out.println("                  今はともかく、完済に向けて、頑張れ！おにいちゃん！");
-		System.out.println("");
-		System.out.println("");
-		Tools.Graphic_Creator_ED(bad_back_down);
 		Thread.sleep(2000);
+
+		Tools.Graphic_Creator_ED(bad_back_up);
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                ■リリーの日記：");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  詳しいことは、わかりませんが");
+		System.out.println("");
+		System.out.println("                  借金返済のために、遠くの海で、漁をするんだとか。");
+		System.out.println("");
+		System.out.println("                  数年ほど、色々頑張らないといけないみたいです。");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("                  ……色々言いたいことはあるんだけど");
+		System.out.println("");
+		System.out.println("                  今はともかく、完済に向けて、頑張れ！おにいちゃん！");
+		System.out.println("");
+		System.out.println("");
+		Tools.Graphic_Creator_ED(bad_back_down);
+		Thread.sleep(4000);
 
 	}
 

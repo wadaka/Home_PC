@@ -17,7 +17,6 @@ public class Directing_Op {
 		for(int i=0;i<33;i++) {
 			System.out.println();
 		}
-		/*
 		System.out.println();
 		System.out.println();
 		System.out.println();
@@ -61,15 +60,14 @@ public class Directing_Op {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		
+
 		Thread.sleep(3500);
 		for(int i=0;i<32;i++) {
 			System.out.println();
 		}
-		*/
-		
+
 		Sister_1();
-		
+
 		/*
 		System.out.println("  君は、トレジャーハンター。");
 		Thread.sleep(2000);
@@ -127,7 +125,7 @@ public class Directing_Op {
 		}
 	}
 	static void Sister_1() throws InterruptedException {
-		
+
 		connect();
 		sister_noise();
 		sister_normal_talk_3();
@@ -525,7 +523,7 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.printf("                ※エンターキー入力で、次に進むよ。>>");
 	}
-	
+
 	static void choice1_1() throws InterruptedException {
 		sister_normal();
 		System.out.println("");
@@ -548,7 +546,7 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 	}
-	
+
 	static void choice1_2() throws InterruptedException {
 		sister_normal();
 		System.out.println("");
@@ -570,7 +568,7 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 	}
-	
+
 	static void choice1_3() throws InterruptedException {
 		sister_worried();
 		System.out.println("");
@@ -599,9 +597,9 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 	}
-	
+
 	static void player() {
 		System.out.println("           ...................MMMM\"Mge.....................");
 		System.out.println("                           ..F       (YNmY\"\"MHm,          7Me,");
@@ -633,7 +631,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY\"\"\"\"4h,....#\"``   _TQ.");
@@ -663,7 +661,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal_talk_1() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY\"\"\"\"4h,....#\"``   _TQ.");
@@ -693,7 +691,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal_talk_2() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY''''4h,....#\"``   _TQ.");
@@ -724,7 +722,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal_talk_3() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY\"\"\"\"4h,....#\"``   _TQ.");
@@ -754,7 +752,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal_talk_4() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY\"\"\"\"4h,....#\"``   _TQ.");
@@ -784,7 +782,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal_talk_5() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY\"\"\"\"4h,....#\"``   _TQ.");
@@ -814,7 +812,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_normal_talk_6() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY\"\"\"\"4h,....#\"``   _TQ.");
@@ -844,7 +842,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_thinking() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                                       ...Jga...");
@@ -874,7 +872,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_angry() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                     M        M      M          MMMM ");
@@ -906,7 +904,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_smile_talk_1() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY''''4h,....#\"``   _TQ.");
@@ -937,7 +935,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_worried() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY''''4h,....#\"``   _TQ.");
@@ -968,7 +966,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_worried_talk_1() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY''''4h,....#\"``   _TQ.");
@@ -999,7 +997,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_gohon() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                        ...JJy(JZY''''4h,....#\"``   _TQ.");
@@ -1030,13 +1028,13 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void sister_noise() throws InterruptedException{
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		
+
 		System.out.println("    `         gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
 		System.out.println("    `         gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
 		System.out.println("               gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
@@ -1069,13 +1067,13 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(250);
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		
+
 		System.out.println("    `         gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
 		System.out.println("    `         gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
 		System.out.println("               gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
@@ -1108,13 +1106,13 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(1000);
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		
+
 		System.out.println("    `         gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
 		System.out.println("             gggNgggggggggdNggggggggggMMNMMNgggggggNggggggggNggggMNgggggggggggggggg");
 		System.out.println("             gggNgggggggggdNggggggggggMMNMMNgg\"\"\"\"4h,....#\"``   _TQ.");
@@ -1148,10 +1146,10 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		
+
 		Thread.sleep(1000);
 	}
-	
+
 	static void takarajima_1() {
 		System.out.println("");
 		System.out.println("");
@@ -1181,7 +1179,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void takarajima_2() {
 		System.out.println("");
 		System.out.println("");
@@ -1211,7 +1209,7 @@ public class Directing_Op {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("");
 	}
-	
+
 	static void a() {
 		System.out.println("             jggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg,");
 		System.out.println("                                                       ...Jga...");
@@ -1245,9 +1243,9 @@ public class Directing_Op {
 		System.out.println("               【1】問題なし。");
 		System.out.println("               【2】う～ん、もうダメかも……。");
 		System.out.printf("                (数字を入力してください) >>");
-		
+
 	}
-	
+
 	static void connect() throws InterruptedException{
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -1324,7 +1322,7 @@ public class Directing_Op {
 		System.out.println("");
 
 		Thread.sleep(500);
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
@@ -1400,7 +1398,7 @@ public class Directing_Op {
 		System.out.println("");
 
 		Thread.sleep(500);
-		
+
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}

@@ -7,6 +7,7 @@ public class Hero {
 	private int item_gun=1;
 	private int item_smoke=1;
 	private int item_litter=0;
+	private String event = "";
 
 	public int getHp() {
 		return this.hp;
@@ -62,5 +63,13 @@ public class Hero {
 	}
 	public void setItem_litter(int item_litter) {
 		this.item_litter = item_litter;
+	}
+
+	public String getEvent() {
+		return event;
+	}
+
+	public void setEvent(String event) {
+		this.event = event;
 	}
 }

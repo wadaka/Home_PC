@@ -1,6 +1,17 @@
 package run;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+
+import run.PlayerData.Player;
 
 public class GameApp {
 	final static Scanner sc = new Scanner(System.in);
@@ -15,36 +26,142 @@ public class GameApp {
 	final static int[] item_N = {20,35,50,60,90};
 	final static int[] item_getN = {25,45,70};
 	final static int[] item_H = {25,35,45,50,85};
+	//セーブデータ管理用に使用する定数。
+	final static int id_name = 0;
+	final static int id_CampEv1 = 1;
+	final static int id_CampEv2 = 2;
+	final static int id_ED_Bad = 3;
+	final static int id_ED_Good = 4;
+	final static int id_ED_Best = 5;
 
+	public static void main(String[] args){
 
-
-	public static void main(String[] args) {
 		preparation();
+
 		while(true) {
-			Directing_Title.showTitle();
-			int startSelect = sc.nextInt();
-			if(startSelect==1) {
+			String[] player_data = new String[6];
+			try {
+				player_data = player_data_read();
+			} catch (IOException e1) {
+				// TODO 自動生成された catch ブロック
+				e1.printStackTrace();
+			}
+
+			Player p = new Player(player_data[0]);
+			try {
+				player_data_reflect(p);
+			} catch (IOException e1) {
+				// TODO 自動生成された catch ブロック
+				e1.printStackTrace();
+			}
+
+			if(p.getName() == null || p.getName().length()<=0) {
+
 				try {
-					Directing_StartGame.showStartGame();
+					Directing_Title.showTitle_firstTime_name_entry();
 				} catch (InterruptedException e) {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
-			}else if(startSelect==2) {
-				Directing_Op.showOp();
-				continue;
-			}else if(startSelect==3) {
-				Directing_Tutorial.showTutorial();
-				continue;
-			}else if(startSelect==4) {
-				break;
+				while(true) {
+					String input_name = sc.next();
+					if(input_name.length() < 1 || input_name.length() > 6) {
+						System.out.println("");
+						System.out.println(" 1文字以上、6文字以内で入力してください。");
+						System.out.println("");
+						try {
+							Thread.sleep(2000);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						System.out.print(" >>");
+					}else {
+						System.out.println("");
+						System.out.println("");
+						System.out.println("");
+						System.out.printf(" 「 %s 」 でよろしいですか？%n",input_name);
+						System.out.println("");
+						try {
+							Thread.sleep(2000);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						System.out.println("");
+						System.out.println(" 【1】はい  【2】いいえ");
+						System.out.println("");
+						System.out.print(" >>");
+						int input_num = sc.nextInt();
+
+						if(input_num==1) {
+							p.setName(input_name);
+							List<Integer> update_name = new ArrayList<>();
+							update_name.add(id_name);
+							try {
+								player_data_update(update_name,p);
+							} catch (IOException e) {
+								// TODO 自動生成された catch ブロック
+								e.printStackTrace();
+							}
+							break;
+						}else {
+							for(int i=0;i<32;i++) {
+								System.out.println("");
+							}
+							System.out.println("");
+							System.out.println(" あなたの名前を入力してください (1文字以上、6文字以内)");
+							System.out.println("");
+							System.out.print(" >>");
+						}
+					}
+				}
+
+				System.out.println("");
+				System.out.println(" 名前を登録しました。");
+				System.out.println("");
+
+				try {
+					Thread.sleep(2000);
+					for(int i=0;i<32;i++) {
+						System.out.println("");
+					}
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO 自動生成された catch ブロック
+					e.printStackTrace();
+				}
+				//Directing_Op.showOp();
+				//Directing_Tutorial.showTutorial();
 			}else {
-				continue;
+				Directing_Title.showTitle();
+				int startSelect = sc.nextInt();
+				if(startSelect==1) {
+					try {
+						Directing_Title.skip_select();
+						int skipSelect = sc.nextInt();
+						if(skipSelect == 2) {
+							p.setSkipEvent_Already_Read(true);
+						}else if(skipSelect == 3){
+							p.setSkipEvent_All(true);
+						}
+						Directing_StartGame.showStartGame();
+					} catch (InterruptedException e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					}
+				}else if(startSelect==2) {
+					Directing_Op.showOp();
+					continue;
+				}else if(startSelect==3) {
+					Directing_Tutorial.showTutorial();
+					continue;
+				}else if(startSelect==4) {
+					break;
+				}else {
+					continue;
+				}
 			}
-
-			//Directing_Op.showOp();
-
-			//Directing_Tutorial.showTutorial();
 
 			Hero h = new Hero();
 			Sister s = new Sister();
@@ -154,9 +271,7 @@ public class GameApp {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
-						System.out.println();
-						System.out.println("  =====================================================================================");
-						System.out.println("    探索終了。");
+						End_Turn(1,h);
 						break;
 					//普通の道を選択した時の処理-----------------------------------------------------------------------------
 					case 2:
@@ -166,11 +281,7 @@ public class GameApp {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
-						getMoney_TurnEnd(2,h);
-						System.out.println();
-						System.out.println("  =====================================================================================");
-						System.out.println("    探索終了。");
-						System.out.println("    普通の道ボーナス:財宝+1。");
+						End_Turn(2,h);
 						break;
 					//危険な道を選択した時の処理-----------------------------------------------------------------------------
 					case 3:
@@ -180,11 +291,7 @@ public class GameApp {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
-						getMoney_TurnEnd(3,h);
-						System.out.println();
-						System.out.println("  =====================================================================================");
-						System.out.println("    探索終了。");
-						System.out.println("    危険な道ボーナス:財宝+2。");
+						End_Turn(3,h);
 						break;
 					//傷薬を使用した場合の処理
 					default:
@@ -195,6 +302,9 @@ public class GameApp {
 						System.out.println("    探索終了。");
 						System.out.println();
 				}
+
+				//イベントで死亡した場合、ここでbreakし、死亡イベントへ移行
+				if(h.getHp()<1) break;
 
 				try {
 					Thread.sleep(2000);
@@ -235,24 +345,48 @@ public class GameApp {
 					String turnendClick = sc.nextLine();
 				}
 
-				//イベントで死亡した場合、ここでbreakし、死亡イベントへ移行
-				if(h.getHp()<1) break;
-
 			}
 
 			//エンディングの分岐処理
 			//エンディングは4種類で、１.HP0で死亡、2.借金が返せずLife is Over、3.生存+借金返済のはっぴーえんど。4は隠し（未実装）
 			int ending = 0;
+			boolean isEDCheck = false;
 			if(h.getHp()<1) {
 				ending = 0;
 			}
 			else if(h.getMoney()>=100) {
 				ending = 1;
+				isEDCheck = p.isEnding_Good();
+				p.setEnding_Good(true);
+				List<Integer> update_ED_G = new ArrayList<>();
+				update_ED_G.add(id_ED_Good);
+				try {
+					player_data_update(update_ED_G,p);
+				} catch (IOException e) {
+					// TODO 自動生成された catch ブロック
+					e.printStackTrace();
+				}
 			}else {
 				ending = 2;
+				isEDCheck = p.isEnding_Bad();
+				p.setEnding_Bad(true);
+				List<Integer> update_ED_B = new ArrayList<>();
+				update_ED_B.add(id_ED_Bad);
+				try {
+					player_data_update(update_ED_B,p);
+				} catch (IOException e) {
+					// TODO 自動生成された catch ブロック
+					e.printStackTrace();
+				}
 			}
 			try {
-				Directing_Ending.showEnding(ending);
+				if(!p.isSkipEvent_All()){
+					if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
+						Directing_Ending.showEnding(ending);
+					}
+				}
+				
+				Directing_Result.Result(h);
 			} catch (InterruptedException e) {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
@@ -263,6 +397,80 @@ public class GameApp {
 		}
 		System.out.println("アプリケーションを終了します。");
 	}
+
+//---------------------------------------------------------------------------------------------------------------
+//ゲームのメインループはここまで。
+//以下では、メインループ中でインスタンスとして利用する、様々なクラスを設定。
+//---------------------------------------------------------------------------------------------------------------
+
+	public static String[] player_data_read() throws IOException {
+
+		String[] read_data = new String[6];
+		FileInputStream fis =new FileInputStream("src/run/PlayerData/player_data.txt");
+		InputStreamReader isr = new InputStreamReader(fis,"utf-8");
+		BufferedReader br = new BufferedReader(isr);
+
+		String line = br.readLine();
+		read_data = line.split(",");
+
+		br.close();
+		return read_data;
+	}
+
+	public static void player_data_reflect(Player p) throws IOException {
+		String[] read_data = player_data_read();
+		if(read_data[1].equals("true")) p.setCampEvent_1(true);
+		if(read_data[2].equals("true")) p.setCampEvent_2(true);
+		if(read_data[3].equals("true")) p.setEnding_Bad(true);
+		if(read_data[4].equals("true")) p.setEnding_Good(true);
+		if(read_data[5].equals("true")) p.setEnding_Best(true);
+	}
+
+	public static void player_data_update(List<Integer> update_num,Player p) throws IOException {
+		/*
+		 * 以下、対応する番号に応じて、データを更新する。
+		 * 0:名前、1:キャンプ１、2:キャンプ２、3:バッドエンド、4:グッドエンド、5:ベストエンド
+		 */
+		String[] read_data = player_data_read();
+	    FileOutputStream fos = new FileOutputStream("src/run/PlayerData/player_data.txt", false);
+	    OutputStreamWriter osw = new OutputStreamWriter(fos,"utf-8");
+	    BufferedWriter bw = new BufferedWriter(osw);
+
+	    for(int i=0;i<update_num.size();i++) {
+	    	switch(update_num.get(i)) {
+	    	case 0:
+	    		read_data[0] = p.getName();
+	    		break;
+	    	case 1:
+	    		if(p.isCampEvent_1()) read_data[1] = "true";
+	    		break;
+	    	case 2:
+	    		if(p.isCampEvent_2()) read_data[2] = "true";
+	    		break;
+	    	case 3:
+	    		if(p.isEnding_Bad()) read_data[3] = "true";
+	    		break;
+	    	case 4:
+	    		if(p.isEnding_Good()) read_data[4] = "true";
+	    		break;
+	    	case 5:
+	    		if(p.isEnding_Best()) read_data[5] = "true";
+	    		break;
+	    		default:
+	    			//今後、追加処理が発生すれば追記
+	    	}
+	    }
+
+	    String write = "";
+	    for(int i=0;i<read_data.length;i++) {
+	    	write += read_data[i];
+	    	if(i==read_data.length-1) continue;
+	    	write += ",";
+	    }
+	    bw.write(write);
+	    bw.close();
+	}
+
 	static void preparation() {
 		System.out.println("============================================================================");
 		System.out.println("============================================================================");
@@ -298,6 +506,30 @@ public class GameApp {
 		System.out.println("============================================================================");
 		System.out.printf("============================================================================");
 		String pre = sc.nextLine();
+	}
+
+	static void End_Turn(int input_num,Hero h) {
+
+		if(h.getHp()>0) {
+			if(input_num==0) {
+				System.out.println();
+				System.out.println("  =====================================================================================");
+				System.out.println("    探索終了。");
+				System.out.println("");
+			}else if(input_num ==1) {
+				getMoney_TurnEnd(2,h);
+				System.out.println();
+				System.out.println("  =====================================================================================");
+				System.out.println("    探索終了。");
+				System.out.println("    普通の道ボーナス:財宝+1。");
+			}else {
+				getMoney_TurnEnd(3,h);
+				System.out.println();
+				System.out.println("  =====================================================================================");
+				System.out.println("    探索終了。");
+				System.out.println("    危険な道ボーナス:財宝+2。");
+			}
+		}
 	}
 
 	static void BattleJudgement(int root,int turn,Hero h) throws InterruptedException{
@@ -423,7 +655,7 @@ public class GameApp {
 		int get_m = 1;
 
 		if(root==2) {
-			get_m+=rdm.nextInt(3);
+			get_m+=rdm.nextInt(3)+1;
 		}
 		if(root==3) {
 			get_m+=rdm.nextInt(3)+2;
@@ -539,7 +771,7 @@ public class GameApp {
 				Thread.sleep(1000);
 			}
 		}else {
-			h.setHp(hp-15);
+			h.setHp(hp-20);
 			Directing_Pick_Items.hand_grenade_1();
 			Thread.sleep(2000);
 			System.out.println();
@@ -550,7 +782,7 @@ public class GameApp {
 			Directing_Pick_Items.hand_grenade_3();
 			Thread.sleep(1000);
 			System.out.println();
-			System.out.println("    HP-15");
+			System.out.println("    HP-20");
 			Thread.sleep(2000);
 		}
 	}
@@ -579,37 +811,37 @@ public class GameApp {
 
 		if(attackN_j<attackNs[0]) {
 			//スコール
-			h.setHp(hp-2);
+			h.setHp(hp-5);
 			System.out.println("    スコールだ！");
 			Thread.sleep(1000);
 			System.out.println();
 			System.out.println("    ずぶぬれになった体が冷え、体力が奪われる……。");
 			Thread.sleep(1000);
-			System.out.println("    HP-2");
+			System.out.println("    HP-5");
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[1]) {
 			//虫
-			h.setHp(hp-3);
+			h.setHp(hp-7);
 			System.out.println("    吸血虫だ！");
 			Thread.sleep(1000);
 			System.out.println();
 			System.out.println("    うぅ、血を吸われて眩暈が……。");
 			Thread.sleep(1000);
-			System.out.println("    HP-3");
+			System.out.println("    HP-7");
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[2]) {
 			//ヘビ
-			h.setHp(hp-7);
+			h.setHp(hp-10);
 			System.out.println("    ヘビだ！");
 			Thread.sleep(1000);
 			System.out.println();
 			System.out.println("    ぎゃあ、噛まれた！！。");
 			Thread.sleep(1000);
-			System.out.println("    HP-7");
+			System.out.println("    HP-10");
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[3]) {
 			//河
-			int bad = rdm.nextInt(8)+3;
+			int bad = rdm.nextInt(8)+8;
 			h.setHp(hp-bad);
 			System.out.println("    河だ！");
 			Thread.sleep(1000);
@@ -621,7 +853,7 @@ public class GameApp {
 		}else {
 			//金食い虫
 			int bad = rdm.nextInt(5)+1;
-			System.out.println("    うわ、金食い虫に財宝を食われた！");
+			System.out.println("    うわ、金食い虫だ！");
 			Thread.sleep(1000);
 			System.out.println();
 			System.out.println("    チクショー！金返せ！！");
