@@ -3,10 +3,12 @@ package run;
 import java.util.Random;
 import java.util.Scanner;
 
+import run.PlayerData.Player;
+
 public class Camp {
 	final static Scanner sc = new Scanner(System.in);
 	final static Random rdm = new Random();
-	static void start_Camp(int turn,Hero h,Sister s,int[] ba) throws InterruptedException{
+	static void start_Camp(int turn,Hero h,Sister s,int[] ba,Player p) throws InterruptedException{
 
 		//ショップの在庫を抽選する
 		int[] supply_stock_lot = {1,1,1,1} ;
@@ -69,20 +71,26 @@ public class Camp {
 			e.printStackTrace();
 		}
 
-		if(turn ==9 && s.isCamp_1 == true) {
-			try {
-				Directing_Camp.after_event_1();
-			} catch (Exception e) {
-				// TODO 自動生成された catch ブロック
-				e.printStackTrace();
+		if(! p.isSkipEvent_All()) {
+			if(turn ==9 && s.isCamp_1 == true) {
+				if(! p.isSkipEvent_Already_Read() || ! p.isCampEvent_1()) {
+					try {
+						Directing_Camp.after_event_1();
+					} catch (Exception e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					}
+				}
 			}
-		}
-		if(turn ==19 && s.isCamp_2 == true) {
-			try {
-				Directing_Camp.after_event_2();
-			} catch (Exception e) {
-				// TODO 自動生成された catch ブロック
-				e.printStackTrace();
+			if(turn ==19 && s.isCamp_2 == true) {
+				if(! p.isSkipEvent_Already_Read() || ! p.isCampEvent_2()) {
+					try {
+						Directing_Camp.after_event_2();
+					} catch (Exception e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					}
+				}
 			}
 		}
 	}

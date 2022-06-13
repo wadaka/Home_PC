@@ -131,8 +131,8 @@ public class GameApp {
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
-				//Directing_Op.showOp();
-				//Directing_Tutorial.showTutorial();
+				Directing_Op.showOp(p);
+				Directing_Tutorial.showTutorial();
 			}else {
 				Directing_Title.showTitle();
 				int startSelect = sc.nextInt();
@@ -151,7 +151,7 @@ public class GameApp {
 						e.printStackTrace();
 					}
 				}else if(startSelect==2) {
-					Directing_Op.showOp();
+					Directing_Op.showOp(p);
 					continue;
 				}else if(startSelect==3) {
 					Directing_Tutorial.showTutorial();
@@ -172,7 +172,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=29;i<30;i++) {
+			for(int i=9;i<30;i++) {
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -321,7 +321,8 @@ public class GameApp {
 					String turnendClick = sc.nextLine();
 
 					try {
-						Camp.start_Camp(i,h,s,before_pl_data);
+
+						Camp.start_Camp(i,h,s,before_pl_data,p);
 					} catch (InterruptedException e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
@@ -385,7 +386,7 @@ public class GameApp {
 						Directing_Ending.showEnding(ending);
 					}
 				}
-				
+
 				Directing_Result.Result(h);
 			} catch (InterruptedException e) {
 				// TODO 自動生成された catch ブロック

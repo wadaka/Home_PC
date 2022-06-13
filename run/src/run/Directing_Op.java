@@ -2,18 +2,20 @@ package run;
 
 import java.util.Scanner;
 
+import run.PlayerData.Player;
+
 public class Directing_Op {
 	final static Scanner scan = new Scanner(System.in);
-	public static void showOp() {
+	public static void showOp(Player p) {
 		try {
-			Op_1_1();
+			Op_1_1(p);
 		} catch (InterruptedException e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
 
 	}
-	public static void Op_1_1() throws InterruptedException{
+	public static void Op_1_1(Player p) throws InterruptedException{
 		for(int i=0;i<33;i++) {
 			System.out.println();
 		}
@@ -66,7 +68,7 @@ public class Directing_Op {
 			System.out.println();
 		}
 
-		Sister_1();
+		Sister_1(p);
 
 		/*
 		System.out.println("  君は、トレジャーハンター。");
@@ -124,7 +126,7 @@ public class Directing_Op {
 			System.out.println();
 		}
 	}
-	static void Sister_1() throws InterruptedException {
+	static void Sister_1(Player p) throws InterruptedException {
 
 		connect();
 		sister_noise();
@@ -495,7 +497,7 @@ public class Directing_Op {
 		System.out.println("               その一言を口火に、");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("               あなたと、その妹リリー、 ふたりの大冒険が幕をあける！！");
+		System.out.printf("               %sと、その妹リリー、 ふたりの大冒険が幕をあける！！%n",p.getName());
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -515,7 +517,7 @@ public class Directing_Op {
 		System.out.println("               その一言を口火に、");
 		System.out.println("");
 		System.out.println("");
-		System.out.println("               あなたと、その妹リリー、 ふたりの大冒険が幕をあける！！");
+		System.out.printf("               %sと、その妹リリー、 ふたりの大冒険が幕をあける！！%n",p.getName());
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
