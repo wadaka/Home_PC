@@ -123,7 +123,7 @@ public class GameApp {
 
 				try {
 					Thread.sleep(2000);
-					for(int i=0;i<32;i++) {
+					for(int i=9;i<32;i++) {
 						System.out.println("");
 					}
 					Thread.sleep(2000);
@@ -320,12 +320,44 @@ public class GameApp {
 					System.out.println();
 					String turnendClick = sc.nextLine();
 
-					try {
+					boolean isFragCather = false;
+					if(i==9 && p.isCampEvent_1()) {
+						isFragCather = true;
+					}else if(i==19 && p.isCampEvent_2()){
+						isFragCather = true;
+					}
 
+					try {
 						Camp.start_Camp(i,h,s,before_pl_data,p);
 					} catch (InterruptedException e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
+					}
+
+					if(i==9 && ! isFragCather) {
+						if(p.isCampEvent_1()) {
+							p.setCampEvent_1(true);
+							List<Integer> update_CampEv1 = new ArrayList<>();
+							update_CampEv1.add(id_CampEv1);
+							try {
+								player_data_update(update_CampEv1,p);
+							} catch (IOException e) {
+								// TODO 自動生成された catch ブロック
+								e.printStackTrace();
+							}
+						}
+					}else if(i==19 && ! isFragCather) {
+						if(p.isCampEvent_2()) {
+							p.setCampEvent_2(true);
+							List<Integer> update_CampEv2 = new ArrayList<>();
+							update_CampEv2.add(id_CampEv2);
+							try {
+								player_data_update(update_CampEv2,p);
+							} catch (IOException e) {
+								// TODO 自動生成された catch ブロック
+								e.printStackTrace();
+							}
+						}
 					}
 
 					//次回の経過報告に向け、参照用のデータを更新

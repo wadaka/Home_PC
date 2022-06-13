@@ -76,6 +76,7 @@ public class Camp {
 				if(! p.isSkipEvent_Already_Read() || ! p.isCampEvent_1()) {
 					try {
 						Directing_Camp.after_event_1();
+						p.setCampEvent_1(true);
 					} catch (Exception e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
@@ -86,6 +87,7 @@ public class Camp {
 				if(! p.isSkipEvent_Already_Read() || ! p.isCampEvent_2()) {
 					try {
 						Directing_Camp.after_event_2();
+						p.setCampEvent_2(true);
 					} catch (Exception e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
