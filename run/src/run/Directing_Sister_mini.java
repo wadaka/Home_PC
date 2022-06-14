@@ -109,7 +109,7 @@ public class Directing_Sister_mini {
 		System.out.println("                |                                                                     |      |(ノ。  。ノノ |   ");
 		System.out.print("                |    ");
 		System.out.printf("%s",word);
-		System.out.println("    |      | (-  ᴗ        -[]   |   ");
+		System.out.println("    |      | (- ー   -[]  |   ");
 		System.out.println("                |                                                                      ＞    |   ――〃 ´  |   ");
 		System.out.println("                |_____________________________________________________________________|      |____〃_〃ヽ___|   ");
 		System.out.println("                                                                                             |______________|   ");
@@ -122,7 +122,7 @@ public class Directing_Sister_mini {
 		System.out.print("                |    ");
 		System.out.printf("%s",word1);
 		System.out.println("    |      |(ノ。  。ノノ |   ");
-		System.out.println("                |                                                                     |      | (-  ᴗ        -[]   |   ");
+		System.out.println("                |                                                                     |      | (- ー   -[]  |  ");
 
 		System.out.print("                |    ");
 		System.out.printf("%s",word2);
