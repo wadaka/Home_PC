@@ -10,6 +10,7 @@ public class Player {
 	private boolean isEnding_Bad = false;
 	private boolean isEnding_Good = false;
 	private boolean isEnding_Best = false;
+	private int play_count = 0;
 
 	public Player(String name) {
 		this.name=name;
@@ -77,6 +78,15 @@ public class Player {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+	public int getPlay_count() {
+		return play_count;
+	}
+
+	public void setPlay_count(int play_count) {
+		this.play_count = play_count;
 	}
 
 }

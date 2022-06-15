@@ -33,13 +33,14 @@ public class GameApp {
 	final static int id_ED_Bad = 3;
 	final static int id_ED_Good = 4;
 	final static int id_ED_Best = 5;
+	final static int id_PlayerCount = 6;
 
 	public static void main(String[] args){
 
 		preparation();
 
 		while(true) {
-			String[] player_data = new String[6];
+			String[] player_data = new String[7];
 			try {
 				player_data = player_data_read();
 			} catch (IOException e1) {
@@ -47,7 +48,7 @@ public class GameApp {
 				e1.printStackTrace();
 			}
 
-			Player p = new Player(player_data[0]);
+			Player p = new Player(player_data[id_name]);
 			try {
 				player_data_reflect(p);
 			} catch (IOException e1) {
@@ -163,16 +164,36 @@ public class GameApp {
 				}
 			}
 
-			Hero h = new Hero();
+			/*プレイヤーの挑戦回数を更新、記録する------------------
+			 * 補足（というか備忘録）
+			 * プレイヤーの挑戦回数を記録する意図は、以下ふたつである。
+			 * １．ランキング機能にて、スコアが同率になった時の順位付け処理用。（挑戦回数が多い方を、上位とする）
+			 * ２．リザルト画面の演出で「挑戦回数」を表記したくなった時用。（2022/06/15現在、実装するつもりはないが……。)
+			 */
+			p.setPlay_count(p.getPlay_count()+1);
+			List<Integer> update_play_count = new ArrayList<>();
+			update_play_count.add(id_PlayerCount);
+			try {
+				player_data_update(update_play_count,p);
+			} catch (IOException e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			}
+			//------------------------------------------------------
+
+			Hero h = new Hero(p.getName(),p.getPlay_count());
 			Sister s = new Sister();
 
 			int[] before_pl_data = {
 					h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter(),
 			};
+			int turn_score_calc = 0;
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
 			for(int i=9;i<30;i++) {
+
+				turn_score_calc = i;
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -412,18 +433,25 @@ public class GameApp {
 					e.printStackTrace();
 				}
 			}
+
+			//エンディングとリザルト画面を表示
+			int score = score_calculator(h);
 			try {
 				if(!p.isSkipEvent_All()){
 					if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
 						Directing_Ending.showEnding(ending);
 					}
 				}
+				Directing_Result.showResult(turn_score_calc,score,h);
+				sc.nextLine();
+				System.out.print("    ※エンターキー入力で次へ進みます。");
+				String Click = sc.nextLine();
 
-				Directing_Result.Result(h);
 			} catch (InterruptedException e) {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
+
 			sc.nextLine();
 			String lastClick = sc.nextLine();
 
@@ -438,7 +466,7 @@ public class GameApp {
 
 	public static String[] player_data_read() throws IOException {
 
-		String[] read_data = new String[6];
+		String[] read_data = new String[7];
 		FileInputStream fis =new FileInputStream("src/run/PlayerData/player_data.txt");
 		InputStreamReader isr = new InputStreamReader(fis,"utf-8");
 		BufferedReader br = new BufferedReader(isr);
@@ -462,7 +490,7 @@ public class GameApp {
 	public static void player_data_update(List<Integer> update_num,Player p) throws IOException {
 		/*
 		 * 以下、対応する番号に応じて、データを更新する。
-		 * 0:名前、1:キャンプ１、2:キャンプ２、3:バッドエンド、4:グッドエンド、5:ベストエンド
+		 * 0:名前、1:キャンプ１、2:キャンプ２、3:バッドエンド、4:グッドエンド、5:ベストエンド、6:挑戦回数
 		 */
 		String[] read_data = player_data_read();
 	    FileOutputStream fos = new FileOutputStream("src/run/PlayerData/player_data.txt", false);
@@ -489,6 +517,8 @@ public class GameApp {
 	    	case 5:
 	    		if(p.isEnding_Best()) read_data[5] = "true";
 	    		break;
+	    	case 6:
+	    		read_data[6] = Integer.valueOf(p.getPlay_count()).toString();
 	    		default:
 	    			//今後、追加処理が発生すれば追記
 	    	}
@@ -502,6 +532,22 @@ public class GameApp {
 	    }
 	    bw.write(write);
 	    bw.close();
+	}
+
+	public static String[] ranking_data_read() throws IOException {
+
+		String[] read_data = new String[5];
+		FileInputStream fis =new FileInputStream("src/run/PlayerData/ranking_data.txt");
+		InputStreamReader isr = new InputStreamReader(fis,"utf-8");
+		BufferedReader br = new BufferedReader(isr);
+
+		for(int i=0;i<10;i++) {
+		String line = br.readLine();
+		read_data = line.split(",");
+		}
+
+		br.close();
+		return read_data;
 	}
 
 	static void preparation() {
@@ -1048,4 +1094,22 @@ public class GameApp {
 		System.out.println("");
 		System.out.println("");
 	}
+
+	static int score_calculator(Hero h) {
+		int score = 0;
+		if(h.getMoney()>124) {
+			score+=400;
+		}else if(h.getMoney()>99) {
+			score+=300;
+		}else {
+			score+=200;
+		}
+		score += h.getMoney() * 10;
+		score += h.getItem_ointment() * 50;
+		score += h.getItem_gun() * 30;
+		score += h.getItem_smoke() * 20;
+		score += h.getItem_litter() * 10;
+		return score;
+	}
+
 }

@@ -1,6 +1,7 @@
 package run;
 
 public class Hero {
+	private String name = "";
 	private int hp=100;
 	private int money=0;
 	private int item_ointment=1;
@@ -8,6 +9,16 @@ public class Hero {
 	private int item_smoke=1;
 	private int item_litter=0;
 	private String event = "";
+	private int player_count;
+
+	public Hero(String name,int player_count) {
+		this.name=name;
+		this.player_count=player_count;
+	}
+
+	public String getName() {
+		return this.name;
+	}
 
 	public int getHp() {
 		return this.hp;
