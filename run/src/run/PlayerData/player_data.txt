@@ -1,1 +1,1 @@
-まるお,true,false,false,false,false,1
+まるお,true,false,true,false,false,1

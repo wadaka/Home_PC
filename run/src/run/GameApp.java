@@ -12,6 +12,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import run.PlayerData.Player;
+import run.PlayerData.Ranking;
 
 public class GameApp {
 	final static Scanner sc = new Scanner(System.in);
@@ -124,7 +125,7 @@ public class GameApp {
 
 				try {
 					Thread.sleep(2000);
-					for(int i=9;i<32;i++) {
+					for(int i=0;i<32;i++) {
 						System.out.println("");
 					}
 					Thread.sleep(2000);
@@ -191,7 +192,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=9;i<30;i++) {
+			for(int i=29;i<30;i++) {
 
 				turn_score_calc = i;
 
@@ -410,6 +411,7 @@ public class GameApp {
 			}
 			else if(h.getMoney()>=100) {
 				ending = 1;
+				h.setEvent("claar_good");
 				isEDCheck = p.isEnding_Good();
 				p.setEnding_Good(true);
 				List<Integer> update_ED_G = new ArrayList<>();
@@ -422,6 +424,7 @@ public class GameApp {
 				}
 			}else {
 				ending = 2;
+				h.setEvent("claar_bad");
 				isEDCheck = p.isEnding_Bad();
 				p.setEnding_Bad(true);
 				List<Integer> update_ED_B = new ArrayList<>();
@@ -447,13 +450,26 @@ public class GameApp {
 				System.out.print("    ※エンターキー入力で次へ進みます。");
 				String Click = sc.nextLine();
 
-			} catch (InterruptedException e) {
+				List<Ranking> r_list = ranking_data_read();
+				Ranking my_rank = new Ranking(h.getName(),Integer.valueOf(score).toString(),turn_score_calc,h.getEvent(),h.getPlayer_count());
+				for(int i=0;i<r_list.size();i++) {
+					int s_num = Integer.parseInt(r_list.get(i).getScore());
+					if(score>=s_num) {
+						r_list.add(i,my_rank);
+						r_list.remove(r_list.size()-1);
+						ranking_data_update(r_list);
+						break;
+					}
+				}
+
+			} catch (InterruptedException | IOException e) {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
 
 			sc.nextLine();
 			String lastClick = sc.nextLine();
+
 
 		}
 		System.out.println("アプリケーションを終了します。");
@@ -534,20 +550,38 @@ public class GameApp {
 	    bw.close();
 	}
 
-	public static String[] ranking_data_read() throws IOException {
+	public static List<Ranking> ranking_data_read() throws IOException {
 
-		String[] read_data = new String[5];
+		List<Ranking> read_data = new ArrayList<>();
 		FileInputStream fis =new FileInputStream("src/run/PlayerData/ranking_data.txt");
 		InputStreamReader isr = new InputStreamReader(fis,"utf-8");
 		BufferedReader br = new BufferedReader(isr);
 
-		for(int i=0;i<10;i++) {
-		String line = br.readLine();
-		read_data = line.split(",");
+		String line;
+		while (( line = br.readLine()) != null) {
+			String[] r_data = new String[5];
+			r_data = line.split(",");
+			Ranking ranking = new Ranking(r_data[0],r_data[1],Integer.parseInt(r_data[2]),r_data[3],Integer.parseInt(r_data[4]));
+			read_data.add(ranking);
 		}
-
 		br.close();
 		return read_data;
+	}
+
+	public static void ranking_data_update(List<Ranking> update_data) throws IOException{
+		FileOutputStream fos = new FileOutputStream("src/run/PlayerData/ranking_data.txt", false);
+	    OutputStreamWriter osw = new OutputStreamWriter(fos,"utf-8");
+	    BufferedWriter bw = new BufferedWriter(osw);
+
+		for(int i=0;i<update_data.size();i++) {
+			bw.write(update_data.get(i).getName()+",");
+			bw.write(update_data.get(i).getScore()+",");
+			bw.write(update_data.get(i).getTurn()+",");
+			bw.write(update_data.get(i).getSummry()+",");
+			bw.write(update_data.get(i).getPlay_count());
+			if(! (i==update_data.size()-1)) bw.newLine();
+		}
+		bw.close();
 	}
 
 	static void preparation() {

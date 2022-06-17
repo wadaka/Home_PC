@@ -83,4 +83,8 @@ public class Hero {
 	public void setEvent(String event) {
 		this.event = event;
 	}
+
+	public int getPlayer_count() {
+		return player_count;
+	}
 }
