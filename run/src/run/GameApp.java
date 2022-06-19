@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+import run.PlayerData.Directing_Ranking;
 import run.PlayerData.Player;
 import run.PlayerData.Ranking;
 
@@ -28,6 +29,7 @@ public class GameApp {
 	final static int[] item_getN = {25,45,70};
 	final static int[] item_H = {25,35,45,50,85};
 	//セーブデータ管理用に使用する定数。
+	final static int data_sum = 7;
 	final static int id_name = 0;
 	final static int id_CampEv1 = 1;
 	final static int id_CampEv2 = 2;
@@ -38,10 +40,16 @@ public class GameApp {
 
 	public static void main(String[] args){
 
+		char sumsun = '１';
+		for(int i=0;i<10;i++) {
+			System.out.println(sumsun);
+			sumsun ++;
+		}
+
 		preparation();
 
 		while(true) {
-			String[] player_data = new String[7];
+			String[] player_data = new String[data_sum];
 			try {
 				player_data = player_data_read();
 			} catch (IOException e1) {
@@ -172,6 +180,7 @@ public class GameApp {
 			 * ２．リザルト画面の演出で「挑戦回数」を表記したくなった時用。（2022/06/15現在、実装するつもりはないが……。)
 			 */
 			p.setPlay_count(p.getPlay_count()+1);
+			System.out.println(p.getPlay_count());
 			List<Integer> update_play_count = new ArrayList<>();
 			update_play_count.add(id_PlayerCount);
 			try {
@@ -192,7 +201,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=29;i<30;i++) {
+			for(int i=0;i<30;i++) {
 
 				turn_score_calc = i;
 
@@ -446,7 +455,6 @@ public class GameApp {
 					}
 				}
 				Directing_Result.showResult(turn_score_calc,score,h);
-				sc.nextLine();
 				System.out.print("    ※エンターキー入力で次へ進みます。");
 				String Click = sc.nextLine();
 
@@ -461,15 +469,16 @@ public class GameApp {
 						break;
 					}
 				}
+				Directing_Ranking.show_Ranking(r_list);
+				sc.nextLine();
+				String lastClick = sc.nextLine();
+				Directing_Ranking.show_Ranking_after();
+				End_Adventure();
 
-			} catch (InterruptedException | IOException e) {
+			} catch ( Exception e) {
 				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
-
-			sc.nextLine();
-			String lastClick = sc.nextLine();
-
 
 		}
 		System.out.println("アプリケーションを終了します。");
@@ -482,7 +491,7 @@ public class GameApp {
 
 	public static String[] player_data_read() throws IOException {
 
-		String[] read_data = new String[7];
+		String[] read_data = new String[data_sum];
 		FileInputStream fis =new FileInputStream("src/run/PlayerData/player_data.txt");
 		InputStreamReader isr = new InputStreamReader(fis,"utf-8");
 		BufferedReader br = new BufferedReader(isr);
@@ -501,6 +510,7 @@ public class GameApp {
 		if(read_data[3].equals("true")) p.setEnding_Bad(true);
 		if(read_data[4].equals("true")) p.setEnding_Good(true);
 		if(read_data[5].equals("true")) p.setEnding_Best(true);
+		p.setPlay_count(Integer.parseInt(read_data[6]));
 	}
 
 	public static void player_data_update(List<Integer> update_num,Player p) throws IOException {
@@ -534,7 +544,8 @@ public class GameApp {
 	    		if(p.isEnding_Best()) read_data[5] = "true";
 	    		break;
 	    	case 6:
-	    		read_data[6] = Integer.valueOf(p.getPlay_count()).toString();
+	    		read_data[6] = Integer.toString(p.getPlay_count());
+	    		break;
 	    		default:
 	    			//今後、追加処理が発生すれば追記
 	    	}
@@ -559,8 +570,7 @@ public class GameApp {
 
 		String line;
 		while (( line = br.readLine()) != null) {
-			String[] r_data = new String[5];
-			r_data = line.split(",");
+			String[] r_data = line.split(",");
 			Ranking ranking = new Ranking(r_data[0],r_data[1],Integer.parseInt(r_data[2]),r_data[3],Integer.parseInt(r_data[4]));
 			read_data.add(ranking);
 		}
@@ -578,7 +588,8 @@ public class GameApp {
 			bw.write(update_data.get(i).getScore()+",");
 			bw.write(update_data.get(i).getTurn()+",");
 			bw.write(update_data.get(i).getSummry()+",");
-			bw.write(update_data.get(i).getPlay_count());
+			bw.write(update_data.get(i).getPlay_count()+",");
+			bw.write("dummy");
 			if(! (i==update_data.size()-1)) bw.newLine();
 		}
 		bw.close();
@@ -624,12 +635,12 @@ public class GameApp {
 	static void End_Turn(int input_num,Hero h) {
 
 		if(h.getHp()>0) {
-			if(input_num==0) {
+			if(input_num==1) {
 				System.out.println();
 				System.out.println("  =====================================================================================");
 				System.out.println("    探索終了。");
 				System.out.println("");
-			}else if(input_num ==1) {
+			}else if(input_num ==2) {
 				getMoney_TurnEnd(2,h);
 				System.out.println();
 				System.out.println("  =====================================================================================");
@@ -1146,4 +1157,191 @@ public class GameApp {
 		return score;
 	}
 
+	static void End_Adventure() throws InterruptedException {
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         S");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         Se");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  Y");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  Yo");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     N");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Ne");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Nex");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next A");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Ad");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adv");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adve");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adven");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Advent");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adventu");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adventur");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adventure");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(100);
+
+		for(int i=0;i<14;i++) {
+			System.out.println("");
+		}
+		System.out.println("                                         See  You     Next Adventure !     ");
+		for(int i=0;i<17;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(2000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(1000);
+	}
 }

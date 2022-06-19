@@ -15,9 +15,7 @@ public class Directing_Result {
 		line_32();
 		result_two(turn,score,h,player_name);
 		System.out.println("");
-		Thread.sleep(4000);
-		line_32();
-		result_two(turn,score,h,player_name);
+		Thread.sleep(2000);
 
 	}
 
@@ -28,8 +26,9 @@ public class Directing_Result {
 	}
 
 	public static void result_one() {
+		System.out.println("");
 		result_up_banner();
-		for(int i=0;i<28;i++) {
+		for(int i=0;i<23;i++) {
 			System.out.println("");
 		}
 		result_down_banner();
@@ -38,8 +37,11 @@ public class Directing_Result {
 
 	public static void result_two(int turn,int score,Hero h,String name) {
 		result_up_banner();
+		for(int i=0;i<2;i++) {
+			System.out.println("");
+		}
 		result_player_data(turn,score,h,name);
-		for(int i=0;i<14;i++) {
+		for(int i=0;i<6;i++) {
 			System.out.println("");
 		}
 		result_down_banner();
@@ -47,7 +49,10 @@ public class Directing_Result {
 
 	public static void result_up_banner() {
 		System.out.println("");
+		System.out.println("");
 		System.out.println("                                 今回の30歩 ");
+		System.out.println("");
+		System.out.println("");
 		System.out.println("----------------------------------------------------------------------------");
 	}
 
