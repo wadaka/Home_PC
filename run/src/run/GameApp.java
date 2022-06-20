@@ -895,6 +895,7 @@ public class GameApp {
 				Thread.sleep(1000);
 			}
 		}else {
+			h.setEvent("booby_trap");
 			h.setHp(hp-20);
 			Directing_Pick_Items.hand_grenade_1();
 			Thread.sleep(2000);
@@ -935,6 +936,7 @@ public class GameApp {
 
 		if(attackN_j<attackNs[0]) {
 			//スコール
+			h.setEvent("squal");
 			h.setHp(hp-5);
 			System.out.println("    スコールだ！");
 			Thread.sleep(1000);
@@ -945,6 +947,7 @@ public class GameApp {
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[1]) {
 			//虫
+			h.setEvent("leeches");
 			h.setHp(hp-7);
 			System.out.println("    吸血虫だ！");
 			Thread.sleep(1000);
@@ -955,6 +958,7 @@ public class GameApp {
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[2]) {
 			//ヘビ
+			h.setEvent("snake");
 			h.setHp(hp-10);
 			System.out.println("    ヘビだ！");
 			Thread.sleep(1000);
@@ -965,6 +969,7 @@ public class GameApp {
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[3]) {
 			//河
+			h.setEvent("river");
 			int bad = rdm.nextInt(8)+8;
 			h.setHp(hp-bad);
 			System.out.println("    河だ！");
@@ -1024,6 +1029,7 @@ public class GameApp {
 				Thread.sleep(1000);
 			}
 		}else if(d_f>0) {
+			h.setEvent("remain_of_rock");
 			System.out.println();
 			System.out.println();
 			System.out.println();
@@ -1056,6 +1062,7 @@ public class GameApp {
 				Thread.sleep(1000);
 			}
 		}else {
+			h.setEvent("remain_of_natives");
 			System.out.println();
 			System.out.println();
 			System.out.println();
