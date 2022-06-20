@@ -12,7 +12,7 @@ public class Directing_Ending {
 		if(ending==0) {
 			DeadEnd();
 			System.out.println("");
-			System.out.println("            エンターキーで、次に進む >>");
+			System.out.println("");
 			System.out.print("");
 		}else {
 			try {

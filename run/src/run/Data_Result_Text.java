@@ -15,11 +15,14 @@ public class Data_Result_Text {
 		case "rogue":
 			text+= "ならず者に襲われ 力尽きた。                  ";
 			break;
-		case "swarm_of_insects":
-			text+= "毒虫の大群に襲われ 力尽きた。                ";
+		case "maneater":
+			text+= "食人植物に襲われ 力尽きた。                  ";
 			break;
 		case "barbarian":
 			text+= "蛮族に襲われ 力尽きた。                      ";
+			break;
+		case "swarm_of_insects":
+			text+= "毒虫の大群に襲われ 力尽きた。                ";
 			break;
 		case "giant_snake":
 			text+= "大蛇に襲われ 力尽きた。                      ";

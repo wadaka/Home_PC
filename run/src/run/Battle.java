@@ -127,7 +127,7 @@ public class Battle {
 
 	static void select_enemy_GiantSnake(Hero h) {
 		Enemy enemy = new GiantSnake("大蛇",60,60,5);
-		String event = "giantsnake";
+		String event = "giant_snake";
 		h.setEvent(event);
 		battle_start(enemy,h);
 	}

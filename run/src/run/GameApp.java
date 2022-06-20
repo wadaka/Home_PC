@@ -203,7 +203,7 @@ public class GameApp {
 			//HPが0になる場合を除き、30ターン
 			for(int i=0;i<30;i++) {
 
-				turn_score_calc = i;
+				turn_score_calc = i+1;
 
 				try {
 					Directing_GameMain.showAvant(i+1);
@@ -449,13 +449,19 @@ public class GameApp {
 			//エンディングとリザルト画面を表示
 			int score = score_calculator(h);
 			try {
-				if(!p.isSkipEvent_All()){
-					if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
-						Directing_Ending.showEnding(ending);
+				if(ending == 0) {
+					Directing_Ending.showEnding(ending);
+					Thread.sleep(3000);
+				}else {
+					if(!p.isSkipEvent_All()){
+						if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
+							Directing_Ending.showEnding(ending);
+						}
 					}
 				}
 				Directing_Result.showResult(turn_score_calc,score,h);
 				System.out.print("    ※エンターキー入力で次へ進みます。");
+				sc.nextLine();
 				String Click = sc.nextLine();
 
 				List<Ranking> r_list = ranking_data_read();
@@ -1173,7 +1179,7 @@ public class GameApp {
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
@@ -1182,7 +1188,7 @@ public class GameApp {
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
@@ -1191,7 +1197,7 @@ public class GameApp {
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
@@ -1200,7 +1206,7 @@ public class GameApp {
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
@@ -1209,7 +1215,7 @@ public class GameApp {
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
@@ -1218,129 +1224,129 @@ public class GameApp {
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     N");
+		System.out.println("                                         See  You   N");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Ne");
+		System.out.println("                                         See  You   Ne");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Nex");
+		System.out.println("                                         See  You   Nex");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next");
+		System.out.println("                                         See  You   Next");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next A");
+		System.out.println("                                         See  You   Next A");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Ad");
+		System.out.println("                                         See  You   Next Ad");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adv");
+		System.out.println("                                         See  You   Next Adv");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adve");
+		System.out.println("                                         See  You   Next Adve");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adven");
+		System.out.println("                                         See  You   Next Adven");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Advent");
+		System.out.println("                                         See  You   Next Advent");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adventu");
+		System.out.println("                                         See  You   Next Adventu");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adventur");
+		System.out.println("                                         See  You   Next Adventur");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adventure");
+		System.out.println("                                         See  You   Next Adventure");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(100);
+		Thread.sleep(80);
 
 		for(int i=0;i<14;i++) {
 			System.out.println("");
 		}
-		System.out.println("                                         See  You     Next Adventure !     ");
+		System.out.println("                                         See  You   Next Adventure !     ");
 		for(int i=0;i<17;i++) {
 			System.out.println("");
 		}
