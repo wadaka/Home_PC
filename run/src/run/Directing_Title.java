@@ -1,7 +1,8 @@
 package run;
 
 public class Directing_Title {
-	public static void showTitle() {
+	public static void showTitle() throws Exception {
+
 		System.out.println("============================================================================");
 		System.out.println("============================================================================");
 		System.out.println();
@@ -118,4 +119,107 @@ public class Directing_Title {
 		System.out.print(" >>");
 	}
 
+	public static void show_title_first() throws Exception{
+		String name_01 = "Title/s_01";
+		Tools.Graphic_Creator(name_01);
+		Thread.sleep(50);
+		String name_02 = "Title/s_02";
+		Tools.Graphic_Creator(name_02);
+		Thread.sleep(50);
+		String name_03 = "Title/s_03";
+		Tools.Graphic_Creator(name_03);
+		Thread.sleep(50);
+		String name_04 = "Title/s_04";
+		Tools.Graphic_Creator(name_04);
+		Thread.sleep(50);
+		String name_05 = "Title/s_05";
+		Tools.Graphic_Creator(name_05);
+		Thread.sleep(50);
+		String name_06 = "Title/s_06";
+		Tools.Graphic_Creator(name_06);
+		Thread.sleep(50);
+		String name_07 = "Title/s_07";
+		Tools.Graphic_Creator(name_07);
+		Thread.sleep(50);
+		String name_08 = "Title/s_08";
+		Tools.Graphic_Creator(name_08);
+		Thread.sleep(50);
+		String name_09 = "Title/s_09";
+		Tools.Graphic_Creator(name_09);
+		Thread.sleep(50);
+		String name_10 = "Title/s_10";
+		Tools.Graphic_Creator(name_10);
+		Thread.sleep(50);
+		String name_11 = "Title/s_11";
+		Tools.Graphic_Creator(name_11);
+		Thread.sleep(50);
+		String name_12 = "Title/s_12";
+		Tools.Graphic_Creator(name_12);
+		Thread.sleep(50);
+		String name_13 = "Title/s_13";
+		Tools.Graphic_Creator(name_13);
+		Thread.sleep(50);
+	}
+
+	public static void show_title_pre() throws Exception {
+		String name_01 = "Title/s_01";
+		Tools.Graphic_Creator(name_01);
+		Thread.sleep(80);
+		String name_02 = "Title/s_02";
+		Tools.Graphic_Creator(name_02);
+		Thread.sleep(80);
+		String name_03 = "Title/s_03";
+		Tools.Graphic_Creator(name_03);
+		Thread.sleep(80);
+		String name_04 = "Title/s_04";
+		Tools.Graphic_Creator(name_04);
+		Thread.sleep(1500);
+		/*
+		Tools.Graphic_Creator(name_04);
+		Thread.sleep(50);
+		Tools.Graphic_Creator(name_03);
+		Thread.sleep(50);
+		Tools.Graphic_Creator(name_02);
+		Thread.sleep(50);
+		Tools.Graphic_Creator(name_01);
+		Thread.sleep(1500);
+
+		Tools.Graphic_Creator(name_01);
+		Thread.sleep(25);
+		Tools.Graphic_Creator(name_02);
+		Thread.sleep(25);
+		Tools.Graphic_Creator(name_03);
+		Thread.sleep(25);
+		Tools.Graphic_Creator(name_04);
+		Thread.sleep(25);
+		Tools.Graphic_Creator(name_05);
+		Thread.sleep(25);*/
+		String name_05 = "Title/s_05";
+		Tools.Graphic_Creator(name_05);
+		Thread.sleep(25);
+		String name_06 = "Title/s_06";
+		Tools.Graphic_Creator(name_06);
+		Thread.sleep(25);
+		String name_07 = "Title/s_07";
+		Tools.Graphic_Creator(name_07);
+		Thread.sleep(25);
+		String name_08 = "Title/s_08";
+		Tools.Graphic_Creator(name_08);
+		Thread.sleep(25);
+		String name_09 = "Title/s_09";
+		Tools.Graphic_Creator(name_09);
+		Thread.sleep(25);
+		String name_10 = "Title/s_10";
+		Tools.Graphic_Creator(name_10);
+		Thread.sleep(50);
+		String name_11 = "Title/s_11";
+		Tools.Graphic_Creator(name_11);
+		Thread.sleep(50);
+		String name_12 = "Title/s_12";
+		Tools.Graphic_Creator(name_12);
+		Thread.sleep(50);
+		String name_13 = "Title/s_13";
+		Tools.Graphic_Creator(name_13);
+		Thread.sleep(50);
+	}
 }

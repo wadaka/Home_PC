@@ -181,35 +181,35 @@ public class Directing_Ranking {
 		Thread.sleep(75);
 		String name_01 = "Ranking/s_01";
 		Tools.Graphic_Creator(name_01);
-		Thread.sleep(500);
+		Thread.sleep(75);
 
 		String name_00_9 = "Ranking/s_00_9";
 		Tools.Graphic_Creator(name_00_9);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_8 = "Ranking/s_00_8";
 		Tools.Graphic_Creator(name_00_8);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_7 = "Ranking/s_00_7";
 		Tools.Graphic_Creator(name_00_7);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_6 = "Ranking/s_00_6";
 		Tools.Graphic_Creator(name_00_6);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_5 = "Ranking/s_00_5";
 		Tools.Graphic_Creator(name_00_5);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_4 = "Ranking/s_00_4";
 		Tools.Graphic_Creator(name_00_4);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_3 = "Ranking/s_00_3";
 		Tools.Graphic_Creator(name_00_3);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_2 = "Ranking/s_00_2";
 		Tools.Graphic_Creator(name_00_2);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		String name_00_1 = "Ranking/s_00_1";
 		Tools.Graphic_Creator(name_00_1);
-		Thread.sleep(125);
+		Thread.sleep(150);
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}

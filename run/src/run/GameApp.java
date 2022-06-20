@@ -142,9 +142,22 @@ public class GameApp {
 					e.printStackTrace();
 				}
 				Directing_Op.showOp(p);
+				try {
+					//Directing_Title.show_title_first();
+					//Thread.sleep(3000);
+				} catch (Exception e) {
+					// TODO 自動生成された catch ブロック
+					e.printStackTrace();
+				}
 				Directing_Tutorial.showTutorial();
 			}else {
-				Directing_Title.showTitle();
+				try {
+					Directing_Title.show_title_pre();
+					Directing_Title.showTitle();
+				} catch (Exception e1) {
+					// TODO 自動生成された catch ブロック
+					e1.printStackTrace();
+				}
 				int startSelect = sc.nextInt();
 				if(startSelect==1) {
 					try {

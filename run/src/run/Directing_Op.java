@@ -120,8 +120,9 @@ public class Directing_Op {
 		System.out.println();
 		System.out.println("  エンターキー入力で、タイトルに戻るよ。>>");
 		*/
-		scan.nextLine();
-		String in = scan.nextLine();
+		//scan.nextLine();
+		//String in = scan.nextLine();
+		Thread.sleep(4000);
 		for(int i=0;i<33;i++) {
 			System.out.println();
 		}
@@ -523,7 +524,7 @@ public class Directing_Op {
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
-		System.out.printf("                ※エンターキー入力で、次に進むよ。>>");
+		//System.out.printf("                ※エンターキー入力で、次に進むよ。>>");
 	}
 
 	static void choice1_1() throws InterruptedException {
