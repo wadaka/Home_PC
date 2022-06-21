@@ -959,11 +959,11 @@ public class GameApp {
 			h.setHp(hp-5);
 			System.out.println("    スコールだ！");
 			Thread.sleep(1000);
-			System.out.println();
 			System.out.println("    ずぶぬれになった体が冷え、体力が奪われる……。");
 			Thread.sleep(1000);
 			System.out.println("    HP-5");
 			Thread.sleep(1000);
+
 		}else if(attackN_j<attackNs[1]) {
 			//虫
 			h.setEvent("leeches");
@@ -993,11 +993,26 @@ public class GameApp {
 			h.setHp(hp-bad);
 			System.out.println("    河だ！");
 			Thread.sleep(1000);
-			System.out.println();
-			System.out.println("    腰丈まである川を渡るのは、心底しんどい……。");
-			Thread.sleep(1000);
-			System.out.printf("    HP-%s%n",bad);
-			Thread.sleep(1000);
+			if(h.getHp()<1) {
+				System.out.println("");
+				System.out.println("    ドドドドドドド……っ！！");
+				System.out.println("");
+				Thread.sleep(1000);
+				System.out.println("");
+				System.out.println("    ！？");
+				System.out.println("");
+				Thread.sleep(1000);
+				System.out.println("");
+				System.out.println("    しまった、洪水が……！！");
+				System.out.println("");
+				Thread.sleep(1000);
+			}else {
+				System.out.println();
+				System.out.println("    腰丈まである川を渡るのは、心底しんどい……。");
+				Thread.sleep(1000);
+				System.out.printf("    HP-%s%n",bad);
+				Thread.sleep(1000);
+			}
 		}else {
 			//金食い虫
 			int bad = rdm.nextInt(5)+1;
