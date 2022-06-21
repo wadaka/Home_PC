@@ -116,7 +116,7 @@ public class Directing_Ending {
 		System.out.println("             ?`          .d\"     J`                        d^  .\\                         ");
 		System.out.println("  (MK'                .J\"        J`                        b   W        +,        .N      ");
 		System.out.println("    (W,              .F          J`                        v[  /h(.      /Hf77TYp .M,..   ");
-		System.out.println("      ?b  `         .$           dF   `  `  `  ` (!  `      ~ ,   H        .W,  BT9^  d` `");
+		System.out.println("      ?b  `         .$           dF   `  `  `  `  `  `      ~ ,   H        .W,  BT9^  d` `");
 		System.out.println("       Jc           \"     . .  .JD                      `     TaJNd   `      .#      .t   ");
 		System.out.println("       .F    `  `.@ ?MNWMMNMnV\"^                                 M7T\"=(g?T5  ,\\     4;    ");
 		System.out.println("       .b        .]                                `       `     -g,    7    H      .b    ");
@@ -151,7 +151,7 @@ public class Directing_Ending {
 		System.out.println("             ?`          .d\"     J`                        d^  .\\                         ");
 		System.out.println("  (MK'                .J\"        J`                        b   W        +,        .N      ");
 		System.out.println("    (W,              .F          J`                        v[  /h(.      /Hf77TYp .M,..   ");
-		System.out.println("      ?b  `         .$           dF   `  `  `  ` (!  `      ~ ,   H        .W,  BT9^  d` `");
+		System.out.println("      ?b  `         .$           dF   `  `  `  `  `  `      ~ ,   H        .W,  BT9^  d` `");
 		System.out.println("       Jc           \"     . .  .JD                      `     TaJNd   `      .#      .t   ");
 		System.out.println("       .F    `  `.@ ?MNWMMNMnV\"^                                 M7T\"=(g?T5  ,\\     4;    ");
 		System.out.println("");
@@ -169,7 +169,6 @@ public class Directing_Ending {
 		System.out.println("            HS+M9!            ?MMMgJMN...  (\"\"\"\"?j,  .MMMM\"\"          '.4gB~             ");
 		System.out.println("          .Z\"=                    .\"WMMMNMN.....MMMhdD                   ($              ");
 		System.out.println("                                        .\"\"?\"\"T\"^_?\"                                     ");
-		System.out.println("");
 		System.out.println("");
 		System.out.println("");
 

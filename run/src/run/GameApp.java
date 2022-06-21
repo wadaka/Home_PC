@@ -274,6 +274,18 @@ public class GameApp {
 							e.printStackTrace();
 						}
 						break;
+					case 10:
+						System.out.println();
+						System.out.println("  =====================================================================================");
+						System.out.println();
+						System.out.println("    デバッグ用");
+						try {
+							BattleJudgement(input,i,h);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						break;
 					//傷薬を使用するときの処理、もし所持していない場合は安全な道を進むことになる。--------------------------
 					default:
 						if(h.getItem_ointment()>0) {
@@ -295,6 +307,9 @@ public class GameApp {
 							} catch (InterruptedException e) {
 								// TODO 自動生成された catch ブロック
 								e.printStackTrace();
+							} catch (Exception e) {
+								// TODO 自動生成された catch ブロック
+								e.printStackTrace();
 							}
 							System.out.println();
 							System.out.println("  =====================================================================================");
@@ -314,6 +329,9 @@ public class GameApp {
 						} catch (InterruptedException e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
+						} catch (Exception e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
 						}
 						End_Turn(1,h);
 						break;
@@ -324,6 +342,9 @@ public class GameApp {
 						} catch (InterruptedException e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
+						} catch (Exception e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
 						}
 						End_Turn(2,h);
 						break;
@@ -332,6 +353,22 @@ public class GameApp {
 						try {
 							EventJudgement(input,i,h);
 						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						} catch (Exception e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						}
+						End_Turn(3,h);
+						break;
+
+					case 10:
+						try {
+							EventJudgement(input,i,h);
+						} catch (InterruptedException e) {
+							// TODO 自動生成された catch ブロック
+							e.printStackTrace();
+						} catch (Exception e) {
 							// TODO 自動生成された catch ブロック
 							e.printStackTrace();
 						}
@@ -461,8 +498,10 @@ public class GameApp {
 
 			//エンディングとリザルト画面を表示
 			int score = score_calculator(h);
+			boolean isDead_directing_skip = false;
+			if( h.getEvent()=="river") isDead_directing_skip = true;
 			try {
-				if(ending == 0) {
+				if(ending == 0 && isDead_directing_skip == false) {
 					Directing_Ending.showEnding(ending);
 					Thread.sleep(3000);
 				}else {
@@ -696,6 +735,12 @@ public class GameApp {
 		int battle_j = rdm.nextInt(100);
 
 		//まずは、戦闘判定。選択した道の危険度と経過ターンで、遭遇率が変化。
+
+		//デバッグ用
+		if(root==10) {
+
+		}else {
+
 		if(turn<11) {
 			if(battle_j>69 && root==1) {
 				Battle.lottery_easy(h);
@@ -721,14 +766,21 @@ public class GameApp {
 				Battle.lottery_difficult(h);
 			}
 		}
+
+		}
 	}
 
-	static void EventJudgement(int root,int turn,Hero h) throws InterruptedException{
+	static void EventJudgement(int root,int turn,Hero h) throws Exception{
 		//イベント判定は、選択した「道」で変化。
 
 		int first_j = rdm.nextInt(100);
 		int second_j = rdm.nextInt(100);
 		//int third_j = rdm.nextInt(100);
+
+		//デバッグ用
+		if(root==10) {
+			attackNature(root,h);
+		}else {
 
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
 		if(root<=2 && first_j>=0) {
@@ -781,6 +833,8 @@ public class GameApp {
 			}else {
 				System.out.println("    安全に進むことができた。");
 			}
+
+		}
 
 		}
 	}
@@ -931,7 +985,7 @@ public class GameApp {
 		}
 	}
 
-	static void attackNature(int root,Hero h) throws InterruptedException{
+	static void attackNature(int root,Hero h) throws Exception{
 		int attackN_j = rdm.nextInt(100);
 		int[] attackNs = new int[attackN_E.length];
 
@@ -947,6 +1001,16 @@ public class GameApp {
 				attackNs[i]=attackN_N[i];
 			}
 			break;
+
+		//デバッグ用
+		case 10:
+			attackNs[0]=0;
+			attackNs[1]=0;
+			attackNs[2]=0;
+			attackNs[3]=1;
+			attackN_j=0;
+			break;
+
 		default:
 			for(int i=0;i<attackNs.length;i++) {
 				attackNs[i]=attackN_H[i];
@@ -990,27 +1054,131 @@ public class GameApp {
 			//河
 			h.setEvent("river");
 			int bad = rdm.nextInt(8)+8;
+			int bad2 = rdm.nextInt(10)+10;
+			int too_bad = rdm.nextInt(100);
 			h.setHp(hp-bad);
-			System.out.println("    河だ！");
-			Thread.sleep(1000);
-			if(h.getHp()<1) {
+
+			String name_01 = "Event/River/s_01";
+			Tools.Graphic_Creator(name_01);
+			System.out.println("");
+			System.out.println("      河だ！");
+			System.out.println("");
+			Thread.sleep(2000);
+
+			String name_02 = "Event/River/s_02";
+
+			String text_02 = "    ";
+
+			for(int i=0;i<5;i++) {
+				text_02+="  ・";
+				Tools.Graphic_Creator(name_02);
 				System.out.println("");
-				System.out.println("    ドドドドドドド……っ！！");
+				System.out.println(text_02);
 				System.out.println("");
 				Thread.sleep(1000);
+			}
+
+			if(h.getHp()<1 || too_bad<30) {
+				h.setHp(hp-bad2);
+				String name_03 = "Event/River/s_03";
+				Tools.Graphic_Creator(name_02);
 				System.out.println("");
-				System.out.println("    ！？");
+				System.out.println("      ドドドドドドド……っ！！");
+				System.out.println("");
+				Thread.sleep(1500);
+				Tools.Graphic_Creator(name_02);
+				System.out.println("");
+				System.out.println("      ……？");
+				System.out.println("");
+				Thread.sleep(500);
+				Tools.Graphic_Creator(name_03);
+				System.out.println("");
+				System.out.println("      ……？ なんの音だ……？");
 				System.out.println("");
 				Thread.sleep(1000);
+				String name_04 = "Event/River/s_04";
+				String name_05 = "Event/River/s_05";
+				String name_06 = "Event/River/s_06";
+				String name_07 = "Event/River/s_07";
+
+				for(int i=0;i<5;i++) {
+					Tools.Graphic_Creator(name_04);
+					System.out.println("");
+					System.out.println("      ザパーーーーーーーーン！！");
+					System.out.println("");
+					Thread.sleep(100);
+					Tools.Graphic_Creator(name_05);
+					System.out.println("");
+					System.out.println("      ザパーーーーーーーーン！！");
+					System.out.println("");
+					Thread.sleep(100);
+					Tools.Graphic_Creator(name_06);
+					System.out.println("");
+					System.out.println("      ザパーーーーーーーーン！！");
+					System.out.println("");
+					Thread.sleep(100);
+					Tools.Graphic_Creator(name_07);
+					System.out.println("");
+					System.out.println("      ザパーーーーーーーーン！！");
+					System.out.println("");
+					Thread.sleep(100);
+				}
+
+				Tools.Graphic_Creator(name_07);
 				System.out.println("");
-				System.out.println("    しまった、洪水が……！！");
+				System.out.println("      しまった、洪水だ！");
 				System.out.println("");
+				Thread.sleep(1500);
+				Tools.Graphic_Creator(name_07);
+				System.out.println("");
+				System.out.println("      しまった、洪水だ！流されるぅぅぅ……。");
+				System.out.println("");
+				Thread.sleep(2000);
+
+				String name_08 = "Event/River/s_08";
+				String text_08 = "    ";
+				for(int i=0;i<8;i++) {
+					text_08+="  ・";
+					Tools.Graphic_Creator(name_08);
+					System.out.println("");
+					System.out.println(text_08);
+					System.out.println("");
+					Thread.sleep(300);
+				}
 				Thread.sleep(1000);
+				for(int i=0;i<32;i++) {
+					System.out.println("");
+				}
+				Thread.sleep(3000);
+				if(h.getHp()>0) {
+					String name_09 = "Event/River/s_09";
+					Tools.Graphic_Creator(name_09);
+					System.out.println();
+					System.out.println("      …………。");
+					System.out.println();
+					Thread.sleep(2000);
+					Tools.Graphic_Creator(name_09);
+					System.out.println();
+					System.out.println("      …………。死ぬかと思った………。");
+					System.out.println();
+					Thread.sleep(2500);
+					Tools.Graphic_Creator(name_09);
+					System.out.println();
+					System.out.printf("    HP-%s%n",bad+bad2);
+					System.out.println();
+					Thread.sleep(1000);
+				}
 			}else {
+				String name_09 = "Event/River/s_09";
+				Tools.Graphic_Creator(name_09);
 				System.out.println();
-				System.out.println("    腰丈まである川を渡るのは、心底しんどい……。");
-				Thread.sleep(1000);
+				System.out.println("      腰丈まである川を渡るのは、心底しんどい……。");
+				System.out.println();
+				Thread.sleep(3000);
+				Tools.Graphic_Creator(name_09);
+				System.out.println();
 				System.out.printf("    HP-%s%n",bad);
+				System.out.println();
 				Thread.sleep(1000);
 			}
 		}else {
