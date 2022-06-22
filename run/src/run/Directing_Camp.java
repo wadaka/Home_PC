@@ -1667,7 +1667,7 @@ public class Directing_Camp {
 		System.out.println("    | |         |                                                                     |      |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |  ----------                                                         |  ☆  |,\" ノノ乀 ,ヽ |         | |");
 		System.out.println("    | |         |  ----------                                                         |    ゜|(ノ。  _ ノノ |         | |");
-		System.out.println("    | |         |    --  --/--   ----  --/--    ---- (-) -- (-) ---- (-) ---- (-)     |      | (-  ᴗ        -[]   |         | |");
+		System.out.println("    | |         |    --  --/--   ----  --/--    ---- (-) -- (-) ---- (-) ---- (-)     |      | (- ー  -[]   |         | |");
 		System.out.println("    | |         |_____________________________________________________________________|      |   ――〃 ´  |         | | ");
 		System.out.println("    | |                                                                                      |____〃_〃ヽ___|         | |");
 		System.out.println("    | |                                                                                      |______________|         | |");
@@ -1706,7 +1706,7 @@ public class Directing_Camp {
 		System.out.println("    | |         |                                                                     |      |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |  ----------                                                         |  ☆  |,\" ノノ乀 ,ヽ |         | |");
 		System.out.println("    | |         |  ----------                                                         |    ゜|(ノ。  _ ノノ |         | |");
-		System.out.println("    | |         |    --  --/--   ----  --/--    ---- (-) -- (-) ---- (-) ---- (-)     |      | (-  ᴗ        -[]   |         | |");
+		System.out.println("    | |         |    --  --/--   ----  --/--    ---- (-) -- (-) ---- (-) ---- (-)     |      | (- ー  -[]   |         | |");
 		System.out.println("    | |         |_____________________________________________________________________|      |   ――〃 ´  |         | | ");
 		System.out.println("    | |                                                                                      |____〃_〃ヽ___|         | |");
 		System.out.println("    | |                                                                                      |______________|         | |");
@@ -1814,7 +1814,7 @@ public class Directing_Camp {
 		System.out.println("    | |         |                                                                     |      |  〃\"\"\"-＝ヽ⌒|         | |");
 		System.out.println("    | |         |  現在の状況                                                         |      |,\" ノノ乀 ,ヽ |         | |");
 		System.out.println("    | |         |  ----------                                                         |      |(ノ。  。 ノノ|         | |");
-		System.out.printf("    | |         |    HP %3d/100  財宝 %3d/100   傷薬 (%d) 銃 (%d) 煙幕 (%d) ゴミ (%d)     |      | (-  ᴗ        -[]   |         | |%n",h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
+		System.out.printf("    | |         |    HP %3d/100  財宝 %3d/100   傷薬 (%d) 銃 (%d) 煙幕 (%d) ゴミ (%d)     |      | (- ー  -[]   |         | |%n",h.getHp(),h.getMoney(),h.getItem_ointment(),h.getItem_gun(),h.getItem_smoke(),h.getItem_litter());
 		System.out.println("    | |         |_____________________________________________________________________|      |   ――〃 ´  |         | | ");
 		System.out.println("    | |                                                                                      |____〃_〃ヽ___|         | |");
 		System.out.println("    | |         ※買い物を終える時は、【5】を入力！                                          |______________|         | |");
