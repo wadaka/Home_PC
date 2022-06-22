@@ -1005,8 +1005,8 @@ public class GameApp {
 		//デバッグ用
 		case 10:
 			attackNs[0]=0;
-			attackNs[1]=0;
-			attackNs[2]=0;
+			attackNs[1]=1;
+			attackNs[2]=1;
 			attackNs[3]=1;
 			attackN_j=0;
 			break;
@@ -1032,23 +1032,76 @@ public class GameApp {
 			//虫
 			h.setEvent("leeches");
 			h.setHp(hp-7);
-			System.out.println("    吸血虫だ！");
+
+			String name_01 = "Event/ExMark/s_01";
+			String name_02 = "Event/ExMark/s_02";
+			String name_03 = "Event/ExMark/s_03";
+			Tools.Graphic_Creator(name_01);
+			System.out.println("");
+			System.out.println("      ！？");
+			System.out.println("");
+			Thread.sleep(250);
+			Tools.Graphic_Creator(name_02);
+			System.out.println("");
+			System.out.println("      ！？");
+			System.out.println("");
+			Thread.sleep(250);
+			Tools.Graphic_Creator(name_03);
+			System.out.println("");
+			System.out.println("      ！？");
+			System.out.println("");
+			Thread.sleep(500);
+
+			String name_04 = "Event/Leeches/s_01";
+			Tools.Graphic_Creator(name_04);
+			System.out.println("");
+			System.out.println("      吸血虫だ！");
+			System.out.println("");
+			Thread.sleep(2000);
+			Tools.Graphic_Creator(name_04);
+			System.out.println("");
+			System.out.println("      うぅ、血を吸われて眩暈が……。");
+			System.out.println("");
 			Thread.sleep(1000);
-			System.out.println();
-			System.out.println("    うぅ、血を吸われて眩暈が……。");
-			Thread.sleep(1000);
-			System.out.println("    HP-7");
+			System.out.println("      HP-7");
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[2]) {
 			//ヘビ
 			h.setEvent("snake");
 			h.setHp(hp-10);
-			System.out.println("    ヘビだ！");
+			String name_01 = "Event/Snake/s_01";
+			Tools.Graphic_Creator(name_01);
+			System.out.println("");
+			System.out.println("      ヘビだ！");
+			System.out.println("");
+			Thread.sleep(1500);
+
+			String name_02 = "Event/ExMark/s_01";
+			String name_03 = "Event/ExMark/s_02";
+			String name_04 = "Event/ExMark/s_03";
+
+			Tools.Graphic_Creator(name_02);
+			System.out.println("");
+			System.out.println("      がぷっ！！");
+			System.out.println("");
+			Thread.sleep(250);
+			Tools.Graphic_Creator(name_03);
+			System.out.println("");
+			System.out.println("      がぷっ！！");
+			System.out.println("");
+			Thread.sleep(250);
+			Tools.Graphic_Creator(name_04);
+			System.out.println("");
+			System.out.println("      がぷっ！！");
+			System.out.println("");
 			Thread.sleep(1000);
-			System.out.println();
-			System.out.println("    ぎゃあ、噛まれた！！。");
+
+			Tools.Graphic_Creator(name_04);
+			System.out.println("");
+			System.out.println("      ぎゃあ、噛まれた！！");
+			System.out.println("");
 			Thread.sleep(1000);
-			System.out.println("    HP-10");
+			System.out.println("      HP-10");
 			Thread.sleep(1000);
 		}else if(attackN_j<attackNs[3]) {
 			//河
@@ -1096,10 +1149,10 @@ public class GameApp {
 				System.out.println("      ……？ なんの音だ……？");
 				System.out.println("");
 				Thread.sleep(1000);
-				String name_04 = "Event/River/s_04";
-				String name_05 = "Event/River/s_05";
-				String name_06 = "Event/River/s_06";
-				String name_07 = "Event/River/s_07";
+				String name_04 = "Event/ExMark/s_01";
+				String name_05 = "Event/ExMark/s_02";
+				String name_06 = "Event/ExMark/s_03";
+				String name_07 = "Event/ExMark/s_04";
 
 				for(int i=0;i<5;i++) {
 					Tools.Graphic_Creator(name_04);
@@ -1177,19 +1230,19 @@ public class GameApp {
 				Thread.sleep(3000);
 				Tools.Graphic_Creator(name_09);
 				System.out.println();
-				System.out.printf("    HP-%s%n",bad);
+				System.out.printf("      HP-%s%n",bad);
 				System.out.println();
 				Thread.sleep(1000);
 			}
 		}else {
 			//金食い虫
 			int bad = rdm.nextInt(5)+1;
-			System.out.println("    うわ、金食い虫だ！");
+			System.out.println("      うわ、金食い虫だ！");
 			Thread.sleep(1000);
 			System.out.println();
-			System.out.println("    チクショー！金返せ！！");
+			System.out.println("      チクショー！金返せ！！");
 			Thread.sleep(1000);
-			System.out.printf("    財宝-%s%n",bad);
+			System.out.printf("      財宝-%s%n",bad);
 			Thread.sleep(500);
 			h.setMoney_judge(h.getItem_litter(),bad,false);
 			Thread.sleep(1000);
