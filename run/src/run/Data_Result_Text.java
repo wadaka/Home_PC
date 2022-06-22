@@ -36,7 +36,7 @@ public class Data_Result_Text {
 		case "booby_trap":
 			text+= "ブービートラップによって 爆散した。          ";
 			break;
-		case "squal":
+		case "squall":
 			text+= "スコールで体力を奪われ 力尽きた。            ";
 			break;
 		case "leeches":

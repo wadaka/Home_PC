@@ -779,7 +779,8 @@ public class GameApp {
 
 		//デバッグ用
 		if(root==10) {
-			attackNature(root,h);
+			goToDungeon(h);
+			//attackNature(root,h);
 		}else {
 
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
@@ -1004,7 +1005,7 @@ public class GameApp {
 
 		//デバッグ用
 		case 10:
-			attackNs[0]=0;
+			attackNs[0]=1;
 			attackNs[1]=1;
 			attackNs[2]=1;
 			attackNs[3]=1;
@@ -1019,13 +1020,77 @@ public class GameApp {
 
 		if(attackN_j<attackNs[0]) {
 			//スコール
-			h.setEvent("squal");
+			h.setEvent("squall");
 			h.setHp(hp-5);
-			System.out.println("    スコールだ！");
+
+			String name_01 = "Event/Squall/s_01";
+			String name_02 = "Event/Squall/s_02";
+
+			Tools.Graphic_Creator(name_01);
+			System.out.println("");
+			System.out.println("      ……ぽつ");
+			System.out.println("");
 			Thread.sleep(1000);
-			System.out.println("    ずぶぬれになった体が冷え、体力が奪われる……。");
+
+			Tools.Graphic_Creator(name_01);
+			System.out.println("");
+			System.out.println("      ……ぽつ、ぽつぽつ。");
+			System.out.println("");
+			Thread.sleep(2000);
+
+			Tools.Graphic_Creator(name_02);
+			System.out.println("");
+			System.out.println("      ……ん？");
+			System.out.println("");
 			Thread.sleep(1000);
-			System.out.println("    HP-5");
+
+			Tools.Graphic_Creator(name_02);
+			System.out.println("");
+			System.out.println("      ……ん？ 雨か……？");
+			System.out.println("");
+			Thread.sleep(500);
+
+
+			String name_03 = "Event/ExMark/s_01";
+			String name_04 = "Event/ExMark/s_02";
+			String name_05 = "Event/ExMark/s_03";
+			String name_06 = "Event/ExMark/s_04";
+
+			for(int i=0;i<5;i++) {
+				Tools.Graphic_Creator(name_03);
+				System.out.println("");
+				System.out.println("      ざあぁぁぁぁぁぁぁぁぁ！！");
+				System.out.println("");
+				Thread.sleep(100);
+				Tools.Graphic_Creator(name_04);
+				System.out.println("");
+				System.out.println("      ざあぁぁぁぁぁぁぁぁぁ！！");
+				System.out.println("");
+				Thread.sleep(100);
+				Tools.Graphic_Creator(name_05);
+				System.out.println("");
+				System.out.println("      ざあぁぁぁぁぁぁぁぁぁ！！");
+				System.out.println("");
+				Thread.sleep(100);
+				Tools.Graphic_Creator(name_06);
+				System.out.println("");
+				System.out.println("      ざあぁぁぁぁぁぁぁぁぁ！！");
+				System.out.println("");
+				Thread.sleep(100);
+			}
+
+			Thread.sleep(1000);
+			Tools.Graphic_Creator(name_06);
+			System.out.println("");
+			System.out.println("      うわぁ、スコールだ！！");
+			System.out.println("");
+			Thread.sleep(2000);
+			Tools.Graphic_Creator(name_06);
+			System.out.println("");
+			System.out.println("      うわぁ、スコールだ！！");
+			System.out.println("      ずぶぬれになった体が冷え、体力が奪われる……。");
+			Thread.sleep(1500);
+			System.out.println("      HP-5");
 			Thread.sleep(1000);
 
 		}else if(attackN_j<attackNs[1]) {
@@ -1060,11 +1125,11 @@ public class GameApp {
 			Thread.sleep(2000);
 			Tools.Graphic_Creator(name_04);
 			System.out.println("");
+			System.out.println("      吸血虫だ！");
 			System.out.println("      うぅ、血を吸われて眩暈が……。");
-			System.out.println("");
 			Thread.sleep(1000);
 			System.out.println("      HP-7");
-			Thread.sleep(1000);
+			Thread.sleep(2500);
 		}else if(attackN_j<attackNs[2]) {
 			//ヘビ
 			h.setEvent("snake");
@@ -1102,7 +1167,7 @@ public class GameApp {
 			System.out.println("");
 			Thread.sleep(1000);
 			System.out.println("      HP-10");
-			Thread.sleep(1000);
+			Thread.sleep(2500);
 		}else if(attackN_j<attackNs[3]) {
 			//河
 			h.setEvent("river");
@@ -1215,10 +1280,7 @@ public class GameApp {
 					System.out.println("      …………。死ぬかと思った………。");
 					System.out.println();
 					Thread.sleep(2500);
-					Tools.Graphic_Creator(name_09);
-					System.out.println();
 					System.out.printf("    HP-%s%n",bad+bad2);
-					System.out.println();
 					Thread.sleep(1000);
 				}
 			}else {
@@ -1228,10 +1290,7 @@ public class GameApp {
 				System.out.println("      腰丈まである川を渡るのは、心底しんどい……。");
 				System.out.println();
 				Thread.sleep(3000);
-				Tools.Graphic_Creator(name_09);
-				System.out.println();
 				System.out.printf("      HP-%s%n",bad);
-				System.out.println();
 				Thread.sleep(1000);
 			}
 		}else {
@@ -1248,46 +1307,119 @@ public class GameApp {
 			Thread.sleep(1000);
 		}
 	}
-	static void goToDungeon(Hero h) throws InterruptedException{
-		System.out.println("    ……おぉ！遺跡があるぞ、入ってみよう！");
+	static void goToDungeon(Hero h) throws Exception{
+		int per = rdm.nextInt(20)+50;
+		System.out.println();
+		System.out.println("      ……！！");
+		System.out.println();
 		Thread.sleep(2000);
+		String name_00 = "Remain/s_01";
+		Tools.Graphic_Creator(name_00);
+		System.out.println();
+		System.out.println("      ……！！");
+		System.out.println("      ……！！おぉ！遺跡があるぞ、入ってみよう！");
+		Thread.sleep(3500);
 		int d_f = rdm.nextInt(3);
 		if(d_f>1) {
-			System.out.println();
-			System.out.println();
-			System.out.println();
-			System.out.println("    何やら怪しいスイッチが……。押してみよう。");
-			Thread.sleep(1000);
-			System.out.println("    ポチ！");
-			if(rdm.nextInt(2)>0) {
-				Thread.sleep(1000);
-				System.out.println();
-				System.out.println("    パカ！");
-				Thread.sleep(1000);
-				System.out.println("    しまった！落とし穴の作動罠だ！");
-				System.out.println("    落下した時に、財宝を一部落としてしまった！");
-				Thread.sleep(2000);
-				System.out.println("    財宝-5");
-				Thread.sleep(500);
-				h.setMoney_judge(h.getItem_litter(),5,false);
-				Thread.sleep(1000);
 
-			}else {
-				h.setMoney(h.getMoney()+10);
-				Thread.sleep(1000);
+			for(int i=0;i<32;i++) {
+				System.out.println("");
+			}
+			String name_01 = "Remain/Switch/s_01";
+			Tools.Graphic_Creator(name_01);
+			System.out.println();
+			System.out.println("      む、何やら怪しいスイッチが……。");
+			System.out.println();
+
+			Thread.sleep(3000);
+			String name_02 = "Remain/Switch/s_02";
+			Tools.Graphic_Creator(name_02);
+			System.out.println();
+			System.out.println("");
+			System.out.println();
+
+			Thread.sleep(1000);
+			String name_03 = "Remain/Switch/s_03";
+			Tools.Graphic_Creator(name_03);
+			System.out.println();
+			System.out.println("      『うわあ、「いかにも」って感じのスイッチだね。");
+			System.out.println();
+
+			Thread.sleep(3000);
+			String name_04 = "Remain/Switch/s_04";
+			Tools.Graphic_Creator(name_04);
+			System.out.println();
+			System.out.println("      『うわあ、「いかにも」って感じのスイッチだね。");
+			System.out.println("        どうする、おにいちゃん？』");
+
+			Thread.sleep(3000);
+			System.out.println("      ");
+			System.out.printf("      【1】押す！  【2】押さない  (成功率:%s%%)%n",per-10);
+			System.out.print("       >>");
+			int input=sc.nextInt();
+			if(input==1) {
+				Tools.Graphic_Creator(name_03);
 				System.out.println();
-				System.out.println("    ゴゴゴゴ！");
-				Thread.sleep(1000);
-				System.out.println("    なんと、隠し部屋が現れた！中の財宝をゲットだ！");
+				System.out.println("      『……どうなっても知らないよ？』");
+				System.out.println();
 				Thread.sleep(2000);
-				System.out.println("    財宝+10");
-				Thread.sleep(1000);
+				String name_yes_01 = "Remain/Switch/s_yes_01";
+				Tools.Graphic_Creator(name_yes_01);
+				System.out.println();
+				System.out.println("      ポチ！");
+				System.out.println();
+				if(rdm.nextInt(100)>per) {
+					Thread.sleep(1000);
+					System.out.println();
+					System.out.println("      パカ！");
+					Thread.sleep(1000);
+					System.out.println("      しまった！落とし穴の作動罠だ！");
+					System.out.println("      落下した時に、財宝を一部落としてしまった！");
+					Thread.sleep(2000);
+					System.out.println("      財宝-5");
+					Thread.sleep(500);
+					h.setMoney_judge(h.getItem_litter(),5,false);
+					Thread.sleep(1000);
+
+				}else {
+					h.setMoney(h.getMoney()+10);
+					Thread.sleep(1000);
+					System.out.println();
+					System.out.println("      ゴゴゴゴ！");
+					Thread.sleep(1000);
+					System.out.println("      なんと、隠し部屋が現れた！中の財宝をゲットだ！");
+					Thread.sleep(2000);
+					System.out.println("      財宝+10");
+					Thread.sleep(1000);
+				}
+			}else {
+				String name_05 = "Remain/Switch/s_05";
+				Tools.Graphic_Creator(name_05);
+				System.out.println();
+				System.out.println("      『押さない？");
+				System.out.println();
+				Thread.sleep(1500);
+
+				String name_06 = "Remain/Switch/s_06";
+				Tools.Graphic_Creator(name_06);
+				System.out.println();
+				System.out.println("      『押さない？");
+				System.out.println("        それが良いと思うよ。明らか罠だもん。』");
+				Thread.sleep(2500);
+
+				String name_07 = "Remain/Switch/s_07";
+				Tools.Graphic_Creator(name_07);
+				System.out.println();
+				System.out.println("      遺跡をあとにしました。");
+				System.out.println("");
+				Thread.sleep(2000);
 			}
 		}else if(d_f>0) {
 			h.setEvent("remain_of_rock");
 			System.out.println();
 			System.out.println();
 			System.out.println();
+			System.out.println("    ※グラフィック未対応");
 			System.out.println("    玉座に黄金像がある！こいつはラッキーだ！");
 			Thread.sleep(1000);
 			System.out.println("    ひょい！");
@@ -1321,6 +1453,7 @@ public class GameApp {
 			System.out.println();
 			System.out.println();
 			System.out.println();
+			System.out.println("    ※グラフィック未対応");
 			System.out.println("    ムム、高価な水晶が祀られてる！");
 			Thread.sleep(1000);
 			System.out.println("    でも、原住民達にしっかり守られてるぞ。");
