@@ -1309,26 +1309,29 @@ public class GameApp {
 	}
 	static void goToDungeon(Hero h) throws Exception{
 		int per = rdm.nextInt(20)+50;
+		String name = "Remain/s_01";
+		Tools.Graphic_Creator(name);
 		System.out.println();
-		System.out.println("      ……！！");
+		System.out.println("      おぉ、遺跡があるぞ、入ってみよう！");
 		System.out.println();
-		Thread.sleep(2000);
-		String name_00 = "Remain/s_01";
-		Tools.Graphic_Creator(name_00);
-		System.out.println();
-		System.out.println("      ……！！");
-		System.out.println("      ……！！おぉ！遺跡があるぞ、入ってみよう！");
 		Thread.sleep(3500);
 		int d_f = rdm.nextInt(3);
-		if(d_f>1) {
+		if(d_f>=0) {
 
 			for(int i=0;i<32;i++) {
 				System.out.println("");
 			}
+			String name_00 = "Remain/Switch/s_00";
+			Tools.Graphic_Creator(name_00);
+			System.out.println();
+			System.out.println("");
+			System.out.println();
+
+			Thread.sleep(2000);
 			String name_01 = "Remain/Switch/s_01";
 			Tools.Graphic_Creator(name_01);
 			System.out.println();
-			System.out.println("      む、何やら怪しいスイッチが……。");
+			System.out.println("      何やら怪しいスイッチが……。");
 			System.out.println();
 
 			Thread.sleep(3000);
@@ -1350,44 +1353,99 @@ public class GameApp {
 			Tools.Graphic_Creator(name_04);
 			System.out.println();
 			System.out.println("      『うわあ、「いかにも」って感じのスイッチだね。");
-			System.out.println("        どうする、おにいちゃん？』");
+			System.out.println("        一応聞くけど、どうするの、おにいちゃん？』");
 
 			Thread.sleep(3000);
 			System.out.println("      ");
 			System.out.printf("      【1】押す！  【2】押さない  (成功率:%s%%)%n",per-10);
+			System.out.println("      ");
+			Thread.sleep(500);
 			System.out.print("       >>");
 			int input=sc.nextInt();
 			if(input==1) {
+				/*
 				Tools.Graphic_Creator(name_03);
 				System.out.println();
 				System.out.println("      『……どうなっても知らないよ？』");
 				System.out.println();
 				Thread.sleep(2000);
+				*/
 				String name_yes_01 = "Remain/Switch/s_yes_01";
 				Tools.Graphic_Creator(name_yes_01);
 				System.out.println();
-				System.out.println("      ポチ！");
+				System.out.println("      「ポチ！」");
 				System.out.println();
-				if(rdm.nextInt(100)>per) {
-					Thread.sleep(1000);
+				Thread.sleep(500);
+
+				Tools.Graphic_Creator(name_yes_01);
+				System.out.println();
+				System.out.println("      『え、押すの！？』");
+				System.out.println();
+				Thread.sleep(500);
+
+				if(rdm.nextInt(1)<per) {
+					String name_yes_fail_01 = "Remain/Switch/s_yes_fail_01";
+					Tools.Graphic_Creator(name_yes_fail_01);
 					System.out.println();
-					System.out.println("      パカ！");
-					Thread.sleep(1000);
-					System.out.println("      しまった！落とし穴の作動罠だ！");
-					System.out.println("      落下した時に、財宝を一部落としてしまった！");
-					Thread.sleep(2000);
+					System.out.println("");
+					System.out.println();
+					Thread.sleep(500);
+					String name_yes_fail_02 = "Remain/Switch/s_yes_fail_02";
+					Tools.Graphic_Creator(name_yes_fail_02);
+					System.out.println();
+					System.out.println("      「パカ！」");
+					System.out.println();
+					Thread.sleep(750);
+					String name_yes_fail_03 = "Remain/Switch/s_yes_fail_03";
+					Tools.Graphic_Creator(name_yes_fail_03);
+					System.out.println();
+					System.out.println("      なんと！？ 落とし穴の作動罠だったとは！！");
+					System.out.println();
+					Thread.sleep(2500);
+
+					String name_yes_fail_05 = "Remain/Switch/s_yes_fail_05";
+					Tools.Graphic_Creator(name_yes_fail_05);
+					System.out.println();
+					System.out.println("      『いや、どう見たって、罠でしょ……。』");
+					System.out.println();
+					Thread.sleep(3500);
+					String name_yes_fail_06 = "Remain/Switch/s_yes_fail_06";
+					Tools.Graphic_Creator(name_yes_fail_06);
+					System.out.println();
+					System.out.println("      落下の際に、いくつか財宝を落としてしまった……。");
+					System.out.println();
+					Thread.sleep(2500);
 					System.out.println("      財宝-5");
+					System.out.println();
 					Thread.sleep(500);
 					h.setMoney_judge(h.getItem_litter(),5,false);
 					Thread.sleep(1000);
 
 				}else {
 					h.setMoney(h.getMoney()+10);
-					Thread.sleep(1000);
+
+					String name_yes_success_01 = "Remain/Switch/s_yes_success_01";
+					Tools.Graphic_Creator(name_yes_success_01);
+					System.out.println();
+					System.out.println("");
+					System.out.println();
+					Thread.sleep(500);
+					String name_yes_success_02 = "Remain/Switch/s_yes_success_02";
+					Tools.Graphic_Creator(name_yes_success_02);
 					System.out.println();
 					System.out.println("      ゴゴゴゴ！");
+					System.out.println();
 					Thread.sleep(1000);
-					System.out.println("      なんと、隠し部屋が現れた！中の財宝をゲットだ！");
+					String name_yes_success_03 = "Remain/Switch/s_yes_success_03";
+					Tools.Graphic_Creator(name_yes_success_03);
+					System.out.println();
+					System.out.println("      お、ラッキー。隠し部屋を発見♪");
+					System.out.println();
+					Thread.sleep(2000);
+					Tools.Graphic_Creator(name_yes_success_03);
+					System.out.println();
+					System.out.println("      『ええ……、そんなことってある……？』");
+					System.out.println();
 					Thread.sleep(2000);
 					System.out.println("      財宝+10");
 					Thread.sleep(1000);
@@ -1396,15 +1454,15 @@ public class GameApp {
 				String name_05 = "Remain/Switch/s_05";
 				Tools.Graphic_Creator(name_05);
 				System.out.println();
-				System.out.println("      『押さない？");
+				System.out.println("      『……ま、だよね。");
 				System.out.println();
 				Thread.sleep(1500);
 
 				String name_06 = "Remain/Switch/s_06";
 				Tools.Graphic_Creator(name_06);
 				System.out.println();
-				System.out.println("      『押さない？");
-				System.out.println("        それが良いと思うよ。明らか罠だもん。』");
+				System.out.println("      『……ま、だよね。");
+				System.out.println("        明らか罠だもん。それが良いと思うよ。』");
 				Thread.sleep(2500);
 
 				String name_07 = "Remain/Switch/s_07";
