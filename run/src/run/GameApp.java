@@ -1308,6 +1308,10 @@ public class GameApp {
 		}
 	}
 	static void goToDungeon(Hero h) throws Exception{
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		Thread.sleep(500);
 		int per = rdm.nextInt(20)+50;
 		String name = "Remain/s_01";
 		Tools.Graphic_Creator(name);
@@ -1316,7 +1320,7 @@ public class GameApp {
 		System.out.println();
 		Thread.sleep(3500);
 		int d_f = rdm.nextInt(3);
-		if(d_f>=0) {
+		if(d_f>1) {
 
 			for(int i=0;i<32;i++) {
 				System.out.println("");
@@ -1341,7 +1345,7 @@ public class GameApp {
 			System.out.println("");
 			System.out.println();
 
-			Thread.sleep(1000);
+			Thread.sleep(500);
 			String name_03 = "Remain/Switch/s_03";
 			Tools.Graphic_Creator(name_03);
 			System.out.println();
@@ -1383,7 +1387,7 @@ public class GameApp {
 				System.out.println();
 				Thread.sleep(500);
 
-				if(rdm.nextInt(1)<per) {
+				if(rdm.nextInt(100)>per) {
 					String name_yes_fail_01 = "Remain/Switch/s_yes_fail_01";
 					Tools.Graphic_Creator(name_yes_fail_01);
 					System.out.println();
@@ -1429,30 +1433,30 @@ public class GameApp {
 					System.out.println();
 					System.out.println("");
 					System.out.println();
-					Thread.sleep(500);
+					Thread.sleep(750);
 					String name_yes_success_02 = "Remain/Switch/s_yes_success_02";
 					Tools.Graphic_Creator(name_yes_success_02);
 					System.out.println();
 					System.out.println("      ゴゴゴゴ！");
 					System.out.println();
-					Thread.sleep(1000);
+					Thread.sleep(750);
 					String name_yes_success_03 = "Remain/Switch/s_yes_success_03";
 					Tools.Graphic_Creator(name_yes_success_03);
 					System.out.println();
 					System.out.println("      お、ラッキー。隠し部屋を発見♪");
 					System.out.println();
-					Thread.sleep(2000);
+					Thread.sleep(1500);
 					Tools.Graphic_Creator(name_yes_success_03);
 					System.out.println();
-					System.out.println("      『ええ……、そんなことってある……？』");
+					System.out.println("      『ええ、そんなことってある……？』");
 					System.out.println();
 					Thread.sleep(2000);
 					System.out.println("      財宝+10");
 					Thread.sleep(1000);
 				}
 			}else {
-				String name_05 = "Remain/Switch/s_05";
-				Tools.Graphic_Creator(name_05);
+				//String name_05 = "Remain/Switch/s_05";
+				Tools.Graphic_Creator(name_03);
 				System.out.println();
 				System.out.println("      『……ま、だよね。");
 				System.out.println();
@@ -1465,8 +1469,8 @@ public class GameApp {
 				System.out.println("        明らか罠だもん。それが良いと思うよ。』");
 				Thread.sleep(2500);
 
-				String name_07 = "Remain/Switch/s_07";
-				Tools.Graphic_Creator(name_07);
+				String name_08 = "Remain/Switch/s_08";
+				Tools.Graphic_Creator(name_08);
 				System.out.println();
 				System.out.println("      遺跡をあとにしました。");
 				System.out.println("");
@@ -1474,37 +1478,60 @@ public class GameApp {
 			}
 		}else if(d_f>0) {
 			h.setEvent("remain_of_rock");
+			
+			String name_01 = "Remain/Rock/s_01";
+			Tools.Graphic_Creator(name_01);
 			System.out.println();
+			System.out.println("      おお、これは見事な黄金像！");
 			System.out.println();
-			System.out.println();
-			System.out.println("    ※グラフィック未対応");
-			System.out.println("    玉座に黄金像がある！こいつはラッキーだ！");
-			Thread.sleep(1000);
-			System.out.println("    ひょい！");
 			Thread.sleep(2000);
-			if(rdm.nextInt(2)>0) {
-				Thread.sleep(1000);
-				System.out.println();
-				h.setHp(h.getHp()-10);
-				System.out.println("    ゴロゴロゴロ！");
-				Thread.sleep(1000);
-				System.out.println("    うわ、像を持ち上げた瞬間、大岩が転がってきた！");
-				Thread.sleep(1000);
-				System.out.println("    下敷きになって大ダメージだ！");
-				Thread.sleep(1000);
-				System.out.println("    HP-10");
-				Thread.sleep(1000);
+			
+			Tools.Graphic_Creator(name_01);
+			System.out.println();
+			System.out.println("      『うわぁ、すっごい価値がありそう。");
+			System.out.println("        ね、ね、貰っていこうよ、おにいちゃん！』");
 
-			}else {
-				h.setMoney(h.getMoney()+10);
-				Thread.sleep(1000);
+			Thread.sleep(3000);
+			System.out.println("      ");
+			System.out.printf("      【1】取る！  【2】取らない  (成功率:%s%%)%n",per-10);
+			System.out.println("      ");
+			Thread.sleep(500);
+			System.out.print("       >>");
+			int input=sc.nextInt();
+			if(input==1) {
 				System.out.println();
-				System.out.println("    ゴゴゴゴ！");
-				Thread.sleep(1000);
-				System.out.println("    おお、像を持ち上げたら外への出口が！なんて親切な遺跡なのだ！");
+				System.out.println("      ひょい！");
+				System.out.println();
 				Thread.sleep(2000);
-				System.out.println("    財宝+10");
-				Thread.sleep(1000);
+				if(rdm.nextInt(100)>per) {
+					Thread.sleep(1000);
+					System.out.println();
+					h.setHp(h.getHp()-10);
+					System.out.println("      ゴロゴロゴロ！");
+					Thread.sleep(1000);
+					System.out.println("      うわ、像を持ち上げた瞬間、大岩が転がってきた！");
+					Thread.sleep(1000);
+					System.out.println("      下敷きになって大ダメージだ！");
+					Thread.sleep(1000);
+					System.out.println("      HP-10");
+					Thread.sleep(1000);
+				}else {
+					h.setMoney(h.getMoney()+10);
+					Thread.sleep(1000);
+					System.out.println();
+					System.out.println("      ゴゴゴゴ！");
+					Thread.sleep(1000);
+					System.out.println("      おお、像を持ち上げたら外への出口が！なんて親切な遺跡なのだ！");
+					Thread.sleep(2000);
+					System.out.println("      財宝+10");
+					Thread.sleep(1000);
+				}
+			}else {
+				Tools.Graphic_Creator(name_01);
+				System.out.println();
+				System.out.println("      遺跡をあとにしました。");
+				System.out.println("");
+				Thread.sleep(2000);
 			}
 		}else {
 			h.setEvent("remain_of_natives");
