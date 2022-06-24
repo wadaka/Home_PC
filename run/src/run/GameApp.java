@@ -1476,16 +1476,16 @@ public class GameApp {
 				System.out.println("");
 				Thread.sleep(2000);
 			}
-		}else if(d_f>0) {
+		}else if(d_f>=0) {
 			h.setEvent("remain_of_rock");
-			
+
 			String name_01 = "Remain/Rock/s_01";
 			Tools.Graphic_Creator(name_01);
 			System.out.println();
 			System.out.println("      おお、これは見事な黄金像！");
 			System.out.println();
 			Thread.sleep(2000);
-			
+
 			Tools.Graphic_Creator(name_01);
 			System.out.println();
 			System.out.println("      『うわぁ、すっごい価値がありそう。");
@@ -1499,10 +1499,12 @@ public class GameApp {
 			System.out.print("       >>");
 			int input=sc.nextInt();
 			if(input==1) {
+				String name_yes_01 = "Remain/Rock/s_yes_01";
+				Tools.Graphic_Creator(name_yes_01);
 				System.out.println();
-				System.out.println("      ひょい！");
+				System.out.println("      「ひょい！」");
 				System.out.println();
-				Thread.sleep(2000);
+				Thread.sleep(1500);
 				if(rdm.nextInt(100)>per) {
 					Thread.sleep(1000);
 					System.out.println();
@@ -1517,13 +1519,48 @@ public class GameApp {
 					Thread.sleep(1000);
 				}else {
 					h.setMoney(h.getMoney()+10);
+					String name_yes_success_01 = "Remain/Rock/s_yes_success_01";
+					Tools.Graphic_Creator(name_yes_success_01);
+					System.out.println();
+					System.out.println("");
+					System.out.println();
 					Thread.sleep(1000);
+					String name_yes_success_02 = "Remain/Rock/s_yes_success_02";
+					Tools.Graphic_Creator(name_yes_success_02);
 					System.out.println();
 					System.out.println("      ゴゴゴゴ！");
-					Thread.sleep(1000);
-					System.out.println("      おお、像を持ち上げたら外への出口が！なんて親切な遺跡なのだ！");
+					System.out.println();
+					Thread.sleep(250);
+					String name_yes_success_03 = "Remain/Rock/s_yes_success_03";
+					Tools.Graphic_Creator(name_yes_success_03);
+					System.out.println();
+					System.out.println("      ゴゴゴゴ！");
+					System.out.println();
+					Thread.sleep(250);
+					String name_yes_success_04 = "Remain/Rock/s_yes_success_04";
+					Tools.Graphic_Creator(name_yes_success_04);
+					System.out.println();
+					System.out.println("      ゴゴゴゴ！");
+					System.out.println();
+					Thread.sleep(1500);
+					Tools.Graphic_Creator(name_yes_success_04);
+					System.out.println();
+					System.out.println("      むむ、このまま外まで運んでくれるみたいだぞ！？");
+					System.out.println();
 					Thread.sleep(2000);
+					Tools.Graphic_Creator(name_yes_success_04);
+					System.out.println();
+					System.out.println("      『元々、脱出用の装置か何かだったのかなぁ。");
+					System.out.println();
+					Thread.sleep(1500);
+					Tools.Graphic_Creator(name_yes_success_04);
+					System.out.println();
+					System.out.println("      『元々、脱出用の装置か何かだったのかなぁ。なんにしても、ラッキーだね！』");
+					System.out.println("");
+					Thread.sleep(1500);
+					System.out.println();
 					System.out.println("      財宝+10");
+					System.out.println();
 					Thread.sleep(1000);
 				}
 			}else {
