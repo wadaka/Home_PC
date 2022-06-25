@@ -1476,7 +1476,7 @@ public class GameApp {
 				System.out.println("");
 				Thread.sleep(2000);
 			}
-		}else if(d_f>=0) {
+		}else if(d_f>0) {
 			h.setEvent("remain_of_rock");
 
 			String name_01 = "Remain/Rock/s_01";
@@ -1505,18 +1505,69 @@ public class GameApp {
 				System.out.println("      「ひょい！」");
 				System.out.println();
 				Thread.sleep(1500);
-				if(rdm.nextInt(100)>per) {
-					Thread.sleep(1000);
-					System.out.println();
+				if(rdm.nextInt(109)>per) {
 					h.setHp(h.getHp()-10);
-					System.out.println("      ゴロゴロゴロ！");
-					Thread.sleep(1000);
-					System.out.println("      うわ、像を持ち上げた瞬間、大岩が転がってきた！");
-					Thread.sleep(1000);
-					System.out.println("      下敷きになって大ダメージだ！");
-					Thread.sleep(1000);
+
+					String name_yes_02 = "Remain/Rock/s_yes_02";
+					Tools.Graphic_Creator(name_yes_02);
+					System.out.println();
+					System.out.println("");
+					System.out.println();
+					Thread.sleep(500);
+
+					String name_yes_fail_01 = "Remain/Rock/s_yes_fail_01";
+					Tools.Graphic_Creator(name_yes_fail_01);
+					System.out.println();
+					System.out.println("");
+					System.out.println();
+					Thread.sleep(125);
+					String name_yes_fail_02 = "Remain/Rock/s_yes_fail_02";
+					Tools.Graphic_Creator(name_yes_fail_02);
+					System.out.println();
+					System.out.println("");
+					System.out.println();
+					Thread.sleep(125);
+					String name_yes_fail_03 = "Remain/Rock/s_yes_fail_03";
+					Tools.Graphic_Creator(name_yes_fail_03);
+					System.out.println();
+					System.out.println("");
+					System.out.println();
+					Thread.sleep(125);
+					String name_yes_fail_04_1 = "Remain/Rock/s_yes_fail_04_1";
+					Tools.Graphic_Creator(name_yes_fail_04_1);
+					System.out.println();
+					System.out.println("      ドン！");
+					System.out.println();
+					Thread.sleep(124);
+
+					String name_yes_fail_04_2 = "Remain/Rock/s_yes_fail_04_2";
+					Tools.Graphic_Creator(name_yes_fail_04_2);
+					System.out.println();
+					System.out.println("      ドン！");
+					System.out.println();
+					Thread.sleep(2500);
+
+					String name_yes_fail_04_3 = "Remain/Rock/s_yes_fail_04_3";
+					Tools.Graphic_Creator(name_yes_fail_04_3);
+					System.out.println();
+					System.out.println("      ");
+					System.out.println();
+					Thread.sleep(2000);
+
+					Tools.Graphic_Creator(name_yes_fail_04_3);
+					System.out.println();
+					System.out.println("      …………あ。");
+					System.out.println();
+					Thread.sleep(2000);
+
+					String name_yes_fail_05 = "Remain/Rock/s_yes_fail_05";
+					Tools.Graphic_Creator(name_yes_fail_05);
+					Thread.sleep(2000);
+					Tools.Graphic_Creator(name_yes_fail_05);
+					System.out.println();
 					System.out.println("      HP-10");
-					Thread.sleep(1000);
+					System.out.println();
+					Thread.sleep(2000);
 				}else {
 					h.setMoney(h.getMoney()+10);
 					String name_yes_success_01 = "Remain/Rock/s_yes_success_01";
@@ -1550,12 +1601,12 @@ public class GameApp {
 					Thread.sleep(2000);
 					Tools.Graphic_Creator(name_yes_success_04);
 					System.out.println();
-					System.out.println("      『元々、脱出用の装置か何かだったのかなぁ。");
+					System.out.println("      『元々、脱出用の装置か何かだったのかな？");
 					System.out.println();
 					Thread.sleep(1500);
 					Tools.Graphic_Creator(name_yes_success_04);
 					System.out.println();
-					System.out.println("      『元々、脱出用の装置か何かだったのかなぁ。なんにしても、ラッキーだね！』");
+					System.out.println("      『元々、脱出用の装置か何かだったのかなぁ？ なんにしても、ラッキーだね！』");
 					System.out.println("");
 					Thread.sleep(1500);
 					System.out.println();
