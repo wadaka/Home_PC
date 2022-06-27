@@ -1617,51 +1617,122 @@ public class GameApp {
 			}else {
 				Tools.Graphic_Creator(name_01);
 				System.out.println();
-				System.out.println("      遺跡をあとにしました。");
+				System.out.println("      うーん、嫌な予感がするからやめとこう……。");
 				System.out.println("");
 				Thread.sleep(2000);
 			}
 		}else {
 			h.setEvent("remain_of_natives");
+
+			String name_01 = "Remain/Natives/s_01";
+			Tools.Graphic_Creator(name_01);
 			System.out.println();
+			System.out.println("      ムム、高そうな水晶が祀られてるぞ！");
 			System.out.println();
-			System.out.println();
-			System.out.println("    ※グラフィック未対応");
-			System.out.println("    ムム、高価な水晶が祀られてる！");
-			Thread.sleep(1000);
-			System.out.println("    でも、原住民達にしっかり守られてるぞ。");
 			Thread.sleep(2000);
+
+			String name_02 = "Remain/Natives/s_02";
+			Tools.Graphic_Creator(name_02);
 			System.out.println();
-			System.out.println("    よーし、コッソリ盗み出してやろう。");
+			System.out.println("");
+			System.out.println();
+			Thread.sleep(500);
+
+			String name_03 = "Remain/Natives/s_03";
+			Tools.Graphic_Creator(name_03);
+			System.out.println();
+			System.out.println("      『うわ、あれ盗品登録されてる奴だよ！");
+			System.out.println();
 			Thread.sleep(2000);
-			if(rdm.nextInt(2)>0) {
-				h.setHp(h.getHp()-5);
+
+			String name_04 = "Remain/Natives/s_04";
+			Tools.Graphic_Creator(name_04);
+			System.out.println();
+			System.out.println("      『うわ、あれ盗品登録されてる奴だよ！");
+			System.out.println("        なんとか奪い返して、持ち主に届けよう、おにいちゃん！』");
+
+			Thread.sleep(3000);
+			System.out.println("      ");
+			System.out.printf("      【1】奪う！  【2】やめとく  (成功率:%s%%)%n",per-10);
+			System.out.println("      ");
+			Thread.sleep(500);
+			System.out.print("       >>");
+			int input=sc.nextInt();
+			if(input==1) {
+				String name_yes_01 = "Remain/Natives/s_yes_01";
+				Tools.Graphic_Creator(name_yes_01);
 				System.out.println();
-				System.out.println();
-				System.out.println();
-				System.out.println("    コロセー！！");
-				Thread.sleep(1000);
-				System.out.println("    トラエロー！！");
+				System.out.println("      令和のルパンと謳われた、おにいちゃんに任せろっ！！");
+				System.out.println("");
 				Thread.sleep(2000);
+				String name_yes_03 = "Remain/Natives/s_yes_03";
+				Tools.Graphic_Creator(name_yes_03);
 				System.out.println();
-				System.out.println("    ちくしょー！案の定バレちまったぜ！");
-				System.out.println("    とっちめられた上に、金も取られちまった……。");
-				Thread.sleep(2000);
-				System.out.println("    HP-5、財宝-5");
-				Thread.sleep(500);
-				h.setMoney_judge(h.getItem_litter(),5,false);
-				Thread.sleep(1000);
+				System.out.println("      『うわぁ、一気に不安になってきた……。』");
+				System.out.println("");
+				Thread.sleep(1500);
+
+				if(rdm.nextInt(100)>per) {
+					String name_yes_fail_01 = "Remain/Natives/s_yes_fail_01";
+					Tools.Graphic_Creator(name_yes_fail_01);
+					System.out.println();
+					System.out.println("      ひいぃぃぃ、捕まったぁぁぁっ！！");
+					System.out.println("");
+					Thread.sleep(2000);
+					String name_yes_fail_02 = "Remain/Natives/s_yes_fail_02";
+					Tools.Graphic_Creator(name_yes_fail_02);
+					System.out.println();
+					System.out.println("      『………………。』");
+					System.out.println("");
+					Thread.sleep(2000);
+					System.out.println("");
+					System.out.println("      HP-5、財宝-5");
+					System.out.println("");
+					Thread.sleep(500);
+					h.setHp(h.getHp()-5);
+					h.setMoney_judge(h.getItem_litter(),5,false);
+					Thread.sleep(1000);
+				}else {
+					h.setMoney(h.getMoney()+10);
+					Thread.sleep(1000);
+					System.out.println();
+					System.out.println("      ふう、なんとかバレずに盗めたぞ。");
+					System.out.println();
+					Thread.sleep(2000);
+
+					System.out.println();
+					System.out.println("      『す、すごい！本当に義賊みたいだよ、おにいちゃん！』");
+					System.out.println();
+					Thread.sleep(2000);
+
+					System.out.println();
+					System.out.println("      ギャッハー！あいつら他にも、たんまりためこんでやがったぜぇー！");
+					System.out.println();
+					Thread.sleep(2000);
+
+					System.out.println();
+					System.out.println("      『前言撤回、小悪党だった！！』");
+					System.out.println();
+					Thread.sleep(2000);
+
+					System.out.println();
+					System.out.println("      財宝+10");
+					System.out.println();
+					Thread.sleep(1000);
+				}
 			}else {
-				h.setMoney(h.getMoney()+10);
-				Thread.sleep(1000);
+				String name_05 = "Remain/Natives/s_05";
+				Tools.Graphic_Creator(name_05);
 				System.out.println();
-				System.out.println("    ふう、なんとかバレずに盗めたぞ。");
-				Thread.sleep(1000);
+				System.out.println("      いや、危険だからやめとこう。");
+				System.out.println("");
+				Thread.sleep(2000);
+				String name_06 = "Remain/Natives/s_06";
+				Tools.Graphic_Creator(name_06);
 				System.out.println();
-				System.out.println("    ギャッハー！あいつら他にも、たんまりためこんでやがったぜぇー！");
-				Thread.sleep(1000);
-				System.out.println("    財宝+10");
-				Thread.sleep(1000);
+				System.out.println("      『私たち、義賊には なれそうもないね……。』");
+				System.out.println("");
+				Thread.sleep(2000);
 			}
 		}
 	}
