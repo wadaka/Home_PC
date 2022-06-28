@@ -1695,23 +1695,54 @@ public class GameApp {
 				}else {
 					h.setMoney(h.getMoney()+10);
 					Thread.sleep(1000);
+					String name_yes_success_01 = "Remain/Natives/s_yes_success_01";
+					Tools.Graphic_Creator(name_yes_success_01);
 					System.out.println();
 					System.out.println("      ふう、なんとかバレずに盗めたぞ。");
 					System.out.println();
 					Thread.sleep(2000);
 
+					Tools.Graphic_Creator(name_yes_success_01);
 					System.out.println();
 					System.out.println("      『す、すごい！本当に義賊みたいだよ、おにいちゃん！』");
 					System.out.println();
 					Thread.sleep(2000);
 
+					String name_yes_success_02 = "Remain/Natives/s_yes_success_02";
+					Tools.Graphic_Creator(name_yes_success_02);
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					Thread.sleep(500);
+					String name_yes_success_03 = "Remain/Natives/s_yes_success_03";
+					Tools.Graphic_Creator(name_yes_success_03);
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					Thread.sleep(100);
+					String name_yes_success_04 = "Remain/Natives/s_yes_success_04";
+					Tools.Graphic_Creator(name_yes_success_04);
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					Thread.sleep(100);
+					String name_yes_success_05 = "Remain/Natives/s_yes_success_05";
+					Tools.Graphic_Creator(name_yes_success_05);
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					Thread.sleep(1000);
+
+					String name_yes_success_06 = "Remain/Natives/s_yes_success_06";
+					Tools.Graphic_Creator(name_yes_success_06);
 					System.out.println();
 					System.out.println("      ギャッハー！あいつら他にも、たんまりためこんでやがったぜぇー！");
 					System.out.println();
 					Thread.sleep(2000);
 
+					Tools.Graphic_Creator(name_yes_success_06);
 					System.out.println();
-					System.out.println("      『前言撤回、小悪党だった！！』");
+					System.out.println("      『前言撤回、小悪党だ！！』");
 					System.out.println();
 					Thread.sleep(2000);
 
