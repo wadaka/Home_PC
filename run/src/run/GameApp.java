@@ -779,8 +779,8 @@ public class GameApp {
 
 		//デバッグ用
 		if(root==10) {
-			goToDungeon(h);
-			//attackNature(root,h);
+			//goToDungeon(h);
+			attackNature(root,h);
 		}else {
 
 		//続いて、イベント判定。選択した道の危険度に応じて、発生するイベント内容が変化。
@@ -800,9 +800,9 @@ public class GameApp {
 			}else {
 				if(second_j>84) {
 					getItem(root,h);
-				}else if(second_j>70) {
+				}else if(second_j>65) {
 					goToDungeon(h);
-				}else if(second_j>34) {
+				}else if(second_j>40) {
 					//アイテム獲得イベント
 					getItem(root,h);
 
@@ -813,11 +813,12 @@ public class GameApp {
 			}
 		//危険な道を選んだ時の抽選-----------------------------------------------------------
 		}else if(root>=3 && first_j>=30) {
-			if(second_j>70) {
-				getItem(root,h);
+			if(second_j>80) {
+				//自然の脅威イベント
+				attackNature(root,h);
 			}else if(second_j>50) {
 				goToDungeon(h);
-			}else if(second_j>24) {
+			}else if(second_j>40) {
 				//アイテム獲得イベント
 				getItem(root,h);
 			}else {
@@ -867,7 +868,7 @@ public class GameApp {
 	}
 
 	static void getItem(int root,Hero h) throws InterruptedException{
-		System.out.println("    ……なにか落ちているぞ？");
+		System.out.println("    ……なにか、落ちているぞ？");
 		Thread.sleep(2000);
 
 		int item_j = rdm.nextInt(100);
@@ -903,7 +904,7 @@ public class GameApp {
 			System.out.println();
 			Thread.sleep(1000);
 			h.setHp(hp+5);
-			System.out.println("    ……まあ、食えなくもない。");
+			System.out.println("    こんがり焼けば、香ばしい。");
 			Thread.sleep(1000);
 			System.out.println("    HP+5");
 			Thread.sleep(1000);
@@ -921,7 +922,7 @@ public class GameApp {
 			System.out.println();
 			Thread.sleep(1000);
 			h.setHp(hp+10);
-			System.out.println("    とれたてだから、鮮度がいいぜ！");
+			System.out.println("    とれたては、鮮度がいいぜ！");
 			Thread.sleep(1000);
 			System.out.println("    HP+10");
 			Thread.sleep(1000);
@@ -1005,10 +1006,10 @@ public class GameApp {
 
 		//デバッグ用
 		case 10:
-			attackNs[0]=1;
-			attackNs[1]=1;
-			attackNs[2]=1;
-			attackNs[3]=1;
+			attackNs[0]=0;
+			attackNs[1]=0;
+			attackNs[2]=0;
+			attackNs[3]=0;
 			attackN_j=0;
 			break;
 
@@ -1082,12 +1083,12 @@ public class GameApp {
 			Thread.sleep(1000);
 			Tools.Graphic_Creator(name_06);
 			System.out.println("");
-			System.out.println("      うわぁ、スコールだ！！");
+			System.out.println("      うわぁ、大雨だ！！");
 			System.out.println("");
 			Thread.sleep(2000);
 			Tools.Graphic_Creator(name_06);
 			System.out.println("");
-			System.out.println("      うわぁ、スコールだ！！");
+			System.out.println("      うわぁ、大雨だ！！");
 			System.out.println("      ずぶぬれになった体が冷え、体力が奪われる……。");
 			Thread.sleep(1500);
 			System.out.println("      HP-5");
@@ -1296,12 +1297,49 @@ public class GameApp {
 		}else {
 			//金食い虫
 			int bad = rdm.nextInt(5)+1;
-			System.out.println("      うわ、金食い虫だ！");
-			Thread.sleep(1000);
+
+			String name_01 = "Event/M_Eater/s_01";
+			Tools.Graphic_Creator(name_01);
 			System.out.println();
-			System.out.println("      チクショー！金返せ！！");
-			Thread.sleep(1000);
+			System.out.println("");
+			System.out.println();
+			Thread.sleep(1500);
+
+			String name_02 = "Event/M_Eater/s_02";
+			Tools.Graphic_Creator(name_02);
+			System.out.println();
+			System.out.println("      ……？");
+			System.out.println();
+			Thread.sleep(1500);
+
+			String name_03 = "Event/M_Eater/s_03";
+			Tools.Graphic_Creator(name_03);
+			System.out.println();
+			System.out.println("      カバンの中に何かいるのか……？");
+			System.out.println();
+			Thread.sleep(1500);
+
+			String name_04 = "Event/M_Eater/s_04";
+			Tools.Graphic_Creator(name_04);
+			System.out.println();
+			System.out.println("      カバンの中に何かいるのか……？");
+			System.out.println();
+			Thread.sleep(1500);
+
+			String name_05 = "Event/M_Eater/s_05";
+			Tools.Graphic_Creator(name_05);
+			System.out.println();
+			System.out.println("      げげ、金食い虫だ！");
+			System.out.println();
+			Thread.sleep(1500);
+			Tools.Graphic_Creator(name_05);
+			System.out.println();
+			System.out.println("      ちくしょー、金目の物を食いやがった！");
+			System.out.println();
+			Thread.sleep(1500);
+			System.out.println();
 			System.out.printf("      財宝-%s%n",bad);
+			System.out.println();
 			Thread.sleep(500);
 			h.setMoney_judge(h.getItem_litter(),bad,false);
 			Thread.sleep(1000);
