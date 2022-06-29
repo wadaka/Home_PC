@@ -614,39 +614,53 @@ public class Directing_Ending {
 
 	}
 
-	static void GoodEnd() {
-		System.out.println("");
-		System.out.println("");
-		System.out.println("  ここに、グッドエンド用のテキストが入ります。");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
+	static void GoodEnd() throws Exception {
+		//-----------------------------------------------------------------
+				String name_01 = "GoodEnd/s_01";
+				System.out.println("");
+				Tools.Graphic_Creator(name_01);
+				System.out.println("");
+				System.out.println("");
+				Thread.sleep(1000);
+				//-----------------------------------------------------------------
+				String name_02 = "GoodEnd/s_02";
+				System.out.println("");
+				Tools.Graphic_Creator(name_02);
+				System.out.println("");
+				System.out.println("");
+				Thread.sleep(2000);
+
+				String good_back_up = "GoodEnd/good_back_01";
+				String good_back_down = "GoodEnd/good_back_02";
+
+				Tools.Graphic_Creator_ED(good_back_up);
+				for(int i=0;i<20;i++) {
+					System.out.println("");
+				}
+				Tools.Graphic_Creator_ED(good_back_down);
+				Thread.sleep(1000);
+
+				Tools.Graphic_Creator_ED(good_back_up);
+				System.out.println("");
+				System.out.println("");
+				System.out.println("                ■リリーの日記：");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				System.out.println("");
+				Tools.Graphic_Creator_ED(good_back_down);
+				Thread.sleep(1000);
 	}
 
 	static void BestEnd() {

@@ -1,5 +1,5 @@
 らびちゃん,1810,30,claar_good,1,dummy
-,0,0,0,0,dummy
+ああああ,610,7,giant_snake,1,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
