@@ -214,7 +214,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=29;i<30;i++) {
+			for(int i=0;i<30;i++) {
 
 				turn_score_calc = i+1;
 
