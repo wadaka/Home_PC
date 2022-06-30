@@ -467,8 +467,19 @@ public class GameApp {
 			boolean isEDCheck = false;
 			if(h.getHp()<1) {
 				ending = 0;
-			}
-			else if(h.getMoney()>=100) {
+			}else if(h.getMoney()>=125 && p.isCampEvent_1()==true && p.isCampEvent_2()==true){
+				ending = 4;
+				h.setEvent("claar_best");
+				p.setEnding_Best(true);
+				List<Integer> update_ED_Be = new ArrayList<>();
+				update_ED_Be.add(id_ED_Best);
+				try {
+					player_data_update(update_ED_Be,p);
+				} catch (IOException e) {
+					// TODO 自動生成された catch ブロック
+					e.printStackTrace();
+				}
+			}else if(h.getMoney()>=100) {
 				ending = 1;
 				h.setEvent("claar_good");
 				isEDCheck = p.isEnding_Good();

@@ -23,6 +23,8 @@ public class Directing_Ending {
 					BadEnd();
 					System.out.println("");
 					System.out.print("            エンターキーで、次に進む >>");
+				}else {
+					BestEnd();
 				}
 			} catch (Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -2301,7 +2303,33 @@ public class Directing_Ending {
 				Thread.sleep(3000);
 	}
 
-	static void BestEnd() {
+	static void BestEnd() throws Exception {
+		Thread.sleep(2000);
+		String name_01 = "BestEnd/s_01";
+		System.out.println("");
+		Tools.Graphic_Creator(name_01);
+		System.out.println("");
+		System.out.println("");
+		Thread.sleep(2000);
 
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……え？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
+		System.out.println("              ");
+		System.out.println("              ……え？ 私の足、治るの？");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
 	}
 }
