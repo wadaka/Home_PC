@@ -2897,5 +2897,57 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(1500);
 
+		Tools.Graphic_Creator(name_29);
+		System.out.println("              ");
+		System.out.println("              もう、私のことなんか忘れちゃって、さ！");
+		System.out.println("              今回の稼ぎだって、");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_29);
+		System.out.println("              ");
+		System.out.println("              もう、私のことなんか忘れちゃって、さ！");
+		System.out.println("              今回の稼ぎだって、自分のために");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_30 = "BestEnd/s_30";
+		Tools.Graphic_Creator(name_30);
+		System.out.println("              ");
+		System.out.println("              もう、私のことなんか忘れちゃって、さ！");
+		System.out.println("              今回の稼ぎだって、自分のために もうパーッと使っちゃっ………。");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+
+		Tools.Graphic_Creator(name_30);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(200);
+
+		Tools.Graphic_Creator(name_30);
+		System.out.println("              ");
+		System.out.println("              「俺のせいだ」");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2500);
+
+		String name_31 = "BestEnd/s_31";
+		Tools.Graphic_Creator(name_31);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator(name_31);
+		System.out.println("              ");
+		System.out.println("              「お前の足も、親父が死んだのも、");
+		System.out.println("                全部、俺のせいなんだ。」");
+		System.out.println("              ");
+		Thread.sleep(2500);
+
 	}
 }
