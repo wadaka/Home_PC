@@ -54,13 +54,16 @@ public class Data_Result_Text {
 		case "remain_of_rock":
 			text+= "遺跡散策中、転がる大岩の下敷きとなり 潰れた。";
 			break;
-		case "claar_bad":
+		case "clear_bad":
 			text+= "無事、秘境を脱出したが、借金のカタとして売り飛ばされた。";
 			break;
-		case "claar_good":
+		case "clear_good":
 			text+= "無事、秘境を脱出し、借金も返済した。                    ";
 			break;
-		case "claar_best":
+		case "clear_best_1":
+			text+= "無事、秘境を脱出した。                                  ";
+			break;
+		case "clear_best_2":
 			text+= "無事、秘境を脱出し、借金を返済し、さらに妹の足も治した。";
 			break;
 			default:

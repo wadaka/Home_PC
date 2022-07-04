@@ -469,7 +469,7 @@ public class GameApp {
 				ending = 0;
 			}else if(h.getMoney()>=125 && p.isCampEvent_1()==true && p.isCampEvent_2()==true){
 				ending = 4;
-				h.setEvent("claar_best");
+				h.setEvent("clear_best_1");
 				p.setEnding_Best(true);
 				List<Integer> update_ED_Be = new ArrayList<>();
 				update_ED_Be.add(id_ED_Best);
@@ -481,7 +481,7 @@ public class GameApp {
 				}
 			}else if(h.getMoney()>=100) {
 				ending = 1;
-				h.setEvent("claar_good");
+				h.setEvent("clear_good");
 				isEDCheck = p.isEnding_Good();
 				p.setEnding_Good(true);
 				List<Integer> update_ED_G = new ArrayList<>();
@@ -494,7 +494,7 @@ public class GameApp {
 				}
 			}else {
 				ending = 2;
-				h.setEvent("claar_bad");
+				h.setEvent("clear_bad");
 				isEDCheck = p.isEnding_Bad();
 				p.setEnding_Bad(true);
 				List<Integer> update_ED_B = new ArrayList<>();
@@ -526,6 +526,11 @@ public class GameApp {
 				System.out.print("    ※エンターキー入力で次へ進みます。");
 				sc.nextLine();
 				String Click = sc.nextLine();
+
+				if(ending == 4) {
+					h.setEvent("clear_best_2");
+					Directing_Ending.BestEnd_2();
+				}
 
 				List<Ranking> r_list = ranking_data_read();
 				Ranking my_rank = new Ranking(h.getName(),Integer.valueOf(score).toString(),turn_score_calc,h.getEvent(),h.getPlayer_count());
