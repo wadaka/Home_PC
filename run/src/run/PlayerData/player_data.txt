@@ -1,1 +1,1 @@
-あああ,true,true,false,false,true,29
+あああ,true,true,false,false,true,32
