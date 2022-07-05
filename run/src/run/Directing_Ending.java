@@ -2672,12 +2672,19 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(2000);
 
-		Tools.Graphic_Creator(name_31);
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
 		System.out.println("              ");
 		System.out.println("              「お前の足も、親父が死んだのも、");
 		System.out.println("                全部、俺のせいなんだ。」");
 		System.out.println("              ");
 		Thread.sleep(4000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
+		Thread.sleep(3000);
 	}
 
 	static void BestEnd_2() throws Exception {
@@ -2920,7 +2927,7 @@ public class Directing_Ending {
 		};
 		System.out.println("              ");
 		System.out.println("              …………ぁ。");
-		System.out.println("              ぁ……ぁあっ！！");
+		System.out.println("              ぁ……ぁぁぁああっ……！！");
 		System.out.println("              ");
 		Thread.sleep(1000);
 
@@ -2995,6 +3002,22 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(4000);
 
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		String name_32 = "BestEnd/s_32";
+		Tools.Graphic_Creator(name_32);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
 
 	}
 }
