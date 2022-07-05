@@ -1,5 +1,5 @@
 らびちゃん,1810,30,claar_good,1,dummy
-,0,0,0,0,dummy
+あああ,1700,30,clear_best_2,29,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
