@@ -24,7 +24,7 @@ public class Directing_Ending {
 					System.out.println("");
 					System.out.print("            エンターキーで、次に進む >>");
 				}else {
-					BestEnd_1();
+					//BestEnd_1();
 				}
 			} catch (Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -2368,13 +2368,7 @@ public class Directing_Ending {
 		for(int i=0;i<32;i++) {
 			System.out.println("");
 		}
-		Thread.sleep(2000);
-		System.out.println("              ");
-		System.out.println("              …………");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -2407,15 +2401,15 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(1500);
 
-		String name_05 = "BestEnd/s_05";
-		System.out.println("");
-		Tools.Graphic_Creator(name_05);
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
 		System.out.println("              ");
 		System.out.println("              …………あのさ、おにいちゃん。");
 		System.out.println("              もう無理に、私を愛さなくていいよ。");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(3000);
+		Thread.sleep(3500);
 
 		Tools.Graphic_Creator(name_02);
 		System.out.println("              ");
@@ -2462,10 +2456,18 @@ public class Directing_Ending {
 		Tools.Graphic_Creator(name_06);
 		System.out.println("              ");
 		System.out.println("              私、ちゃんと わかってるよ。");
+		System.out.println("              私がね ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		Tools.Graphic_Creator(name_06);
+		System.out.println("              ");
+		System.out.println("              私、ちゃんと わかってるよ。");
 		System.out.println("              私がね おにいちゃんから、");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(3000);
+		Thread.sleep(1500);
 
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -2528,7 +2530,7 @@ public class Directing_Ending {
 		for(int i=0;i<32;i++) {
 			System.out.println("              ");
 		}
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		String name_24_2 = "BestEnd/s_24_2";
 		Tools.Graphic_Creator(name_24_2);
@@ -2536,7 +2538,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(1500);
+		Thread.sleep(3500);
 
 		String name_23 = "BestEnd/s_23";
 		Tools.Graphic_Creator(name_23);
@@ -2564,7 +2566,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator(name_23);
 		System.out.println("              ");
 		System.out.println("              そ、それに！");
-		System.out.println("              お、お母さんの…こと…だって……。");
+		System.out.println("              お、お母さんの…こと…");
 		System.out.println("              ");
 		Thread.sleep(2000);
 
@@ -2573,7 +2575,7 @@ public class Directing_Ending {
 		System.out.println("              そ、それに！");
 		System.out.println("              お、お母さんの…こと…だって……。");
 		System.out.println("              ");
-		Thread.sleep(2500);
+		Thread.sleep(3500);
 
 		String name_27 = "BestEnd/s_27";
 		Tools.Graphic_Creator(name_27);
@@ -2581,7 +2583,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(2500);
+		Thread.sleep(4500);
 
 		String name_27_2 = "BestEnd/s_27_2";
 		Tools.Graphic_Creator(name_27_2);
@@ -2668,7 +2670,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator(name_31);
 		System.out.println("              ");
 		System.out.println("              「お前の足も、親父が死んだのも、");
-		System.out.println("                全部、」");
+		System.out.println("                全部、");
 		System.out.println("              ");
 		Thread.sleep(2000);
 
@@ -2689,6 +2691,11 @@ public class Directing_Ending {
 
 	static void BestEnd_2() throws Exception {
 
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
+		Thread.sleep(3500);
+
 		String name_07 = "BestEnd/s_07";
 		System.out.println("");
 		Tools.Graphic_Creator(name_07);
@@ -2697,9 +2704,8 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(3000);
+		Thread.sleep(3500);
 
-		//イベント後半にもってくる？
 		Tools.Graphic_Creator(name_07);
 		System.out.println("              ");
 		System.out.println("              （……まだ、上の子も小さいのに。）");
@@ -2710,7 +2716,7 @@ public class Directing_Ending {
 
 		Tools.Graphic_Creator(name_07);
 		System.out.println("              ");
-		System.out.println("              （……まだ、上の子も若いのに。）");
+		System.out.println("              （……まだ、上の子も小さいのに。）");
 		System.out.println("              ");
 		System.out.println("              （お気の毒に、ねぇ……。）");
 		System.out.println("              ");
@@ -2997,6 +3003,13 @@ public class Directing_Ending {
 		String name_22 = "BestEnd/s_22";
 		Tools.Graphic_Creator(name_22);
 		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		Tools.Graphic_Creator(name_22);
+		System.out.println("              ");
 		System.out.println("              りりィがぁぁぁ……っ！！！");
 		System.out.println("              ");
 		System.out.println("              ");
@@ -3010,11 +3023,78 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 
 		String name_32 = "BestEnd/s_32";
 		Tools.Graphic_Creator(name_32);
 		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(5000);
+
+
+		String name_33 = "BestEnd/s_33";
+		Tools.Graphic_Creator(name_33);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(4000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
+		System.out.println("              ");
+		System.out.println("              ……家に、");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		};
+		System.out.println("              ");
+		System.out.println("              ……家に、帰ったらさ。");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		Tools.Graphic_Creator(name_33);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_34 = "BestEnd/s_34";
+		Tools.Graphic_Creator(name_34);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		String name_35 = "BestEnd/s_35";
+		Tools.Graphic_Creator(name_35);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_36 = "BestEnd/s_36";
+		Tools.Graphic_Creator(name_36);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_37 = "BestEnd/s_37";
+		Tools.Graphic_Creator(name_37);
+		System.out.println("              ");
+		System.out.println("              教えてよ、冒険の仕方。");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(3000);
