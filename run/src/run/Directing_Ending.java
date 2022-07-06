@@ -3046,15 +3046,6 @@ public class Directing_Ending {
 			System.out.println("");
 		};
 		System.out.println("              ");
-		System.out.println("              ……家に、");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1000);
-
-		for(int i=0;i<32;i++) {
-			System.out.println("");
-		};
-		System.out.println("              ");
 		System.out.println("              ……家に、帰ったらさ。");
 		System.out.println("              ");
 		System.out.println("              ");
@@ -3065,7 +3056,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(1000);
+		Thread.sleep(500);
 
 		String name_34 = "BestEnd/s_34";
 		Tools.Graphic_Creator(name_34);
@@ -3073,7 +3064,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 		String name_35 = "BestEnd/s_35";
 		Tools.Graphic_Creator(name_35);
@@ -3095,6 +3086,30 @@ public class Directing_Ending {
 		Tools.Graphic_Creator(name_37);
 		System.out.println("              ");
 		System.out.println("              教えてよ、冒険の仕方。");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		String name_38 = "BestEnd/s_38";
+		Tools.Graphic_Creator(name_38);
+		System.out.println("              ");
+		System.out.println("              教えてよ、冒険の仕方。");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_39 = "BestEnd/s_39";
+		Tools.Graphic_Creator(name_39);
+		System.out.println("              ");
+		System.out.println("              教えてよ、冒険の仕方。");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		String name_40 = "BestEnd/s_40";
+		Tools.Graphic_Creator(name_40);
+		System.out.println("              ");
+		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(3000);
