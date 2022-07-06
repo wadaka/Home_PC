@@ -1,10 +1,10 @@
 らびちゃん,1810,30,claar_good,1,dummy
+あああ,1700,30,clear_best_2,35,dummy
+あああ,1700,30,clear_best_2,34,dummy
+あああ,1700,30,clear_best_2,33,dummy
 あああ,1700,30,clear_best_2,32,dummy
 あああ,1700,30,clear_best_2,31,dummy
 あああ,1700,30,clear_best_2,30,dummy
 あああ,1700,30,clear_best_2,29,dummy
-,0,0,0,0,dummy
-,0,0,0,0,dummy
-,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
