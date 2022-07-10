@@ -324,7 +324,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -346,7 +346,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -368,7 +368,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -390,7 +390,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -412,7 +412,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -434,7 +434,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -456,7 +456,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -482,7 +482,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -504,7 +504,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -526,7 +526,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -548,7 +548,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -570,7 +570,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -592,7 +592,7 @@ public class Directing_Ending {
 		Tools.Graphic_Creator_ED(bad_back_up);
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                ■リリーの日記：");
+		System.out.println("                ■リリィの日記：");
 		System.out.println("");
 		System.out.println("");
 		System.out.println("");
@@ -642,7 +642,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -664,7 +664,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -686,7 +686,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -708,7 +708,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -730,7 +730,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -752,7 +752,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -774,7 +774,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -796,7 +796,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -818,7 +818,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -840,7 +840,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -862,7 +862,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -884,7 +884,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -906,7 +906,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -928,7 +928,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -950,7 +950,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -972,7 +972,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -994,7 +994,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1016,7 +1016,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1038,7 +1038,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1060,7 +1060,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1082,7 +1082,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1104,7 +1104,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1126,7 +1126,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1148,7 +1148,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1170,7 +1170,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1192,7 +1192,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("                  ");
@@ -1214,7 +1214,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1236,7 +1236,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1258,7 +1258,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1280,7 +1280,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1302,7 +1302,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1324,7 +1324,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1346,7 +1346,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1368,7 +1368,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1390,7 +1390,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1412,7 +1412,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1434,7 +1434,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1456,7 +1456,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1478,7 +1478,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1500,7 +1500,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1522,7 +1522,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1544,7 +1544,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1566,7 +1566,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1588,7 +1588,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1610,7 +1610,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1632,7 +1632,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1654,7 +1654,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1676,7 +1676,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1698,7 +1698,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1720,7 +1720,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1742,7 +1742,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1764,7 +1764,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1786,7 +1786,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1808,7 +1808,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1830,7 +1830,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1852,7 +1852,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1874,7 +1874,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1896,7 +1896,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1918,7 +1918,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1940,7 +1940,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1962,7 +1962,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -1985,7 +1985,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2008,7 +2008,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2030,7 +2030,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2052,7 +2052,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2074,7 +2074,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2097,7 +2097,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2120,7 +2120,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2142,7 +2142,7 @@ public class Directing_Ending {
 				Tools.Graphic_Creator_ED(good_back_up);
 				System.out.println("");
 				System.out.println("");
-				System.out.println("                ■リリーの日記：");
+				System.out.println("                ■リリィの日記：");
 				System.out.println("");
 				System.out.println("");
 				System.out.println("");
@@ -2638,9 +2638,20 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(200);
 
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		System.out.println("                                       ");
+		System.out.println("                                       「俺のせいだ」");
+		System.out.println("                                       ");
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		Thread.sleep(2500);
+
 		Tools.Graphic_Creator(name_30);
 		System.out.println("              ");
-		System.out.println("              「俺のせいだ」");
+		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(2500);
@@ -2653,6 +2664,52 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(2000);
 
+
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		System.out.println("                                       「お前の足も、");
+		System.out.println("                                       ");
+		System.out.println("                                       ");
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		Thread.sleep(1500);
+
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		System.out.println("                                       「お前の足も、親父が死んだのも、");
+		System.out.println("                                       ");
+		System.out.println("                                       ");
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		Thread.sleep(3500);
+
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		System.out.println("                                       「お前の足も、親父が死んだのも、");
+		System.out.println("                                       ");
+		System.out.println("                                         全部、");
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		Thread.sleep(2000);
+
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		System.out.println("                                       「お前の足も、親父が死んだのも、");
+		System.out.println("                                       ");
+		System.out.println("                                         全部、俺のせいなんだ。」");
+		for(int i=0;i<15;i++) {
+			System.out.println("              ");
+		}
+		Thread.sleep(4000);
+
+		/*
 		Tools.Graphic_Creator(name_31);
 		System.out.println("              ");
 		System.out.println("              「お前の足も、");
@@ -2682,6 +2739,7 @@ public class Directing_Ending {
 		System.out.println("                全部、俺のせいなんだ。」");
 		System.out.println("              ");
 		Thread.sleep(4000);
+		*/
 
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -2696,6 +2754,7 @@ public class Directing_Ending {
 		};
 		Thread.sleep(3500);
 
+		/*
 		String name_07 = "BestEnd/s_07";
 		System.out.println("");
 		Tools.Graphic_Creator(name_07);
@@ -2959,7 +3018,7 @@ public class Directing_Ending {
 			System.out.println("");
 		};
 		System.out.println("              ");
-		System.out.println("              りりィが、");
+		System.out.println("              リリィが、");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(500);
@@ -2968,7 +3027,7 @@ public class Directing_Ending {
 			System.out.println("");
 		};
 		System.out.println("              ");
-		System.out.println("              りりィが、りりィが、");
+		System.out.println("              リリィが、リリィが、");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(500);
@@ -2977,7 +3036,7 @@ public class Directing_Ending {
 			System.out.println("");
 		};
 		System.out.println("              ");
-		System.out.println("              りりィが、りりィが、");
+		System.out.println("              リリィが、リリィが、");
 		System.out.println("              足が、");
 		System.out.println("              ");
 		Thread.sleep(500);
@@ -2986,7 +3045,7 @@ public class Directing_Ending {
 			System.out.println("");
 		};
 		System.out.println("              ");
-		System.out.println("              りりィが、りりィが、");
+		System.out.println("              リリィが、リリィが、");
 		System.out.println("              足が、り、");
 		System.out.println("              ");
 		Thread.sleep(1000);
@@ -2995,8 +3054,8 @@ public class Directing_Ending {
 			System.out.println("");
 		};
 		System.out.println("              ");
-		System.out.println("              りりィが、りりィが、");
-		System.out.println("              足が、り、りりィがっ！！");
+		System.out.println("              リリィが、リリィが、");
+		System.out.println("              足が、り、リリィがっ！！");
 		System.out.println("              ");
 		Thread.sleep(1000);
 
@@ -3010,7 +3069,7 @@ public class Directing_Ending {
 
 		Tools.Graphic_Creator(name_22);
 		System.out.println("              ");
-		System.out.println("              りりィがぁぁぁ……っ！！！");
+		System.out.println("              リリィがぁぁぁ……っ！！！");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(4000);
@@ -3024,6 +3083,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(6000);
+		*/
 
 		String name_32 = "BestEnd/s_32";
 		Tools.Graphic_Creator(name_32);
@@ -3064,7 +3124,15 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(1000);
+		Thread.sleep(500);
+
+		String name_34_2 = "BestEnd/s_34_2";
+		Tools.Graphic_Creator(name_34_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
 
 		String name_35 = "BestEnd/s_35";
 		Tools.Graphic_Creator(name_35);
@@ -3072,7 +3140,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(2000);
+		Thread.sleep(1500);
 
 		String name_36 = "BestEnd/s_36";
 		Tools.Graphic_Creator(name_36);
@@ -3085,7 +3153,7 @@ public class Directing_Ending {
 		String name_37 = "BestEnd/s_37";
 		Tools.Graphic_Creator(name_37);
 		System.out.println("              ");
-		System.out.println("              教えてよ、冒険の仕方。");
+		System.out.println("              教えてよ、");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(3000);
@@ -3106,13 +3174,436 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(3000);
 
+		String name_00 = "BestEnd/s_00";
+		Tools.Graphic_Creator(name_00);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		/*
+		String name_42 = "BestEnd/s_42";
+		Tools.Graphic_Creator(name_42);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+
 		String name_40 = "BestEnd/s_40";
 		Tools.Graphic_Creator(name_40);
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
+		Thread.sleep(1500);
+
+		String name_42_2 = "BestEnd/s_42_2";
+
+		Tools.Graphic_Creator(name_42_2);
+		System.out.println("              ");
+		System.out.println("              「なんで」って？");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1500);
+		*/
+
+
+		String name_42_2 = "BestEnd/s_42_2";
+		String name_42_5 = "BestEnd/s_42_5";
+		Tools.Graphic_Creator(name_42_5);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(4000);
+
+		String name_42_6 = "BestEnd/s_42_6";
+		String name_42_7 = "BestEnd/s_42_7";
+		Tools.Graphic_Creator(name_42_7);
+		System.out.println("              ");
+		System.out.println("              だってさ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		Tools.Graphic_Creator(name_42_2);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_42_3 = "BestEnd/s_42_3";
+		Tools.Graphic_Creator(name_42_3);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              いっつも");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_42_2);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              いっつも「ごめん」");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		Tools.Graphic_Creator(name_42_3);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              いっつも「ごめん」だとか");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_42_2);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              いっつも「ごめん」だとか「すまない」");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		String name_42_4 = "BestEnd/s_42_4";
+		Tools.Graphic_Creator(name_42_4);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              いっつも「ごめん」だとか「すまない」だとか、");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_42_8 = "BestEnd/s_42_8";
+		Tools.Graphic_Creator(name_42_8);
+		System.out.println("              ");
+		System.out.println("              だってさ、せっかく無事に帰ってこれたのに");
+		System.out.println("              いっつも「ごめん」だとか「すまない」だとか、辛気臭いんだもん。");
+		System.out.println("              ");
+		Thread.sleep(5000);
+
+		/*
+		Tools.Graphic_Creator(name_42);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+		*/
+
+		String name_00_2 = "BestEnd/s_00_2";
+		Tools.Graphic_Creator(name_00_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
 		Thread.sleep(3000);
 
+		String name_42 = "BestEnd/s_42";
+		Tools.Graphic_Creator(name_42);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(250);
+
+		String name_43 = "BestEnd/s_43";
+		Tools.Graphic_Creator(name_43);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_44 = "BestEnd/s_44";
+		Tools.Graphic_Creator(name_44);
+		System.out.println("              ");
+		System.out.println("              だからさ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_44);
+		System.out.println("              ");
+		System.out.println("              だからさ、今度は私が冒険に出るの！");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_41 = "BestEnd/s_41";
+		Tools.Graphic_Creator(name_41);
+		System.out.println("              ");
+		System.out.println("              だからさ、今度は私が冒険に出るの！");
+		System.out.println("              宝物を求めて、西へ東へ飛び回って、");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		String name_45 = "BestEnd/s_45";
+		Tools.Graphic_Creator(name_45);
+		System.out.println("              ");
+		System.out.println("              だからさ、今度は私が冒険に出るの！");
+		System.out.println("              宝物を求めて、西へ東へ飛び回って、もうすっごいスペクタクルで！");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		Tools.Graphic_Creator(name_42_5);
+		System.out.println("              ");
+		System.out.println("              たくさんの危険に巡り合うかもだけど……");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator(name_42_7);
+		System.out.println("              ");
+		System.out.println("              たくさんの危険に巡り合うかもだけど……");
+		System.out.println("              最後は、絶対「ただいま」って、戻ってくるよ！");
+		System.out.println("              ");
+		Thread.sleep(3500);
+
+		Tools.Graphic_Creator(name_44);
+		System.out.println("              ");
+		System.out.println("              そしたらさ、");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator(name_44);
+		System.out.println("              ");
+		System.out.println("              そしたらさ、次からは");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		Tools.Graphic_Creator(name_44);
+		System.out.println("              ");
+		System.out.println("              そしたらさ、次からは");
+		System.out.println("              「おかえり」って言えるでしょ？");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_00_3 = "BestEnd/s_00_3";
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(4000);
+
+
+		String speech = "それで、リリィは幸せか？";
+		char[] speak = speech.toCharArray();
+		String speak_now = "";
+		for(int i=0;i<speak.length;i++) {
+			speak_now += speak[i];
+			Tools.Graphic_Creator(name_00_3);
+			System.out.println("              ");
+			System.out.printf("              %s%n",speak_now);
+			System.out.println("              ");
+			if(i==3) Thread.sleep(2000);
+			else Thread.sleep(50);
+		}
+		Thread.sleep(2500);
+
+		Tools.Graphic_Creator(name_44);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_46_1 = "BestEnd/s_46_1";
+		Tools.Graphic_Creator(name_46_1);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1250);
+
+		String name_46_2_2 = "BestEnd/s_46_2_2";
+		Tools.Graphic_Creator(name_46_2_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		/*
+		String name_46_3_2 = "BestEnd/s_46_3_2";
+		Tools.Graphic_Creator(name_46_3_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+
+		String name_46_3 = "BestEnd/s_46_3";
+		Tools.Graphic_Creator(name_46_3);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+		*/
+
+		String name_46_4_2 = "BestEnd/s_46_4_2";
+		Tools.Graphic_Creator(name_46_4_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		String name_46_4_3 = "BestEnd/s_46_4_3";
+		Tools.Graphic_Creator(name_46_4_3);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(125);
+
+		String name_46_4_4 = "BestEnd/s_46_4_4";
+		Tools.Graphic_Creator(name_46_4_4);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(125);
+
+		String name_46_4_5 = "BestEnd/s_46_4_5";
+		Tools.Graphic_Creator(name_46_4_5);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(125);
+
+		String name_46_4_6 = "BestEnd/s_46_4_6";
+		Tools.Graphic_Creator(name_46_4_6);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(125);
+
+		String name_46_4_7 = "BestEnd/s_46_4_7";
+		Tools.Graphic_Creator(name_46_4_7);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(125);
+
+		String name_46_4_9 = "BestEnd/s_46_4_9";
+		Tools.Graphic_Creator(name_46_4_9);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(125);
+
+		String name_46_4_8 = "BestEnd/s_46_4_8";
+		Tools.Graphic_Creator(name_46_4_8);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		//56
+		for(int i=1;i<=56;i+=3) {
+			String names = "BestEnd/s_47_" + i;
+			Tools.Graphic_Creator(names);
+			System.out.println("              ");
+			System.out.println("              ");
+			System.out.println("              ");
+			System.out.println("              ");
+			Thread.sleep(30);
+		}
+
+		String name_47_56 = "BestEnd/s_47_56";
+		Tools.Graphic_Creator(name_47_56);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		//49
+		for(int i=1;i<=49;i+=4) {
+			String names = "BestEnd/s_48_" + i;
+			Tools.Graphic_Creator(names);
+			System.out.println("              ");
+			System.out.println("              ");
+			System.out.println("              ");
+			System.out.println("              ");
+			Thread.sleep(30);
+		}
+
+		Thread.sleep(2000);
+
+		String name_50 = "BestEnd/s_50";
+		Tools.Graphic_Creator(name_50);
+		System.out.println("              ");
+		System.out.println("              だからさ、いいでしょ？");
+		System.out.println("              色々、教えてよ。");
+		System.out.println("              ");
+		Thread.sleep(2500);
+
+		Tools.Graphic_Creator(name_50);
+		System.out.println("              ");
+		System.out.println("              「……ああ。」");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator(name_50);
+		System.out.println("              ");
+		System.out.println("              ほんと？ ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ほんと？ やった、");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ほんと？ やった、言質取ったからね！");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ほんと？ やった、言質取ったからね！");
+		System.out.println("              後から「ナシ」は言いっこなしだよ？");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ……約束だよ？");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2500);
+
+		Tools.Graphic_Creator(name_00_3);
+		System.out.println("              ");
+		System.out.println("              ……約束だよ？ お兄ちゃん。");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		for(int i=0;i<32;i++) {
+			System.out.println();
+		}
+		Thread.sleep(3000);
 	}
 }
