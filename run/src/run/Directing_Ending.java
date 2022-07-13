@@ -3538,67 +3538,151 @@ public class Directing_Ending {
 
 		Thread.sleep(2000);
 
-		String name_50 = "BestEnd/s_50";
-		Tools.Graphic_Creator(name_50);
+		String name_49_1 = "BestEnd/s_49_1";
+		Tools.Graphic_Creator(name_49_1);
 		System.out.println("              ");
-		System.out.println("              だからさ、いいでしょ？");
-		System.out.println("              色々、教えてよ。");
 		System.out.println("              ");
-		Thread.sleep(2500);
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(300);
 
-		Tools.Graphic_Creator(name_50);
+		String name_49_2 = "BestEnd/s_49_2";
+		Tools.Graphic_Creator(name_49_2);
 		System.out.println("              ");
-		System.out.println("              「……ああ。」");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(300);
+
+		String name_50_1 = "BestEnd/s_50_1";
+		Tools.Graphic_Creator(name_50_1);
+		System.out.println("              ");
+		System.out.println("              ");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(2000);
 
-		Tools.Graphic_Creator(name_50);
+		Tools.Graphic_Creator(name_50_1);
 		System.out.println("              ");
-		System.out.println("              ほんと？ ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1000);
-
-		Tools.Graphic_Creator(name_00_3);
-		System.out.println("              ");
-		System.out.println("              ほんと？ やった、");
-		System.out.println("              ");
-		Thread.sleep(1000);
-
-		Tools.Graphic_Creator(name_00_3);
-		System.out.println("              ");
-		System.out.println("              ほんと？ やった、言質取ったからね！");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1500);
-
-		Tools.Graphic_Creator(name_00_3);
-		System.out.println("              ");
-		System.out.println("              ほんと？ やった、言質取ったからね！");
-		System.out.println("              後から「ナシ」は言いっこなしだよ？");
-		System.out.println("              ");
-		Thread.sleep(3000);
-
-		Tools.Graphic_Creator(name_00_3);
-		System.out.println("              ");
-		System.out.println("              ");
+		System.out.println("              「ごめんな、");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(1000);
 
-		Tools.Graphic_Creator(name_00_3);
+		Tools.Graphic_Creator(name_50_1);
 		System.out.println("              ");
-		System.out.println("              ……約束だよ？");
+		System.out.println("              「ごめんな、ごめんな……。」");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator(name_50_1);
+		System.out.println("              ");
+		System.out.println("              もう、「ごめん」はダメって");
+		System.out.println("              さっきいったばっかじゃん！");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_50_2 = "BestEnd/s_50_2";
+		Tools.Graphic_Creator(name_50_2);
+		System.out.println("              ");
+		System.out.println("              「あ……、");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_50_2);
+		System.out.println("              ");
+		System.out.println("              「あ……、すまな……。」");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_50_2);
+		System.out.println("              ");
+		System.out.println("              言ってるそばから！");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_50_3 = "BestEnd/s_50_3";
+		Tools.Graphic_Creator(name_50_3);
+		System.out.println("              ");
+		System.out.println("              言ってるそばから！");
+		System.out.println("              まったく、しっかりしてよね？");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_50_3);
+		System.out.println("              ");
+		System.out.println("              言ってるそばから！");
+		System.out.println("              まったく、しっかりしてよね？");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		Tools.Graphic_Creator(name_50_3);
+		System.out.println("              ");
+		System.out.println("              「はい……。」 ");
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(2500);
 
+		String name_50_4 = "BestEnd/s_50_4";
+		Tools.Graphic_Creator(name_50_4);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_50_5 = "BestEnd/s_50_5";
+		Tools.Graphic_Creator(name_50_5);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として……");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		for(int i=6;i<=16;i++) {
+			String names = "BestEnd/s_50_" + i;
+			Tools.Graphic_Creator(names);
+			System.out.println("              ");
+			System.out.println("              じゃ、罰として……家に帰るまでに、");
+			System.out.println("              冒険の仕方をちゃんとまとめておくこと！");
+			System.out.println("              ");
+			Thread.sleep(100);
+		}
+		Thread.sleep(1500);
+
 		Tools.Graphic_Creator(name_00_3);
 		System.out.println("              ");
-		System.out.println("              ……約束だよ？ お兄ちゃん。");
+		System.out.println("              じゃ、罰として……家に帰るまでに、");
+		System.out.println("              冒険の仕方をちゃんとまとめておくこと！ いいね！");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		Tools.Graphic_Creator(name_00_3);
 		System.out.println("              ");
 		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(3000);
+
+		String speech2 = "・・・約束だよ？ お兄ちゃん。";
+		char[] speak2 = speech2.toCharArray();
+		String speak_now2 = "";
+		for(int i=0;i<speak2.length;i++) {
+			speak_now2 += speak2[i];
+			Tools.Graphic_Creator(name_00_3);
+			System.out.println("              ");
+			System.out.printf("              %s%n",speak_now2);
+			System.out.println("              ");
+			if(i<2) Thread.sleep(200);
+			else if(i==2) Thread.sleep(2000);
+			else if(i==8) Thread.sleep(2500);
+			else Thread.sleep(50);
+		}
+
 		Thread.sleep(3000);
 
 		for(int i=0;i<32;i++) {
