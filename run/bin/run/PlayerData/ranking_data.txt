@@ -1,10 +1,10 @@
 らびちゃん,1810,30,clear_good,1,dummy
+いいづか,1700,30,clear_best_2,83,dummy
+いいづか,1700,30,clear_best_2,82,dummy
+いいづか,1700,30,clear_best_2,80,dummy
+いいづか,1700,30,clear_best_2,79,dummy
+いいづか,1700,30,clear_best_2,78,dummy
 いいづか,1700,30,clear_best_2,76,dummy
 いいづか,1700,30,clear_best_2,75,dummy
 いいづか,1700,30,clear_best_2,74,dummy
 いいづか,1700,30,clear_best_2,73,dummy
-いいづか,1700,30,clear_best_2,72,dummy
-いいづか,1700,30,clear_best_2,71,dummy
-いいづか,1700,30,clear_best_2,70,dummy
-いいづか,1700,30,clear_best_2,69,dummy
-いいづか,1700,30,clear_best_2,68,dummy
