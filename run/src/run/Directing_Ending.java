@@ -24,7 +24,7 @@ public class Directing_Ending {
 					System.out.println("");
 					System.out.print("            エンターキーで、次に進む >>");
 				}else {
-					//BestEnd_1();
+					BestEnd_1();
 				}
 			} catch (Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -2754,7 +2754,6 @@ public class Directing_Ending {
 		};
 		Thread.sleep(3500);
 
-		/*
 		String name_07 = "BestEnd/s_07";
 		System.out.println("");
 		Tools.Graphic_Creator(name_07);
@@ -3083,7 +3082,7 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(6000);
-		*/
+
 
 		String name_32 = "BestEnd/s_32";
 		Tools.Graphic_Creator(name_32);
@@ -3181,35 +3180,6 @@ public class Directing_Ending {
 		System.out.println("              ");
 		Thread.sleep(2000);
 
-		/*
-		String name_42 = "BestEnd/s_42";
-		Tools.Graphic_Creator(name_42);
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1000);
-
-
-		String name_40 = "BestEnd/s_40";
-		Tools.Graphic_Creator(name_40);
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1500);
-
-		String name_42_2 = "BestEnd/s_42_2";
-
-		Tools.Graphic_Creator(name_42_2);
-		System.out.println("              ");
-		System.out.println("              「なんで」って？");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1500);
-		*/
-
-
 		String name_42_2 = "BestEnd/s_42_2";
 		String name_42_5 = "BestEnd/s_42_5";
 		Tools.Graphic_Creator(name_42_5);
@@ -3279,15 +3249,6 @@ public class Directing_Ending {
 		System.out.println("              いっつも「ごめん」だとか「すまない」だとか、辛気臭いんだもん。");
 		System.out.println("              ");
 		Thread.sleep(5000);
-
-		/*
-		Tools.Graphic_Creator(name_42);
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(3000);
-		*/
 
 		String name_00_2 = "BestEnd/s_00_2";
 		Tools.Graphic_Creator(name_00_2);
@@ -3422,25 +3383,6 @@ public class Directing_Ending {
 		System.out.println("              ");
 		System.out.println("              ");
 		Thread.sleep(2000);
-
-		/*
-		String name_46_3_2 = "BestEnd/s_46_3_2";
-		Tools.Graphic_Creator(name_46_3_2);
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(2000);
-
-
-		String name_46_3 = "BestEnd/s_46_3";
-		Tools.Graphic_Creator(name_46_3);
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(1000);
-		*/
 
 		String name_46_4_2 = "BestEnd/s_46_4_2";
 		Tools.Graphic_Creator(name_46_4_2);
@@ -3620,40 +3562,117 @@ public class Directing_Ending {
 		System.out.println("              言ってるそばから！");
 		System.out.println("              まったく、しっかりしてよね？");
 		System.out.println("              ");
-		Thread.sleep(1000);
-
-		Tools.Graphic_Creator(name_50_5);
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		System.out.println("              ");
-		Thread.sleep(2500);
+		Thread.sleep(500);
 
 
 		for(int i=6;i<=16;i++) {
 			String names = "BestEnd/s_50_" + i;
 			Tools.Graphic_Creator(names);
 			System.out.println("              ");
-			System.out.println("              じゃ、罰として……家に帰るまでに、");
-			System.out.println("              冒険の仕方をちゃんとまとめておくこと！いいね！");
+			System.out.println("              言ってるそばから！");
+			System.out.println("              まったく、しっかりしてよね？");
 			System.out.println("              ");
 			Thread.sleep(100);
 		}
 		Thread.sleep(1500);
 
+		String name_51_1 = "BestEnd/s_51_1";
+		Tools.Graphic_Creator(name_51_1);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		String name_51_2 = "BestEnd/s_51_2";
+		Tools.Graphic_Creator(name_51_2);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+		Tools.Graphic_Creator(name_51_2);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		String name_51_3 = "BestEnd/s_51_3";
+		Tools.Graphic_Creator(name_51_3);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		Tools.Graphic_Creator(name_51_3);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として 家に帰るまでに、");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		Tools.Graphic_Creator(name_51_3);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として 家に帰るまでに、");
+		System.out.println("              冒険の仕方をちゃんとまとめておくこと！");
+		System.out.println("              ");
+		Thread.sleep(1500);
+
+		String name_51_4 = "BestEnd/s_51_4";
+		Tools.Graphic_Creator(name_51_4);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として 家に帰るまでに、");
+		System.out.println("              冒険の仕方をちゃんとまとめておくこと！");
+		System.out.println("              ");
+		Thread.sleep(500);
+
+		Tools.Graphic_Creator(name_51_4);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として 家に帰るまでに、");
+		System.out.println("              冒険の仕方をちゃんとまとめておくこと！いいね！");
+		System.out.println("              ");
+		Thread.sleep(1000);
+
+		String name_51_5 = "BestEnd/s_51_5";
+		Tools.Graphic_Creator(name_51_5);
+		System.out.println("              ");
+		System.out.println("              じゃ、罰として 家に帰るまでに、");
+		System.out.println("              冒険の仕方をちゃんとまとめておくこと！いいね！");
+		System.out.println("              ");
+		Thread.sleep(2000);
+
+		/*
+		int times = 2000;
+		String[] word_s_51_line_1 =  {
+				"",
+				"じゃ、罰として……",
+				"じゃ、罰として……家に帰るまでに、"
+				};
+		String[] word_s_51_line_2 =  {
+				"","","",
+				"冒険の仕方をちゃんとまとめておくこと！",
+				"冒険の仕方をちゃんとまとめておくこと！いいね！"
+				};
 		for(int i=1;i<=5;i++) {
 			String names = "BestEnd/s_51_" + i;
 			Tools.Graphic_Creator(names);
 			System.out.println("              ");
+			System.out.printf("              %s%n",i <3 ? word_s_51_line_1[i]:word_s_51_line_1[2]);
+			System.out.printf("              %s%n",word_s_51_line_2[i]);
 			System.out.println("              ");
-			System.out.println("              ");
-			System.out.println("              ");
-			Thread.sleep(1000);
+			if(i!=5) Thread.sleep(times);
+			times += 500;
 		}
+		*/
+		Tools.Graphic_Creator(name_51_5);
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		System.out.println("              ");
+		Thread.sleep(2000);
 
-		Thread.sleep(3000);
-
-		String name_51_5 = "BestEnd/s_51_5";
 		String speech2 = "・・・約束だよ？ お兄ちゃん。";
 		char[] speak2 = speech2.toCharArray();
 		String speak_now2 = "";
