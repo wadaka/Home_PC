@@ -16,7 +16,7 @@ public class Directing_Ending {
 			System.out.print("");
 		}else {
 			try {
-				Goal();
+				//Goal();
 				if(ending==1) {
 					GoodEnd();
 				}else if(ending==2){
@@ -24,7 +24,7 @@ public class Directing_Ending {
 					System.out.println("");
 					System.out.print("            エンターキーで、次に進む >>");
 				}else {
-					BestEnd_1();
+					//BestEnd_1();
 				}
 			} catch (Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -3695,5 +3695,93 @@ public class Directing_Ending {
 			System.out.println();
 		}
 		Thread.sleep(3000);
+	}
+
+	static void BestEnd_3() throws Exception {
+		/*
+		//s_100
+		for(int i = 1;i<17;i++) {
+			String gra_name = "BestEnd/s_100_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i>=6 && i<8) Thread.sleep(500);
+			else if(i==9 || i==10) Thread.sleep(1500);
+			else if(i==11 || i==16) Thread.sleep(4000);
+			else Thread.sleep(2000);
+		}
+		//s_101
+		for(int i = 1;i<14;i++) {
+			String gra_name = "BestEnd/s_101_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i==3) Thread.sleep(1000);
+			else if(i == 6 || i == 9)  Thread.sleep(3000);
+			else if(i==4 || i==13) Thread.sleep(4000);
+			else if(i>=10 && i<=12) Thread.sleep(1000);
+			else Thread.sleep(2000);
+			if(i==4) {
+				String nothing_message = "BestEnd/s_100_0";
+				Tools.Graphic_Creator(nothing_message);
+				Thread.sleep(3000);
+			}
+		}
+		//s_102
+		for(int i = 1;i<8;i++) {
+			String gra_name = "BestEnd/s_102_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i==7) Thread.sleep(6000);
+			else if(i==5) Thread.sleep(4000);
+			else if(i>=3 && i<5) Thread.sleep(1000);
+			else Thread.sleep(2000);
+		}
+		//s_103
+		for(int i = 1;i<8;i++) {
+			String gra_name = "BestEnd/s_103_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i==3 || i==5) Thread.sleep(4000);
+			else if(i==7) Thread.sleep(6000);
+			else Thread.sleep(3000);
+		}
+		//s_104
+		for(int i = 1;i<16;i++) {
+			String gra_name = "BestEnd/s_104_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i>=5 && i<7) Thread.sleep(500);
+			else if(i==7) Thread.sleep(3000);
+			else if(i==7 || i ==8 || i == 11) Thread.sleep(4000);
+			else if(i==15) Thread.sleep(5000);
+			else Thread.sleep(2000);
+		}
+		//s_105
+		for(int i = 1;i<7;i++) {
+			String gra_name = "BestEnd/s_105_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i==2 || i==5) Thread.sleep(1000);
+			else if(i==3) Thread.sleep(3000);
+			else if(i==6) Thread.sleep(4000);
+			else Thread.sleep(2000);
+		}
+		String nothing_message = "BestEnd/s_100_0";
+		Tools.Graphic_Creator(nothing_message);
+		Thread.sleep(3000);
+		*/
+		//s_106
+		for(int i = 1;i<5;i++) {
+			String gra_name = "BestEnd/s_106_"+i;
+			Tools.Graphic_Creator(gra_name);
+			if(i==4) Thread.sleep(4000);
+			else Thread.sleep(2000);
+		}
+		String nothing_message = "BestEnd/s_100_0";
+		Tools.Graphic_Creator(nothing_message);
+		Thread.sleep(3000);
+		for(int i=107;i<118;i++) {
+			String gra_name = "BestEnd/s_"+i;
+			Tools.Graphic_Creator(gra_name);
+			System.out.println();
+			System.out.println();
+			if(i==109) Thread.sleep(500);
+			else if(i==110) Thread.sleep(2000);
+			else if(i>=111 && i<115) Thread.sleep(250);
+			else Thread.sleep(2000);
+		}
 	}
 }

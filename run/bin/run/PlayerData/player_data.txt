@@ -1,1 +1,1 @@
-いいづか,true,true,false,false,true,88
+いいづか,true,true,false,false,true,111

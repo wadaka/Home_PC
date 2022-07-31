@@ -152,8 +152,13 @@ public class GameApp {
 				Directing_Tutorial.showTutorial();
 			}else {
 				try {
-					Directing_Title.show_title_pre();
-					Directing_Title.showTitle();
+					if(p.isEnding_Best() == true) {
+						Directing_Title.show_title_pre_after_best();
+						Directing_Title.showTitle_after_best();
+					}else {
+						Directing_Title.show_title_pre();
+						Directing_Title.showTitle();
+					}
 				} catch (Exception e1) {
 					// TODO 自動生成された catch ブロック
 					e1.printStackTrace();
@@ -161,15 +166,26 @@ public class GameApp {
 				int startSelect = sc.nextInt();
 				if(startSelect==1) {
 					try {
-						Directing_Title.skip_select();
+						if(p.isEnding_Best() == true) {
+							Directing_Title.skip_select_after_best();
+						}else {
+							Directing_Title.skip_select();
+						}
 						int skipSelect = sc.nextInt();
 						if(skipSelect == 2) {
 							p.setSkipEvent_Already_Read(true);
 						}else if(skipSelect == 3){
 							p.setSkipEvent_All(true);
 						}
-						Directing_StartGame.showStartGame();
+						if(p.isEnding_Best() == true) {
+							Directing_StartGame.showStartGame_after_best();
+						}else {
+							Directing_StartGame.showStartGame();
+						}
 					} catch (InterruptedException e) {
+						// TODO 自動生成された catch ブロック
+						e.printStackTrace();
+					} catch (Exception e) {
 						// TODO 自動生成された catch ブロック
 						e.printStackTrace();
 					}
@@ -470,6 +486,7 @@ public class GameApp {
 			}else if(h.getMoney()>=125 && p.isCampEvent_1()==true && p.isCampEvent_2()==true){
 				ending = 4;
 				h.setEvent("clear_best_1");
+				isEDCheck = p.isEnding_Best();
 				p.setEnding_Best(true);
 				List<Integer> update_ED_Be = new ArrayList<>();
 				update_ED_Be.add(id_ED_Best);
@@ -529,7 +546,7 @@ public class GameApp {
 
 				if(ending == 4) {
 					h.setEvent("clear_best_2");
-					Directing_Ending.BestEnd_2();
+					//Directing_Ending.BestEnd_2();
 				}
 
 				List<Ranking> r_list = ranking_data_read();
@@ -546,8 +563,26 @@ public class GameApp {
 				Directing_Ranking.show_Ranking(r_list);
 				sc.nextLine();
 				String lastClick = sc.nextLine();
-				Directing_Ranking.show_Ranking_after();
-				End_Adventure();
+
+				if(!p.isSkipEvent_All()){
+					if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
+						for(int i=0;i<32;i++) {
+							System.out.println();
+						}
+						Thread.sleep(3000);
+						Directing_Ending.BestEnd_3();
+						for(int i=0;i<32;i++) {
+							System.out.println();
+						}
+						Thread.sleep(1500);
+					}else {
+						Directing_Ranking.show_Ranking_after();
+						End_Adventure();
+					}
+				}else {
+					Directing_Ranking.show_Ranking_after();
+					End_Adventure();
+				}
 
 			} catch ( Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -670,39 +705,39 @@ public class GameApp {
 	}
 
 	static void preparation() {
-		System.out.println("============================================================================");
-		System.out.println("============================================================================");
-		System.out.println("      合わせ終わったらエンターキーを押してください。ゲームが始まります    ");
-		System.out.println("              -上下の線とコンソールの表示幅を合わせてください-            ");
-		System.out.println("                                     上");
-		System.out.println("                                     下");
-		System.out.println("                                     の");
-		System.out.println("                                     線");
-		System.out.println("                                     と");
-		System.out.println("                                     コ");
-		System.out.println("                                     ン");
-		System.out.println("                                     ソ");
-		System.out.println("                                     |");
-		System.out.println("                                     ル");
-		System.out.println("                                     の");
-		System.out.println("                                     表");
-		System.out.println("                                     示");
-		System.out.println("                                     幅");
-		System.out.println("                                     を");
-		System.out.println("                                     合");
-		System.out.println("                                     わ");
-		System.out.println("                                     せ");
-		System.out.println("                                     て");
-		System.out.println("                                     く");
-		System.out.println("                                     だ");
-		System.out.println("                                     さ");
-		System.out.println("                                     い");
-		System.out.println("                                     。");
+		System.out.println("==============================================================================================================");
+		System.out.println("==============================================================================================================");
+		System.out.println("                       合わせ終わったらエンターキーを押してください。ゲームが始まります                       ");
+		System.out.println("                               -上下の線とコンソールの表示幅を合わせてください-            ");
+		System.out.println("                                                      上");
+		System.out.println("                                                      下");
+		System.out.println("                                                      の");
+		System.out.println("                                                      線");
+		System.out.println("                                                      と");
+		System.out.println("                                                      コ");
+		System.out.println("                                                      ン");
+		System.out.println("                                                      ソ");
+		System.out.println("                                                       |");
+		System.out.println("                                                      ル");
+		System.out.println("                                                      の");
+		System.out.println("                                                      表");
+		System.out.println("                                                      示");
+		System.out.println("                                                      幅");
+		System.out.println("                                                      を");
+		System.out.println("                                                      合");
+		System.out.println("                                                      わ");
+		System.out.println("                                                      せ");
+		System.out.println("                                                      て");
+		System.out.println("                                                      く");
+		System.out.println("                                                      だ");
+		System.out.println("                                                      さ");
+		System.out.println("                                                      い");
+		System.out.println("                                                      。");
 		System.out.println("");
-		System.out.println("              -上下の線とコンソールの表示幅を合わせてください-            ");
-		System.out.println("      合わせ終わったらエンターキーを押してください。ゲームが始まります    ");
-		System.out.println("============================================================================");
-		System.out.printf("============================================================================");
+		System.out.println("                               -上下の線とコンソールの表示幅を合わせてください-            ");
+		System.out.println("                       合わせ終わったらエンターキーを押してください。ゲームが始まります                       ");
+		System.out.println("==============================================================================================================");
+		System.out.printf("==============================================================================================================");
 		String pre = sc.nextLine();
 	}
 
