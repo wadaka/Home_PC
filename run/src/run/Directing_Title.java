@@ -269,29 +269,43 @@ public class Directing_Title {
 		String name_05 = "Title/s_b_05";
 		Tools.Graphic_Creator(name_05);
 		Thread.sleep(25);
+		line_32();
 		String name_06 = "Title/s_b_06";
 		Tools.Graphic_Creator(name_06);
 		Thread.sleep(25);
+		line_32();
 		String name_07 = "Title/s_b_07";
 		Tools.Graphic_Creator(name_07);
 		Thread.sleep(25);
+		line_32();
 		String name_08 = "Title/s_b_08";
 		Tools.Graphic_Creator(name_08);
 		Thread.sleep(25);
+		line_32();
 		String name_09 = "Title/s_b_09";
 		Tools.Graphic_Creator(name_09);
 		Thread.sleep(25);
+		line_32();
 		String name_10 = "Title/s_b_10";
 		Tools.Graphic_Creator(name_10);
 		Thread.sleep(50);
+		line_32();
 		String name_11 = "Title/s_b_11";
 		Tools.Graphic_Creator(name_11);
 		Thread.sleep(50);
+		line_32();
 		String name_12 = "Title/s_b_12";
 		Tools.Graphic_Creator(name_12);
 		Thread.sleep(50);
+		line_32();
 		String name_13 = "Title/s_b_13";
 		Tools.Graphic_Creator(name_13);
 		Thread.sleep(50);
+		line_32();
+	}
+	public static void line_32() {
+		for(int i=0;i<32;i++) {
+			System.out.println("");
+		}
 	}
 }

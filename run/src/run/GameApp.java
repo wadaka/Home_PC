@@ -230,7 +230,7 @@ public class GameApp {
 
 			//ゲームのメインループ
 			//HPが0になる場合を除き、30ターン
-			for(int i=29;i<30;i++) {
+			for(int i=0;i<30;i++) {
 
 				turn_score_calc = i+1;
 
@@ -544,9 +544,13 @@ public class GameApp {
 				sc.nextLine();
 				String Click = sc.nextLine();
 
-				if(ending == 4) {
-					h.setEvent("clear_best_2");
-					//Directing_Ending.BestEnd_2();
+				if(ending==4) {
+					if(!p.isSkipEvent_All()){
+						if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
+							h.setEvent("clear_best_2");
+							Directing_Ending.BestEnd_2();
+						}
+					}
 				}
 
 				List<Ranking> r_list = ranking_data_read();
@@ -564,17 +568,19 @@ public class GameApp {
 				sc.nextLine();
 				String lastClick = sc.nextLine();
 
-				if(!p.isSkipEvent_All()){
-					if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
-						for(int i=0;i<32;i++) {
-							System.out.println();
+				if(ending==4) {
+					if(!p.isSkipEvent_All()){
+						if(!p.isSkipEvent_Already_Read() || !isEDCheck ) {
+							for(int i=0;i<32;i++) {
+								System.out.println();
+							}
+							Thread.sleep(3000);
+							Directing_Ending.BestEnd_3();
+							Thread.sleep(1500);
+						}else {
+							Directing_Ranking.show_Ranking_after();
+							End_Adventure();
 						}
-						Thread.sleep(3000);
-						Directing_Ending.BestEnd_3();
-						for(int i=0;i<32;i++) {
-							System.out.println();
-						}
-						Thread.sleep(1500);
 					}else {
 						Directing_Ranking.show_Ranking_after();
 						End_Adventure();

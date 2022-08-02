@@ -24,7 +24,7 @@ public class Directing_Ending {
 					System.out.println("");
 					System.out.print("            エンターキーで、次に進む >>");
 				}else {
-					//BestEnd_1();
+					BestEnd_1();
 				}
 			} catch (Exception e) {
 				// TODO 自動生成された catch ブロック
@@ -3774,6 +3774,12 @@ public class Directing_Ending {
 		Tools.Graphic_Creator(nothing_message);
 		Thread.sleep(3000);
 		for(int i=107;i<118;i++) {
+			if(i==111) {
+				Tools.Graphic_Creator("BestEnd/s_111_1");
+				System.out.println();
+				System.out.println();
+				Thread.sleep(250);
+			}
 			String gra_name = "BestEnd/s_"+i;
 			Tools.Graphic_Creator(gra_name);
 			System.out.println();
@@ -3782,6 +3788,17 @@ public class Directing_Ending {
 			else if(i==110) Thread.sleep(2000);
 			else if(i>=111 && i<115) Thread.sleep(250);
 			else Thread.sleep(2000);
+		}
+		for(int i=1;i<9;i++) {
+			String gra_name = "BestEnd/s_118_"+i;
+			Tools.Graphic_Creator(gra_name);
+			Thread.sleep(25);
+		}
+		Thread.sleep(1000);
+		for(int i=120;i<133;i++) {
+			String gra_name = "BestEnd/s_"+i;
+			Tools.Graphic_Creator(gra_name);
+			Thread.sleep(65);
 		}
 	}
 }
