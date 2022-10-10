@@ -16,7 +16,7 @@ public class Directing_Ending {
 			System.out.print("");
 		}else {
 			try {
-				//Goal();
+				Goal();
 				if(ending==1) {
 					GoodEnd();
 				}else if(ending==2){
@@ -3071,7 +3071,18 @@ public class Directing_Ending {
 		System.out.println("              リリィがぁぁぁ……っ！！！");
 		System.out.println("              ");
 		System.out.println("              ");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+
+		for(int i=1;i<11;i++) {
+			String names = "BestEnd/s_22_"+i;
+			Tools.Graphic_Creator(names);
+			System.out.println("              ");
+			System.out.println("              リリィがぁぁぁ……っ！！！");
+			System.out.println("              ");
+			System.out.println("              ");
+			Thread.sleep(100);
+		}
+		Thread.sleep(3000);
 
 		for(int i=0;i<32;i++) {
 			System.out.println("");
@@ -3698,7 +3709,7 @@ public class Directing_Ending {
 	}
 
 	static void BestEnd_3() throws Exception {
-		/*
+
 		//s_100
 		for(int i = 1;i<17;i++) {
 			String gra_name = "BestEnd/s_100_"+i;
@@ -3762,7 +3773,7 @@ public class Directing_Ending {
 		String nothing_message = "BestEnd/s_100_0";
 		Tools.Graphic_Creator(nothing_message);
 		Thread.sleep(3000);
-		*/
+
 		//s_106
 		for(int i = 1;i<5;i++) {
 			String gra_name = "BestEnd/s_106_"+i;
@@ -3770,7 +3781,7 @@ public class Directing_Ending {
 			if(i==4) Thread.sleep(4000);
 			else Thread.sleep(2000);
 		}
-		String nothing_message = "BestEnd/s_100_0";
+
 		Tools.Graphic_Creator(nothing_message);
 		Thread.sleep(3000);
 		for(int i=107;i<118;i++) {

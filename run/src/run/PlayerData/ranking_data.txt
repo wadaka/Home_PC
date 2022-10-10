@@ -1,5 +1,5 @@
-らびちゃん,1810,30,clear_good,1,dummy
-マーカス,680,10,booby_trap,4,dummy
+,0,0,0,0,dummy
+,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy

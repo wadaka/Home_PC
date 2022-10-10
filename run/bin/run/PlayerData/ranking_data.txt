@@ -1,4 +1,4 @@
-らびちゃん,1810,30,clear_good,1,dummy
+,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
