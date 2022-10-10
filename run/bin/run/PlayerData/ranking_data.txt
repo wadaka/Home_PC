@@ -1,5 +1,5 @@
-,0,0,0,0,dummy
-,0,0,0,0,dummy
+わだか,1850,30,clear_best_2,4,dummy
+わだか,1020,30,clear_bad,2,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
 ,0,0,0,0,dummy
